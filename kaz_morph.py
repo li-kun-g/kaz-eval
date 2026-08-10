@@ -3,20 +3,14 @@
 """
 kaz_morph.py -- generate Kazakh nominal-morphology eval items as JSONL.
 
-Emits one JSON object per line, matching what run_eval.py reads:
-
-    {"id": ..., "question": ..., "answer": ..., "accepts": [...],
-     "type": ..., "stem": ...}
-
-Usage:
     python3 kaz_morph.py --generate 300 --seed 7 > data/kk_grammar_gen.jsonl
+    python3 kaz_morph.py --generate 50 --seed 7 --tasks gen_izafet > data/kk_izafet.jsonl
     python3 kaz_morph.py --selftest
+    python3 kaz_morph.py --list-tasks
 
-The items test suffix allomorph selection, which in Kazakh depends on two
-independent things: vowel harmony (front vs back, set by the last full vowel
-of the stem) and the sound class of the stem-final segment. A model that has
-merely memorised words will get these wrong; a model with real morphological
-competence will not.
+REPRODUCIBILITY: the default task set is the original eight categories.
+gen_izafet is opt-in via --tasks, so --generate 300 --seed 7 keeps producing
+the exact same 300 items as before.
 """
 
 import argparse
@@ -24,13 +18,10 @@ import json
 import random
 import sys
 
-# --------------------------------------------------------------- phonology
-
 FRONT_V = set("әеөүі")
 BACK_V = set("аоұы")
 HARM_V = FRONT_V | BACK_V
 
-# Final voiceless stops voice before a vowel-initial suffix: кітап -> кітабы
 VOICING = {"п": "б", "қ": "ғ", "к": "г"}
 
 
@@ -55,10 +46,9 @@ def end_class(word):
         return "JZ"
     if c in HARM_V or c == "и":
         return "V"
-    return "VL"          # voiceless: б в г д к қ п с т ф х һ ц ч ш щ
+    return "VL"
 
 
-# (back_form, front_form) keyed by end class
 PLURAL = {"V": ("лар", "лер"), "RUY": ("лар", "лер"),
           "L": ("дар", "дер"), "NASAL": ("дар", "дер"), "JZ": ("дар", "дер"),
           "VL": ("тар", "тер")}
@@ -85,14 +75,14 @@ ABLATIVE = {"V": ("дан", "ден"), "RUY": ("дан", "ден"), "L": ("да�
             "NASAL": ("нан", "нен"),
             "VL": ("тан", "тен")}
 
-# no harmony alternation
 INSTRUMENTAL = {"V": ("мен", "мен"), "RUY": ("мен", "мен"),
                 "L": ("мен", "мен"), "NASAL": ("мен", "мен"),
                 "JZ": ("бен", "бен"),
                 "VL": ("пен", "пен")}
 
 TABLES = {"plural": PLURAL, "gen": GENITIVE, "dat": DATIVE, "acc": ACCUSATIVE,
-          "loc": LOCATIVE, "abl": ABLATIVE, "ins": INSTRUMENTAL}
+          "loc": LOCATIVE, "abl": ABLATIVE, "ins": INSTRUMENTAL,
+          "gen_izafet": GENITIVE}
 
 
 def attach(stem, table):
@@ -116,17 +106,11 @@ def inflect(stem, task):
     return attach(stem, TABLES[task])
 
 
-# ----------------------------------------------------------------- lexicon
-# Regular stems only. Syncopating stems (халық->халқы, орын->орны,
-# ауыз->аузы) are deliberately excluded so every gold answer is derivable.
-
 STEMS = [
-    # back-harmony
     "кітап", "бала", "қала", "адам", "ат", "қыз", "жол", "тау", "қол", "жаз",
     "ұл", "сағат", "дос", "ағаш", "қасық", "бас", "жаңбыр", "ай", "алма",
     "сабақ", "жұмыс", "қалам", "орамал", "балық", "шаң", "аспан", "жылқы",
     "дала", "қар", "тас",
-    # front-harmony
     "үй", "көл", "жер", "кісі", "іс", "көз", "тіс", "ел", "күн", "сөз",
     "мектеп", "дәптер", "бет", "ет", "терезе", "түн", "гүл", "кеш", "күш",
     "әже",
@@ -143,7 +127,9 @@ CASE_PROMPTS = {
     "ins": "көмектес септігінде (кіммен? немен?)",
 }
 
-TASKS = ["plural", "gen", "dat", "acc", "loc", "abl", "ins", "poss3"]
+DEFAULT_TASKS = ["plural", "gen", "dat", "acc", "loc", "abl", "ins", "poss3"]
+EXTRA_TASKS = ["gen_izafet"]
+ALL_TASKS = DEFAULT_TASKS + EXTRA_TASKS
 
 
 def question_text(stem, task):
@@ -152,12 +138,15 @@ def question_text(stem, task):
     if task == "poss3":
         return ("«%s» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз "
                 "(оның ...). %s" % (stem, ONE_WORD))
+    if task == "gen_izafet":
+        return ("«%s» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: "
+                "___ суреті. %s" % (stem, ONE_WORD))
     return "«%s» сөзін %s жазыңыз. %s" % (stem, CASE_PROMPTS[task], ONE_WORD)
 
 
-def build_all():
+def build_all(tasks):
     items = []
-    for task in TASKS:
+    for task in tasks:
         for stem in STEMS:
             ans = inflect(stem, task)
             items.append({
@@ -171,10 +160,6 @@ def build_all():
             })
     return items
 
-
-# ---------------------------------------------------------------- selftest
-# Hand-verified forms. If the rule tables above ever drift, this catches it
-# before 300 wrong gold answers reach an eval run.
 
 GOLD = [
     ("кітап", "plural", "кітаптар"), ("жол", "plural", "жолдар"),
@@ -202,6 +187,8 @@ GOLD = [
     ("мектеп", "poss3", "мектебі"), ("бала", "poss3", "баласы"),
     ("үй", "poss3", "үйі"), ("терезе", "poss3", "терезесі"),
     ("балық", "poss3", "балығы"), ("күн", "poss3", "күні"),
+    ("бала", "gen_izafet", "баланың"), ("дос", "gen_izafet", "достың"),
+    ("үй", "gen_izafet", "үйдің"), ("адам", "gen_izafet", "адамның"),
 ]
 
 
@@ -212,39 +199,53 @@ def selftest():
         if got != want:
             bad.append((stem, task, want, got))
     for stem, task, want, got in bad:
-        print("FAIL %-10s %-7s expected %-14s got %s"
+        print("FAIL %-10s %-11s expected %-14s got %s"
               % (stem, task, want, got), file=sys.stderr)
     print("selftest: %d/%d passed" % (len(GOLD) - len(bad), len(GOLD)),
           file=sys.stderr)
     return 1 if bad else 0
 
 
-# --------------------------------------------------------------------- cli
-
 def main():
-    ap = argparse.ArgumentParser(description=__doc__,
-                                 formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--generate", type=int, metavar="N",
                     help="number of items to emit as JSONL on stdout")
     ap.add_argument("--seed", type=int, default=0,
                     help="shuffle seed, for reproducible sets")
+    ap.add_argument("--tasks", default=",".join(DEFAULT_TASKS),
+                    help="comma-separated task names (default: the original "
+                         "eight categories, so --seed 7 stays reproducible)")
+    ap.add_argument("--list-tasks", action="store_true",
+                    help="print available task names and exit")
     ap.add_argument("--selftest", action="store_true",
                     help="check the rule tables against hand-verified forms")
     args = ap.parse_args()
+
+    if args.list_tasks:
+        print("default: %s" % ", ".join(DEFAULT_TASKS))
+        print("extra:   %s" % ", ".join(EXTRA_TASKS))
+        return
 
     if args.selftest:
         sys.exit(selftest())
 
     if not args.generate:
-        ap.error("give --generate N (or --selftest)")
+        ap.error("give --generate N (or --selftest / --list-tasks)")
+
+    tasks = [t.strip() for t in args.tasks.split(",") if t.strip()]
+    unknown = [t for t in tasks if t not in ALL_TASKS]
+    if unknown:
+        ap.error("unknown task(s): %s (see --list-tasks)" % ", ".join(unknown))
 
     if selftest() != 0:
         sys.exit("rule tables are wrong; refusing to generate")
 
-    items = build_all()
+    items = build_all(tasks)
     if args.generate > len(items):
-        print("warning: only %d unique items exist; emitting all of them"
-              % len(items), file=sys.stderr)
+        print("warning: only %d unique items exist for tasks %s; emitting all"
+              % (len(items), ",".join(tasks)), file=sys.stderr)
         args.generate = len(items)
 
     random.Random(args.seed).shuffle(items)
