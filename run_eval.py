@@ -109,7 +109,14 @@ def substring_grade(item: dict, response: str) -> bool:
 
 
 def is_error(rec: dict) -> bool:
-    return str(rec.get("response", "")).startswith("__ERROR__")
+    """An empty completion is a non-answer, not a wrong answer.
+
+    Excluding blanks keeps them out of the accuracy denominator and makes
+    --resume retry them, which is what you want when an API intermittently
+    returns nothing.
+    """
+    s = str(rec.get("response", "")).strip()
+    return not s or s.startswith("__ERROR__")
 
 
 _THINK = re.compile(r"<(think|thinking|reasoning)>.*?</\1>", re.S | re.I)
