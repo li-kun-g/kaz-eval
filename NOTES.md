@@ -96,3 +96,58 @@ paragraph is drafted in FINDINGS.md discussion.
 
 If 31B scores high on izafet -> item type is sound, 4B zero is instruction
 complexity. If 31B also fails -> drop genitive from the benchmark.
+
+---
+
+## Session 3 update
+
+### CORRECTED ceiling numbers (the old ones were contaminated)
+Root cause found: gemma-4-31b-it does hidden reasoning that counts against
+maxOutputTokens. At --max-tokens 256, ~208 tokens went to thinking and the
+answer was never emitted -> blank responses scored as wrong. --no-think does
+NOT suppress it. Fix: --max-tokens 1500.
+
+Clean numbers, ZERO blanks:
+
+    qwen2.5:3b       KK   4.3%   RU  21.0%   (+16.7)
+    gemma3:4b        KK  16.3%   RU  48.3%   (+32.0)
+    gemma-4-31b-it   KK  98.7%   RU 100.0%   ( +1.3)
+
+Only 2 errors in 300 at 31B, and only one is morphological:
+  ul  -> "Olar" (lexical slip, wrong word entirely)
+  soz -> "sozning" instead of "sozdin" -- wrong assimilation allomorph
+         after z. Harmony was correct. This is THE single genuine
+         morphological error at 31B.
+
+### Izafet genitive: half-rescued, then complicated
+31B scores 46/49 on izafet items. All three errors are bet/bas/is -- exactly
+the nouns where a Type II compound reading is natural (bet sureti = portrait).
+
+IMPORTANT LINGUISTIC CORRECTION: Kazakh izafet Type II (bala kitaby) takes a
+BARE possessor. My frame "___ sureti" is a Type II slot, so the bare stem is
+arguably the correct answer and my gold demanding genitive is wrong for these.
+Type III (balanyn kitaby) requires a definite possessor, which the prompt does
+not supply.
+
+=> Three genitive elicitation attempts, three different failure modes:
+   kogo/chego pulled to ablative; prinadlezhnosti pulled to possessive;
+   izafet frame underspecified for definiteness.
+   DECISION: report seven categories. Document genitive as a category this
+   methodology cannot cleanly measure, with the three failures as evidence.
+   That is a methodological contribution, not a gap. Do not attempt a fourth.
+
+### Done this session
+- run_eval.py patched: blanks are errors, not wrong answers
+- kaz_morph.py v2: --tasks flag, gen_izafet, selftest 54/54
+  (default 300/seed 7 still byte-identical to original)
+- ru_prompts.py v2: takes paths, handles gen_izafet
+- seeds 7/8/9 run for gemma3:4b Kazakh prompts -- NOT YET ANALYZED
+
+### Tomorrow, in order
+1. python3 seedvar.py            <- analyze the seed runs, get the noise floor
+2. Update FINDINGS.md: corrected 31B numbers, noise floor, genitive decision,
+   the reasoning-token bug as a fifth methodological finding
+3. Choose direction: extend to verbs / write the paper / email MBZUAI
+
+Note: FINDINGS.md still contains the OLD contaminated 86.0/80.0 and 98.5/97.6
+figures. Replace with 98.7/100.0.
