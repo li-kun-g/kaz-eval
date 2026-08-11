@@ -151,3 +151,31 @@ not supply.
 
 Note: FINDINGS.md still contains the OLD contaminated 86.0/80.0 and 98.5/97.6
 figures. Replace with 98.7/100.0.
+
+## Noise floor (measured, seeds 7/8/9, gemma3:4b, Kazakh prompts)
+
+    seed 7: 16.3%   seed 8: 18.0%   seed 9: 15.3%
+    mean 16.6%   sd 1.35   range 2.7 points
+
+Per-category range across the three item samples:
+
+    plural 12.0 | gen 3.1 | loc 3.0 | dat 2.6
+    ins     2.5 | abl 1.0 | poss3 0.1 | acc 0.0
+
+READING:
+- Headline +32.0 gap is ~12x the noise. Safe.
+- dat/acc/loc/abl/ins/poss3 gaps all far outside their ranges. Safe.
+- PLURAL is NOT safe: the -3.0 KK-vs-RU difference sits inside a 12-point
+  noise range. Drop any claim about plural being "unchanged".
+- Variance is near zero where the model is floored (acc 0.0, poss3 0.1) and
+  largest where it is mid-range (plural ~65%). Binomial variance peaks at
+  p=0.5, so partially-competent categories need the most data. Worth saying
+  in a methods section.
+- Seed 7 reproduced the original run item-for-item. Determinism confirmed.
+
+## Next session
+FINDINGS.md does NOT exist on disk (the heredoc paste hit a terminal length
+limit and was aborted cleanly). Rebuild it in 3-4 smaller chunks. Content
+needed: corrected 31B numbers (98.7 KK / 100.0 RU, zero blanks), the noise
+floor above, the genitive decision (7 categories, genitive documented as
+unmeasurable), and the reasoning-token bug as finding 3.
