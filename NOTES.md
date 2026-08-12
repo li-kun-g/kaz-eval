@@ -179,3 +179,53 @@ limit and was aborted cleanly). Rebuild it in 3-4 smaller chunks. Content
 needed: corrected 31B numbers (98.7 KK / 100.0 RU, zero blanks), the noise
 floor above, the genitive decision (7 categories, genitive documented as
 unmeasurable), and the reasoning-token bug as finding 3.
+
+---
+
+## Session 4: the paper, and a near-scoop
+
+PAPER.md now exists: title, abstract, intro, related work, benchmark, setup,
+results, 5 methodological findings, limitations, conclusion. ~400 lines.
+
+### IMPORTANT: prior work already did the instruction-language manipulation
+arXiv:2410.12656 (NAACL 2025), "Evaluating Morphological Compositional
+Generalization in LLMs" -- Turkish/Finnish. Their Appendix A.1 is titled
+"Effect of Instruction Language", Tables 28-33. Conclusion: "mostly a drop or
+no change when the instruction language is other than English."
+
+BUT their effect is 1-5 points; ours is 32. Likely cause: they prompt with
+1/3/5 in-context examples, we are zero-shot. Examples substitute for
+instruction comprehension.
+
+=> Reframe: we do not introduce the manipulation. We show that zero-shot, on
+grammatical terminology, it is an order of magnitude larger, varies 0-60 points
+BY CATEGORY, and vanishes at 31B. Prior work's small effect is explained by
+their few-shot design.
+
+### Few-shot experiment (DONE, needs writing up)
+results/gemma3-4b-kk_1shot.json, -kk_5shot.json, -ru_5shot.json
+Rough estimate from error counts: KK 16.3 -> ~55 (1-shot) -> ~75 (5-shot);
+RU 48.3 -> ~70 (5-shot). Kazakh gains far more than Russian => hypothesis
+supported. EXACT numbers: run `python3 shots.py`.
+
+Caveat for the paper: with 5 same-category demos the model sees most of the
+allomorph inventory, so 5-shot is closer to analogy than rule application.
+Lead with the 1-shot number.
+
+Verified grading is sound: correct 5-shot responses replay the demos then give
+the right target form last; demos are stripped as question echo.
+
+### Known flaw to document (do NOT re-run)
+Three gold answers collide with the Kazakh instruction boilerplate:
+  soz+ins = sozben  ("Tek bir sozben jauap beriniz")
+  bas+dat = basqa   ("basqa eshtene jazbaniz")
+  soz+poss3 = sozi  ("sozine")
+Inspected: only 1 item scored correct with an ambiguous response. <0.5 point
+impact, Kazakh condition only, would WIDEN the gap if excluded.
+Fix in v2: change instruction to "Jauabiniz tek bir gana soz bolsin".
+
+### Tomorrow
+1. python3 shots.py  -> paste output
+2. Rewrite PAPER.md Section 5.2 with few-shot results + the reframe above
+3. Still open: qwen seeds 8/9 for uniform error bars; gemma3-12b scaling point;
+   verify arXiv:2411.14198, 2511.01380, MultiBLiMP; fill author lists
