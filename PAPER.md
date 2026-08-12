@@ -1,0 +1,387 @@
+# What Small Models Know About Kazakh Morphology and Cannot Be Asked
+
+## Abstract
+
+Multiple-choice benchmarks show that large language models underperform in
+Kazakh relative to Russian, but cannot explain why: a model can answer them
+without ever producing a Kazakh word form. We introduce a generative benchmark
+of rule-derived Kazakh nominal inflection covering eight morphological
+categories over fifty regular noun stems, in which gold answers are computed
+from vowel-harmony and consonant-assimilation rules rather than hand-annotated.
+Holding items and gold answers byte-identical while varying only the language
+of the instruction, we find that small models are bottlenecked by instruction
+comprehension rather than morphological knowledge. gemma3-4b scores 16.5% when
+instructed in Kazakh, 48.8% in Russian and 52.0% in English, against a noise
+floor of 2.7 points measured over independent item samples; qwen2.5-3b scores
+4.3% and 21.0% for Kazakh and Russian. Russian and English are close at the top
+line, ruling out an account grounded in Kazakhstan's specific bilingual
+situation, but they diverge sharply by category: Russian instructions are far
+better for oblique cases and English for core argument cases, with differences
+of 20-30 points in opposite directions. The Kazakh penalty is itself
+category-specific: plural and genitive show little or no penalty while
+accusative and dative collapse to near zero, indicating that the bottleneck
+is coverage of Kazakh grammatical terminology rather than instruction
+following in general. The overall effect disappears with
+scale: gemma-4-31b reaches 98.7% under Kazakh instructions and 100.0% under
+Russian, with a single genuine morphological error in 300 items. We additionally
+report five methodological findings for cross-lingual generative evaluation,
+including a case-label translation that moved one category by 41 points, a
+morpheme that resists isolated elicitation on principled grammatical grounds,
+and hidden reasoning tokens that silently consume the output budget and are
+scored as errors.
+
+## 1. Introduction
+
+Kazakh is spoken by roughly fourteen million people and is an official language
+of a country of twenty million, yet remains among the languages for which large
+language models are least reliable. It is also agglutinative: nominal stems take
+suffixes whose surface form is determined jointly by vowel harmony, which
+propagates the front/back quality of the last stem vowel, and by consonant
+assimilation, which selects the suffix onset according to the voicing and manner
+of the stem-final segment. A model that has memorised frequent word forms and a
+model that has acquired the underlying rules are indistinguishable on any
+benchmark that does not require the model to *produce* a form it may never have
+seen.
+
+Existing Kazakh benchmarks do not require this. KazMMLU (Togmanov et al., 2025),
+the largest and most widely used, comprises 23,000 multiple-choice questions; a
+model can score well on all of them without emitting a single Kazakh word form.
+Its authors observe that models perform better in Russian than in Kazakh and
+attribute the gap to "differences in training data availability, language
+complexity, or tokenization differences," without distinguishing between them.
+Multiple-choice evaluation cannot make that distinction: it conflates knowing
+something with being able to say it.
+
+We introduce a generative benchmark for Kazakh nominal morphology in which gold
+answers are derived from phonological rules rather than annotated by hand,
+making the item set reproducible from a seed, cheap to extend, and free of
+annotator disagreement. Each item presents a citation-form noun and a target
+morphological category and requires the model to produce the inflected form.
+Because the gold answer is computed, the analysis can be conditioned on the
+linguistic properties that determine it -- harmony class, stem-final sound, and
+the specific allomorph -- so that we report where a model fails rather than only
+how often.
+
+Our central experiment holds items and gold answers byte-identical while varying
+only the language of the instruction. Small models prove limited by instruction
+comprehension rather than morphological knowledge. That English performs on par
+with Russian rules out an explanation grounded in Kazakhstan's bilingual
+situation: the effect is instruction comprehension in general, not transfer from
+a contact language. Underneath that parity, however, the choice of instruction
+language shifts individual categories by 20-30 points in opposite directions,
+which we discuss in Section 6. The morphology is largely present in models that
+appear, when addressed in Kazakh, not to have it.
+
+## 2. Related work
+
+**Kazakh benchmarks.** KazMMLU (Togmanov et al., 2025) is the reference point:
+23,000 bilingual multiple-choice questions drawn from educational materials
+across STEM, humanities and social sciences. ISSAI's KAZ-LLM suite [CITE]
+provides evaluation scripts and datasets alongside a Kazakh-centric model.
+KazQAD [CITE] targets question answering and retrieval, KazSim [CITE] text
+simplification, and Qorgau [CITE] safety in the Kazakh-Russian bilingual
+setting. All are task-level evaluations; none targets morphological generation,
+and none reports results conditioned on phonological properties of the target
+form.
+
+**Morphological evaluation.** [CITE -- SIGMORPHON inflection shared tasks;
+UniMorph; prior work probing LLM inflection in agglutinative languages. This
+paragraph requires a real literature search before submission and must not be
+written from memory.]
+
+**Prompt-language effects.** Cross-lingual prompting studies have reported that
+instructing a multilingual model in a high-resource language can outperform
+instructing it in the target language [CITE]. Our contribution is to isolate
+this effect on a task whose *output* is fixed in the low-resource language
+regardless of instruction language, so that any difference is attributable to
+instruction comprehension rather than to output-language fluency.
+
+## 3. The benchmark
+
+### 3.1 Item construction
+
+Each item pairs a citation-form Kazakh noun with a target morphological
+category and requires the inflected form as output. Eight categories are
+covered: plural, six cases (genitive, dative, accusative, locative, ablative,
+instrumental) and third-person possessive.
+
+Gold answers are computed, not annotated. Suffix selection in Kazakh is
+determined by two independent factors. Vowel harmony assigns the suffix vowel
+according to the front/back quality of the last full vowel of the stem, so
+`үй` takes `-лер` while `тау` takes `-лар`. Consonant assimilation selects the
+suffix onset according to the stem-final segment, partitioning consonants into
+five classes: vowels and р/у/й take л-initial plural suffixes; л, м, н, ң, ж, з
+take д-initial; voiceless segments take т-initial. Distinct partitions apply to
+each case. A third rule voices stem-final п, қ, к before vowel-initial
+suffixes, so `кітап` becomes `кітабы` and `сабақ` becomes `сабағы` under
+third-person possessive.
+
+Encoding these rules as tables makes the item set reproducible from a random
+seed, free to extend to new stems, and free of annotator disagreement. It also
+permits conditioning the analysis on the properties that determine the answer,
+so that results can be reported by harmony class, by stem-final sound class,
+and by individual allomorph rather than only by category.
+
+### 3.2 Lexicon and exclusions
+
+Fifty regular noun stems are used, thirty back-harmonic and twenty
+front-harmonic, spanning all six stem-final sound classes. Stems that undergo
+syncope under suffixation -- `халық` to `халқы`, `орын` to `орны`, `ауыз` to
+`аузы` -- are deliberately excluded, since their surface forms are not derivable
+from the rules above. The benchmark therefore slightly understates the
+difficulty of real Kazakh.
+
+Fifty stems and eight categories yield 400 unique items, from which a run
+samples 300 without replacement.
+
+### 3.3 Validation
+
+The rule tables are checked against 54 hand-verified forms before every
+generation; the generator refuses to emit items if any check fails. This guards
+against the failure mode in which a systematic error in the tables silently
+produces hundreds of incorrect gold answers.
+
+### 3.4 Grading
+
+Responses are graded by substring match against an accept list after removal of
+words echoed from the question. Echo removal is necessary because a model that
+merely repeats the prompt would otherwise score correct whenever the prompt
+contains a substring of the answer. Blank completions are treated as
+non-answers and excluded from the denominator rather than scored as errors
+(Section 7).
+
+## 4. Experimental setup
+
+### 4.1 Conditions
+
+The instruction-language manipulation rewrites only the `question` field of
+each item. Identifiers, gold answers and accept lists are preserved
+byte-for-byte, so conditions are paired item-for-item and any difference is
+attributable to the instruction alone. In all conditions the required output is
+Kazakh.
+
+Kazakh instructions use standard school grammatical terminology
+(`табыс септігінде (кімді? нені?)`). Russian and English instructions use the
+corresponding case names in those languages together with their conventional
+interrogative cues.
+
+### 4.2 Models
+
+Three models are evaluated: qwen2.5-3b and gemma3-4b served locally through
+Ollama, and gemma-4-31b-it accessed through a hosted API. gemini-3.6-flash was
+additionally used as a ceiling check on a subset. Decoding is greedy; repeated
+runs on identical items reproduce identical outputs.
+
+Local models were given a 64-token budget, sufficient for single-word answers;
+API models required 1500 tokens for reasons discussed in Section 7.
+
+### 4.3 Noise floor
+
+Because items are sampled from a larger pool, run-to-run variation is
+non-zero. We estimate it by drawing three independent 300-item samples (seeds
+7, 8, 9) and evaluating the same model under the same condition. All reported
+differences are compared against the observed range for the relevant category.
+
+## 5. Results
+
+### 5.1 Scale
+
+| Model | Params | Kazakh | Russian | English |
+|---|---:|---:|---:|---:|
+| qwen2.5-3b | 3B | 4.3 | 21.0 | -- |
+| gemma3-4b | 4B | 16.6 +-1.3 | 48.8 +-1.0 | 52.0 +-1.3 |
+| gemma-4-31b-it | 31B | 98.7 | 100.0 | -- |
+
+gemma3-4b figures are means over three independent item samples, with half the
+observed range. Others are single runs of 300 items (3B) and 150 items (31B).
+
+Two small models show the same pattern: a large deficit under Kazakh
+instructions that a high-resource instruction language largely removes. At 31B
+the deficit is absent. Note that gemma3-4b and gemma-4-31b-it belong to
+different model generations, so the comparison confounds capacity with a
+generation of training improvements; a within-generation control at 12B was
+attempted but not completed for reasons of local disk (Section 8).
+
+### 5.2 Instruction language by category
+
+The overall difference between Russian and English is 3.2 points, marginally
+outside the 2.7-point noise band. Beneath that near-parity, individual
+categories diverge by an order of magnitude more, in both directions:
+
+| Category | Kazakh | Russian | English | difference |
+|---|---:|---:|---:|---:|
+| plural | 68.7 +-6.0 | 58.9 +-2.0 | 68.0 +-1.5 | EN +9.1 |
+| genitive | 42.2 +-1.5 | 1.8 +-1.5 | 28.2 +-3.2 | EN +26.4 |
+| dative | 1.7 +-1.3 | 33.6 +-6.8 | 48.4 +-5.8 | EN +14.8 |
+| accusative | 0.0 +-0.0 | 31.0 +-5.4 | 62.9 +-3.3 | EN +31.9 |
+| locative | 9.2 +-1.5 | 76.7 +-2.0 | 51.6 +-2.4 | RU +25.1 |
+| ablative | 3.1 +-0.5 | 57.9 +-1.3 | 40.8 +-5.9 | RU +17.1 |
+| instrumental | 11.0 +-1.2 | 74.6 +-4.5 | 53.4 +-2.6 | RU +21.2 |
+| possessive-3 | 2.6 +-0.1 | 56.4 +-1.4 | 62.4 +-2.1 | EN +6.0 |
+
+Russian instructions are substantially better for the oblique cases -- locative,
+instrumental, ablative -- while English instructions are substantially better for
+accusative and genitive. Russian lexicalises an instrumental and a
+locative/prepositional case; English has no case morphology and its case terms
+are purely metalinguistic. Whether the interaction reflects that difference in
+grammatical inventory, or simply uneven quality across our own glosses, is not
+resolvable with the present design (Section 8).
+
+### 5.3 The Kazakh penalty is category-specific
+
+The deficit under Kazakh instructions is not uniform. For plural, Kazakh
+instructions perform as well as English (68.7 against 68.0). For genitive they
+outperform both alternatives (42.2 against 28.2 and 1.8). For accusative and
+dative they collapse to near zero.
+
+The categories that survive Kazakh prompting are those whose Kazakh
+grammatical terms -- `көпше түрі`, `ілік септік` -- are basic school vocabulary;
+those that fail use more specialised terminology. This suggests that the
+bottleneck is coverage of Kazakh metalinguistic vocabulary rather than an
+inability to process Kazakh instructions in general, and predicts that term
+frequency in Kazakh corpora should predict which categories survive. We do not
+test that prediction here.
+
+### 5.4 Neighbour-language interference
+
+Under Kazakh instructions, both small models produce forms drawn from a
+better-resourced Turkic relative, and they draw on different ones. gemma3-4b
+produces `Мектеpler` for `мектептер`, grafting the Turkish plural `-ler` in
+Latin script onto a Cyrillic stem, and substitutes Latin `ə` for Cyrillic `ә`.
+qwen2.5-3b produces Kyrgyz morphology (`айтып берет` where Kazakh requires
+`айтып береді`) and Kyrgyz lexical items.
+
+This interference is largely absent under Russian and English instructions,
+which supports reading it as a symptom of failed instruction parsing rather
+than of a corrupted Kazakh lexicon.
+
+### 5.5 Phonological conditioning
+
+Where models are above the floor, back-harmonic stems outperform front-harmonic
+ones: 52.2 against 42.2 for gemma3-4b under Russian instructions, 25.5 against
+13.8 for qwen2.5-3b. At 31B both classes reach 100%.
+
+qwen2.5-3b scores 0/40 on instrumental under both Kazakh and Russian
+instructions -- the `-мен/-бен/-пен` paradigm appears to be absent from the model
+rather than merely unreachable. gemma3-4b handles instrumental at 74.6 under
+Russian. Two models of comparable size therefore fail on different categories,
+and an intervention targeting either would need to be built against measured
+per-model gaps.
+
+### 5.6 Error profile at ceiling
+
+gemma-4-31b-it makes two errors in 300 items. One is lexical: `ұл` returns
+`Олар` ("they"). The other is the single genuine morphological error observed
+at this scale: `сөз` returns `сөзнің` where Kazakh requires `сөздің`, applying
+the post-nasal allomorph after a fricative. Vowel harmony is correct;
+assimilation is not. All other cuts of the data -- both harmony classes, all six
+stem-final sound classes, every allomorph -- are at 100%.
+
+## 6. Methodological findings
+
+We report five issues encountered in building this evaluation. Each cost
+substantial time to diagnose and each generalises beyond Kazakh.
+
+**6.1 A translated case label moved one category by 41 points.** We first
+glossed Kazakh ілік септік as Russian `родительный падеж (кого? чего?)`.
+Russian's `кого?/чего?` overlaps with the accusative and with negation
+constructions and does not signal possession; the model was pulled toward
+ablative and instrumental forms (`шаң` returning `Шаңмен`, `түн` returning
+`Түннен`). Genitive fell from 42.2 under Kazakh instructions to 1.8 under
+Russian. All six allomorphs scored near zero uniformly -- the signature of a
+category never identified, as opposed to a phonological error, which would
+fail some allomorphs and spare others. A cross-lingual evaluation measures its
+own translations as much as it measures the model.
+
+**6.2 The Kazakh genitive resists isolated elicitation.** Three attempts failed
+in three distinct ways. The `кого? чего?` gloss pulled toward oblique cases.
+A revised `родительный падеж принадлежности (чей? чьё?)` pulled toward the
+possessed form (`шаң` returning `Оның шаңы`, `дос` returning `Досының`). An
+izafet frame (`___ суреті`) scored zero at 4B but 93.9 at 31B, and its residual
+errors at 31B were confined to `бет`, `бас` and `іс` -- exactly the nouns that
+form natural compounds.
+
+The explanation is grammatical. Kazakh izafet Type II (`бала кітабы`) takes a
+bare possessor; Type III (`баланың кітабы`) requires a definite possessor that
+an isolated prompt does not supply. The frame is a Type II slot, so the bare
+stem is a legitimate answer and our genitive gold is wrong for those items.
+The construction that hosts the genitive does not require it. We therefore
+report the genitive with this caveat rather than treating its scores as a clean
+measure of morphological competence.
+
+**6.3 Hidden reasoning tokens consume the output budget silently.** The hosted
+gemma-4-31b-it performs internal reasoning that counts against
+`maxOutputTokens`. At a 256-token budget, roughly 208 tokens went to reasoning
+and the answer was never emitted; the API returned an empty completion.
+Symptoms were 12-48% blank responses varying between runs and answers truncated
+mid-word. Requesting suppression of reasoning did not prevent it. Raising the
+budget to 1500 tokens eliminated blanks entirely and moved the measured score
+from 86.0 to 98.7. Any API-based evaluation of a reasoning-capable model needs
+a budget far above the visible answer length and an explicit blank-rate check.
+
+**6.4 Blank responses were being scored as wrong answers.** Our harness
+initially treated only explicit API errors as errors, so empty completions
+counted against accuracy. A non-answer is not a wrong answer; it belongs
+outside the denominator, and it should be retried on resumption.
+
+**6.5 Generation-length truncation was ruled out rather than assumed.**
+qwen2.5-3b produces long meta-commentary under Kazakh instructions and hit its
+64-token ceiling. Re-running sixty items at 256 tokens produced exactly the
+same four correct answers while throughput fell from 0.6 to 0.4 items per
+second: the model generated more text and used it to elaborate rather than to
+answer. The low score is genuine.
+
+## 7. Validity
+
+gemini-3.6-flash answered the first seven Kazakh-instruction items correctly
+before quota exhaustion, including the two instrumental items on which
+qwen2.5-3b fails forty times out of forty. gemma-4-31b-it reached 98.7% with
+zero blank responses. The items are well-formed and answerable in Kazakh; low
+scores at small scale reflect model behaviour rather than a defective
+instrument.
+
+## 8. Limitations
+
+The benchmark covers fifty regular noun stems and eight suffix categories. It
+contains no verbs, no syntax, no irregular stems, and no measure of fluency or
+translation quality; a model could score perfectly here and still write poor
+Kazakh. Syncopating stems are excluded, so the set understates real difficulty.
+
+Genitive results carry the caveat in 6.2. Plural differences between
+instruction languages fall inside the noise floor and support no claim.
+
+The category-by-instruction-language interaction in 5.2 admits two
+explanations we cannot separate: the instruction language's own grammatical
+inventory, or uneven quality across our glosses. Given 6.1, the second is a
+live possibility. Distinguishing them requires multiple independent glosses per
+category per language, which we leave to future work.
+
+The scaling comparison spans two model generations. Error bars are available
+for gemma3-4b only; other models were run once. The noise floor is estimated
+from item sampling and does not capture decoding variance, which is nil under
+greedy decoding, or variance across prompt phrasings, which 6.1 suggests is
+large. Three models establish a trend, not a scaling law.
+
+## 9. Conclusion
+
+Small multilingual models know more Kazakh nominal morphology than they can be
+asked to demonstrate in Kazakh. Instructing gemma3-4b in Russian or English
+rather than Kazakh raises accuracy from 16.6 to roughly 50 on identical items
+with identical Kazakh answers, and the deficit disappears entirely at 31B
+parameters. The gap is not uniform across the paradigm: it is largest for
+categories whose Kazakh grammatical terminology is least common, which locates
+the bottleneck in metalinguistic vocabulary rather than in morphological
+knowledge or in Kazakh processing as such.
+
+For practitioners building Kazakh systems on small open-weight models, this
+suggests that instruction tuning on Kazakh task descriptions is likely to
+recover more capability per unit of compute than continued pretraining on
+Kazakh text. For evaluation, it suggests that any multiple-choice benchmark
+reporting a Kazakh-Russian gap is measuring a mixture of knowledge and
+instruction comprehension, and cannot separate them by design.
+
+## Availability
+
+Code and item sets: [REPOSITORY URL]. All items are generated from a seed; the
+generator validates its rule tables against hand-verified forms before emitting
+anything.
