@@ -84,10 +84,39 @@ setting. All are task-level evaluations; none targets morphological generation,
 and none reports results conditioned on phonological properties of the target
 form.
 
-**Morphological evaluation.** [CITE -- SIGMORPHON inflection shared tasks;
-UniMorph; prior work probing LLM inflection in agglutinative languages. This
-paragraph requires a real literature search before submission and must not be
-written from memory.]
+**Morphological evaluation.** The SIGMORPHON-UniMorph shared tasks have treated
+morphological inflection as a supervised problem for a decade, most recently
+covering 26 languages from 9 families with lemma-disjoint splits designed to
+test generalisation to unseen lemmas (SIGMORPHON-UniMorph 2023 Shared Task 0).
+Our item format -- lemma plus target features, inflected form as output --
+follows that tradition, but evaluates instruction-following models zero-shot
+rather than trained inflection systems.
+
+Closest to the present work, "Evaluating Morphological Compositional
+Generalization in Large Language Models" (NAACL 2025; arXiv:2410.12656)
+evaluates instruction-tuned multilingual models on Turkish and Finnish, treating
+morphemes as compositional primitives and testing productivity and systematicity
+over novel roots. It reports sharp degradation as morphological complexity rises
+and a lack of systematicity relative to humans. We differ in three respects: the
+language is Kazakh; the instruction language is manipulated while the task and
+gold answers are held fixed, which that work does not do; and our focus is the
+small-model regime, where the effect we report is largest, rather than frontier
+models.
+
+"Evaluating Metalinguistic Knowledge in Large Language Models across the World's
+Languages" (arXiv:2602.02182) converts WALS features into multiple-choice
+questions across 2,660 languages and finds metalinguistic knowledge to be
+fragmented and predicted mainly by digital resource availability rather than by
+genealogical or geographic factors. That is consistent with our interpretation
+in Section 5.3, though it measures knowledge *about* languages rather than the
+ability to act on grammatical instructions *in* a language, and is itself
+multiple-choice.
+
+[TO VERIFY BEFORE SUBMISSION: arXiv:2411.14198 "Why do language models perform
+worse for morphologically complex languages?"; arXiv:2511.01380 "Confounding
+Factors in Relating Model Performance to Morphology"; MultiBLiMP 1.0
+(morphosyntactic minimal pairs, 101 languages). Titles located but contents not
+read. Also fill exact author lists and page numbers for all citations above.]
 
 **Prompt-language effects.** Cross-lingual prompting studies have reported that
 instructing a multilingual model in a high-resource language can outperform
