@@ -70,7 +70,7 @@ with Russian rules out an explanation grounded in Kazakhstan's bilingual
 situation: the effect is instruction comprehension in general, not transfer from
 a contact language. A single in-context example recovers most of the deficit and five
 eliminate it, showing that the knowledge was present and the instruction
-could not reach it (Section 5.7). Underneath that parity, however, the choice of instruction
+could not reach it (Section 5.3). Underneath that parity, however, the choice of instruction
 language shifts individual categories by 20-30 points in opposite directions,
 which we discuss in Section 6. The morphology is largely present in models that
 appear, when addressed in Kazakh, not to have it.
@@ -106,7 +106,7 @@ prompting in Turkish or Finnish rather than English yields "a drop or no
 change" of roughly 1-5 points. We differ in three respects. The language is
 Kazakh. The instruction language is the manipulated variable rather than a
 robustness check, and we decompose its effect by morphological category. And we
-evaluate zero-shot, which Section 5.7 shows is why our effect is an order of
+evaluate zero-shot, which Section 5.3 shows is why our effect is an order of
 magnitude larger than theirs.
 
 **Prompt language and code-switching.** Wendler et al. (2024) show that
@@ -123,7 +123,7 @@ Finally, Arcon et al. (2026) evaluate metalinguistic knowledge across the
 2,660 languages of the World Atlas of Language Structures, converting WALS
 features into multiple-choice questions, and find such knowledge to be fragmented and
 predicted mainly by digital resource availability rather than by genealogical
-or geographic factors. That converges with our Section 5.3 result at the level
+or geographic factors. That converges with our Section 5.4 result at the level
 of a single language, though it measures knowledge *about* languages rather
 than the ability to act on grammatical instructions *in* one.
 
@@ -217,6 +217,9 @@ differences are compared against the observed range for the relevant category.
 
 ### 5.1 Scale
 
+**Table 1.** Accuracy by model and instruction language.
+gemma3-4b figures are means over three independent item samples.
+
 | Model | Params | Kazakh | Russian | English |
 |---|---:|---:|---:|---:|
 | qwen2.5-3b | 3B | 4.3 | 21.0 | -- |
@@ -226,7 +229,7 @@ differences are compared against the observed range for the relevant category.
 gemma3-4b figures are means over three independent item samples, with half the
 observed range. Others are single runs of 300 items (3B) and 150 items (31B).
 
-Two small models show the same pattern: a large deficit under Kazakh
+Table 1 shows the same pattern in two small models: a large deficit under Kazakh
 instructions that a high-resource instruction language largely removes. At 31B
 the deficit is absent. Note that gemma3-4b and gemma-4-31b-it belong to
 different model generations, so the comparison confounds capacity with a
@@ -237,7 +240,11 @@ attempted but not completed for reasons of local disk (Section 8).
 
 The overall difference between Russian and English is 3.2 points, marginally
 outside the 2.7-point noise band. Beneath that near-parity, individual
-categories diverge by an order of magnitude more, in both directions:
+categories diverge by an order of magnitude more, in both directions
+(Table 2):
+
+**Table 2.** gemma3-4b accuracy by morphological category and instruction
+language. Mean over three item samples, plus or minus half the observed range.
 
 | Category | Kazakh | Russian | English | difference |
 |---|---:|---:|---:|---:|
@@ -258,7 +265,9 @@ are purely metalinguistic. Whether the interaction reflects that difference in
 grammatical inventory, or simply uneven quality across our own glosses, is not
 resolvable with the present design (Section 8).
 
-### 5.3 The Kazakh penalty is category-specific
+
+
+### 5.4 The Kazakh penalty is category-specific
 
 The deficit under Kazakh instructions is not uniform. For plural, Kazakh
 instructions perform as well as English (68.7 against 68.0). For genitive they
@@ -273,7 +282,7 @@ inability to process Kazakh instructions in general, and predicts that term
 frequency in Kazakh corpora should predict which categories survive. We do not
 test that prediction here.
 
-### 5.4 Neighbour-language interference
+### 5.5 Neighbour-language interference
 
 Under Kazakh instructions, both small models produce forms drawn from a
 better-resourced Turkic relative, and they draw on different ones. gemma3-4b
@@ -286,7 +295,7 @@ This interference is largely absent under Russian and English instructions,
 which supports reading it as a symptom of failed instruction parsing rather
 than of a corrupted Kazakh lexicon.
 
-### 5.5 Phonological conditioning
+### 5.6 Phonological conditioning
 
 Where models are above the floor, back-harmonic stems outperform front-harmonic
 ones: 52.2 against 42.2 for gemma3-4b under Russian instructions, 25.5 against
@@ -299,7 +308,7 @@ Russian. Two models of comparable size therefore fail on different categories,
 and an intervention targeting either would need to be built against measured
 per-model gaps.
 
-### 5.6 Error profile at ceiling
+### 5.7 Error profile at ceiling
 
 gemma-4-31b-it makes two errors in 300 items. One is lexical: `ұл` returns
 `Олар` ("they"). The other is the single genuine morphological error observed
@@ -418,13 +427,126 @@ Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generate
 generator validates its rule tables against hand-verified forms before emitting
 anything.
 
+## 6. Methodological findings
+
+We report five issues encountered in building this evaluation. Each cost
+substantial time to diagnose and each generalises beyond Kazakh.
+
+**6.1 A translated case label moved one category by 41 points.** We first
+glossed Kazakh ілік септік as Russian `родительный падеж (кого? чего?)`.
+Russian's `кого?/чего?` overlaps with the accusative and with negation
+constructions and does not signal possession; the model was pulled toward
+ablative and instrumental forms (`шаң` returning `Шаңмен`, `түн` returning
+`Түннен`). Genitive fell from 42.2 under Kazakh instructions to 1.8 under
+Russian. All six allomorphs scored near zero uniformly -- the signature of a
+category never identified, as opposed to a phonological error, which would
+fail some allomorphs and spare others. A cross-lingual evaluation measures its
+own translations as much as it measures the model.
+
+**6.2 The Kazakh genitive resists isolated elicitation.** Three attempts failed
+in three distinct ways. The `кого? чего?` gloss pulled toward oblique cases.
+A revised `родительный падеж принадлежности (чей? чьё?)` pulled toward the
+possessed form (`шаң` returning `Оның шаңы`, `дос` returning `Досының`). An
+izafet frame (`___ суреті`) scored zero at 4B but 93.9 at 31B, and its residual
+errors at 31B were confined to `бет`, `бас` and `іс` -- exactly the nouns that
+form natural compounds.
+
+The explanation is grammatical. Kazakh izafet Type II (`бала кітабы`) takes a
+bare possessor; Type III (`баланың кітабы`) requires a definite possessor that
+an isolated prompt does not supply. The frame is a Type II slot, so the bare
+stem is a legitimate answer and our genitive gold is wrong for those items.
+The construction that hosts the genitive does not require it. We therefore
+report the genitive with this caveat rather than treating its scores as a clean
+measure of morphological competence.
+
+**6.3 Hidden reasoning tokens consume the output budget silently.** The hosted
+gemma-4-31b-it performs internal reasoning that counts against
+`maxOutputTokens`. At a 256-token budget, roughly 208 tokens went to reasoning
+and the answer was never emitted; the API returned an empty completion.
+Symptoms were 12-48% blank responses varying between runs and answers truncated
+mid-word. Requesting suppression of reasoning did not prevent it. Raising the
+budget to 1500 tokens eliminated blanks entirely and moved the measured score
+from 86.0 to 98.7. Any API-based evaluation of a reasoning-capable model needs
+a budget far above the visible answer length and an explicit blank-rate check.
+
+**6.4 Blank responses were being scored as wrong answers.** Our harness
+initially treated only explicit API errors as errors, so empty completions
+counted against accuracy. A non-answer is not a wrong answer; it belongs
+outside the denominator, and it should be retried on resumption.
+
+**6.5 Generation-length truncation was ruled out rather than assumed.**
+qwen2.5-3b produces long meta-commentary under Kazakh instructions and hit its
+64-token ceiling. Re-running sixty items at 256 tokens produced exactly the
+same four correct answers while throughput fell from 0.6 to 0.4 items per
+second: the model generated more text and used it to elaborate rather than to
+answer. The low score is genuine.
+
+## 7. Validity
+
+gemini-3.6-flash answered the first seven Kazakh-instruction items correctly
+before quota exhaustion, including the two instrumental items on which
+qwen2.5-3b fails forty times out of forty. gemma-4-31b-it reached 98.7% with
+zero blank responses. The items are well-formed and answerable in Kazakh; low
+scores at small scale reflect model behaviour rather than a defective
+instrument.
+
+## 8. Limitations
+
+The benchmark covers fifty regular noun stems and eight suffix categories. It
+contains no verbs, no syntax, no irregular stems, and no measure of fluency or
+translation quality; a model could score perfectly here and still write poor
+Kazakh. Syncopating stems are excluded, so the set understates real difficulty.
+
+Genitive results carry the caveat in 6.2. Plural differences between
+instruction languages fall inside the noise floor and support no claim.
+
+The category-by-instruction-language interaction in 5.2 admits two
+explanations we cannot separate: the instruction language's own grammatical
+inventory, or uneven quality across our glosses. Given 6.1, the second is a
+live possibility. Distinguishing them requires multiple independent glosses per
+category per language, which we leave to future work.
+
+The scaling comparison spans two model generations. Error bars are available
+for gemma3-4b only; other models were run once. The noise floor is estimated
+from item sampling and does not capture decoding variance, which is nil under
+greedy decoding, or variance across prompt phrasings, which 6.1 suggests is
+large. Three models establish a trend, not a scaling law.
+
+## 9. Conclusion
+
+Small multilingual models know more Kazakh nominal morphology than they can be
+asked to demonstrate in Kazakh. Instructing gemma3-4b in Russian or English
+rather than Kazakh raises accuracy from 16.6 to roughly 50 on identical items
+with identical Kazakh answers, and the deficit disappears entirely at 31B
+parameters. The gap is not uniform across the paradigm: it is largest for
+categories whose Kazakh grammatical terminology is least common, which locates
+the bottleneck in metalinguistic vocabulary rather than in morphological
+knowledge or in Kazakh processing as such.
+
+For practitioners building Kazakh systems on small open-weight models, this
+suggests that instruction tuning on Kazakh task descriptions is likely to
+recover more capability per unit of compute than continued pretraining on
+Kazakh text. For evaluation, it suggests that any multiple-choice benchmark
+reporting a Kazakh-Russian gap is measuring a mixture of knowledge and
+instruction comprehension, and cannot separate them by design.
+
+## Availability
+
+Code and item sets: https://github.com/li-kun-g/kaz-eval
+Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generated from a seed; the
+generator validates its rule tables against hand-verified forms before emitting
+anything.
+
 ### 5.7 In-context examples close the gap
 
 The results above are zero-shot. Prior work on morphological evaluation in
 agglutinative languages prompts with in-context examples, and reports only a
 1-5 point penalty for instructing in the target language rather than English
 (arXiv:2410.12656, Appendix A.1). We reconcile the two by varying the number of
-examples on our own items.
+examples on our own items (Table 3).
+
+**Table 3.** Effect of in-context examples on gemma3-4b, by instruction
+language and number of demonstrations.
 
 | Category | KK 0-shot | KK 1-shot | KK 5-shot | RU 0-shot | RU 5-shot |
 |---|---:|---:|---:|---:|---:|
@@ -444,7 +566,7 @@ condition: the 32.0-point instruction-language gap becomes -4.3. Kazakh gains
 58.3 points from examples while Russian gains 22.0.
 
 The gains are not uniform, and their distribution supports the account in
-Section 5.3. The categories that gain most from one example are exactly those
+Section 5.4. The categories that gain most from one example are exactly those
 where Kazakh instructions failed: dative +68.3, instrumental +57.5, possessive
 +50.0, locative +47.5, ablative +40.7. The two categories the model already
 handled under Kazakh instructions gain least: plural +6.1 and genitive +9.7.
