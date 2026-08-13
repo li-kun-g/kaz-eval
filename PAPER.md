@@ -267,6 +267,63 @@ resolvable with the present design (Section 8).
 
 
 
+### 5.3 In-context examples close the gap
+
+The results above are zero-shot. Prior work on morphological evaluation in
+agglutinative languages prompts with in-context examples, and reports only a
+1-5 point penalty for instructing in the target language rather than English
+(arXiv:2410.12656, Appendix A.1). We reconcile the two by varying the number of
+examples on our own items (Table 3).
+
+**Table 3.** Effect of in-context examples on gemma3-4b, by instruction
+language and number of demonstrations.
+
+| Category | KK 0-shot | KK 1-shot | KK 5-shot | RU 0-shot | RU 5-shot |
+|---|---:|---:|---:|---:|---:|
+| plural | 63.6 | 69.7 | 84.8 | 60.6 | 78.8 |
+| genitive | 41.5 | 51.2 | 68.3 | 0.0 | 75.6 |
+| dative | 2.4 | 70.7 | 80.5 | 41.5 | 63.4 |
+| accusative | 0.0 | 22.5 | 67.5 | 25.0 | 72.5 |
+| locative | 7.5 | 55.0 | 62.5 | 75.0 | 47.5 |
+| ablative | 3.7 | 44.4 | 66.7 | 59.3 | 55.6 |
+| instrumental | 12.5 | 70.0 | 87.5 | 75.0 | 85.0 |
+| possessive-3 | 2.6 | 52.6 | 78.9 | 57.9 | 81.6 |
+| **OVERALL** | **16.3** | **54.7** | **74.7** | **48.3** | **70.3** |
+
+A single example raises Kazakh-instructed accuracy from 16.3 to 54.7. Five
+examples raise it to 74.7, at which point it slightly exceeds the Russian
+condition: the 32.0-point instruction-language gap becomes -4.3. Kazakh gains
+58.3 points from examples while Russian gains 22.0.
+
+The gains are not uniform, and their distribution supports the account in
+Section 5.4. The categories that gain most from one example are exactly those
+where Kazakh instructions failed: dative +68.3, instrumental +57.5, possessive
++50.0, locative +47.5, ablative +40.7. The two categories the model already
+handled under Kazakh instructions gain least: plural +6.1 and genitive +9.7.
+An example supplies what a grammatical term failed to convey -- which
+transformation is intended -- and it is redundant where the term was already
+understood.
+
+The Russian genitive provides an internal check. Under our first Russian gloss
+it scored 0.0 (Section 6.1); with five examples it reaches 75.6. The model's
+genitive knowledge was intact throughout; a mistranslated case label concealed
+it, and demonstrations bypass the label entirely.
+
+**Implication for evaluation practice.** Few-shot prompting substitutes for
+instruction comprehension and therefore masks instruction-language effects. A
+benchmark that reports few-shot numbers is measuring something closer to
+analogical pattern completion than to a model's ability to act on grammatical
+instructions in the target language. Both are worth measuring, but they are
+different capabilities, and reporting only the former will understate how
+poorly a model serves users who write in that language.
+
+Two caveats. With five same-category demonstrations the model observes most of
+the allomorph inventory for that category, so the 5-shot condition is closer to
+analogy than to rule application; the 1-shot figure is the more conservative
+one. And the Russian condition loses ground on locative (75.0 to 47.5) and
+ablative (59.3 to 55.6) under 5-shot prompting, which we do not currently
+explain.
+
 ### 5.4 The Kazakh penalty is category-specific
 
 The deficit under Kazakh instructions is not uniform. For plural, Kazakh
@@ -426,173 +483,6 @@ Code and item sets: https://github.com/li-kun-g/kaz-eval
 Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generated from a seed; the
 generator validates its rule tables against hand-verified forms before emitting
 anything.
-
-## 6. Methodological findings
-
-We report five issues encountered in building this evaluation. Each cost
-substantial time to diagnose and each generalises beyond Kazakh.
-
-**6.1 A translated case label moved one category by 41 points.** We first
-glossed Kazakh ілік септік as Russian `родительный падеж (кого? чего?)`.
-Russian's `кого?/чего?` overlaps with the accusative and with negation
-constructions and does not signal possession; the model was pulled toward
-ablative and instrumental forms (`шаң` returning `Шаңмен`, `түн` returning
-`Түннен`). Genitive fell from 42.2 under Kazakh instructions to 1.8 under
-Russian. All six allomorphs scored near zero uniformly -- the signature of a
-category never identified, as opposed to a phonological error, which would
-fail some allomorphs and spare others. A cross-lingual evaluation measures its
-own translations as much as it measures the model.
-
-**6.2 The Kazakh genitive resists isolated elicitation.** Three attempts failed
-in three distinct ways. The `кого? чего?` gloss pulled toward oblique cases.
-A revised `родительный падеж принадлежности (чей? чьё?)` pulled toward the
-possessed form (`шаң` returning `Оның шаңы`, `дос` returning `Досының`). An
-izafet frame (`___ суреті`) scored zero at 4B but 93.9 at 31B, and its residual
-errors at 31B were confined to `бет`, `бас` and `іс` -- exactly the nouns that
-form natural compounds.
-
-The explanation is grammatical. Kazakh izafet Type II (`бала кітабы`) takes a
-bare possessor; Type III (`баланың кітабы`) requires a definite possessor that
-an isolated prompt does not supply. The frame is a Type II slot, so the bare
-stem is a legitimate answer and our genitive gold is wrong for those items.
-The construction that hosts the genitive does not require it. We therefore
-report the genitive with this caveat rather than treating its scores as a clean
-measure of morphological competence.
-
-**6.3 Hidden reasoning tokens consume the output budget silently.** The hosted
-gemma-4-31b-it performs internal reasoning that counts against
-`maxOutputTokens`. At a 256-token budget, roughly 208 tokens went to reasoning
-and the answer was never emitted; the API returned an empty completion.
-Symptoms were 12-48% blank responses varying between runs and answers truncated
-mid-word. Requesting suppression of reasoning did not prevent it. Raising the
-budget to 1500 tokens eliminated blanks entirely and moved the measured score
-from 86.0 to 98.7. Any API-based evaluation of a reasoning-capable model needs
-a budget far above the visible answer length and an explicit blank-rate check.
-
-**6.4 Blank responses were being scored as wrong answers.** Our harness
-initially treated only explicit API errors as errors, so empty completions
-counted against accuracy. A non-answer is not a wrong answer; it belongs
-outside the denominator, and it should be retried on resumption.
-
-**6.5 Generation-length truncation was ruled out rather than assumed.**
-qwen2.5-3b produces long meta-commentary under Kazakh instructions and hit its
-64-token ceiling. Re-running sixty items at 256 tokens produced exactly the
-same four correct answers while throughput fell from 0.6 to 0.4 items per
-second: the model generated more text and used it to elaborate rather than to
-answer. The low score is genuine.
-
-## 7. Validity
-
-gemini-3.6-flash answered the first seven Kazakh-instruction items correctly
-before quota exhaustion, including the two instrumental items on which
-qwen2.5-3b fails forty times out of forty. gemma-4-31b-it reached 98.7% with
-zero blank responses. The items are well-formed and answerable in Kazakh; low
-scores at small scale reflect model behaviour rather than a defective
-instrument.
-
-## 8. Limitations
-
-The benchmark covers fifty regular noun stems and eight suffix categories. It
-contains no verbs, no syntax, no irregular stems, and no measure of fluency or
-translation quality; a model could score perfectly here and still write poor
-Kazakh. Syncopating stems are excluded, so the set understates real difficulty.
-
-Genitive results carry the caveat in 6.2. Plural differences between
-instruction languages fall inside the noise floor and support no claim.
-
-The category-by-instruction-language interaction in 5.2 admits two
-explanations we cannot separate: the instruction language's own grammatical
-inventory, or uneven quality across our glosses. Given 6.1, the second is a
-live possibility. Distinguishing them requires multiple independent glosses per
-category per language, which we leave to future work.
-
-The scaling comparison spans two model generations. Error bars are available
-for gemma3-4b only; other models were run once. The noise floor is estimated
-from item sampling and does not capture decoding variance, which is nil under
-greedy decoding, or variance across prompt phrasings, which 6.1 suggests is
-large. Three models establish a trend, not a scaling law.
-
-## 9. Conclusion
-
-Small multilingual models know more Kazakh nominal morphology than they can be
-asked to demonstrate in Kazakh. Instructing gemma3-4b in Russian or English
-rather than Kazakh raises accuracy from 16.6 to roughly 50 on identical items
-with identical Kazakh answers, and the deficit disappears entirely at 31B
-parameters. The gap is not uniform across the paradigm: it is largest for
-categories whose Kazakh grammatical terminology is least common, which locates
-the bottleneck in metalinguistic vocabulary rather than in morphological
-knowledge or in Kazakh processing as such.
-
-For practitioners building Kazakh systems on small open-weight models, this
-suggests that instruction tuning on Kazakh task descriptions is likely to
-recover more capability per unit of compute than continued pretraining on
-Kazakh text. For evaluation, it suggests that any multiple-choice benchmark
-reporting a Kazakh-Russian gap is measuring a mixture of knowledge and
-instruction comprehension, and cannot separate them by design.
-
-## Availability
-
-Code and item sets: https://github.com/li-kun-g/kaz-eval
-Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generated from a seed; the
-generator validates its rule tables against hand-verified forms before emitting
-anything.
-
-### 5.7 In-context examples close the gap
-
-The results above are zero-shot. Prior work on morphological evaluation in
-agglutinative languages prompts with in-context examples, and reports only a
-1-5 point penalty for instructing in the target language rather than English
-(arXiv:2410.12656, Appendix A.1). We reconcile the two by varying the number of
-examples on our own items (Table 3).
-
-**Table 3.** Effect of in-context examples on gemma3-4b, by instruction
-language and number of demonstrations.
-
-| Category | KK 0-shot | KK 1-shot | KK 5-shot | RU 0-shot | RU 5-shot |
-|---|---:|---:|---:|---:|---:|
-| plural | 63.6 | 69.7 | 84.8 | 60.6 | 78.8 |
-| genitive | 41.5 | 51.2 | 68.3 | 0.0 | 75.6 |
-| dative | 2.4 | 70.7 | 80.5 | 41.5 | 63.4 |
-| accusative | 0.0 | 22.5 | 67.5 | 25.0 | 72.5 |
-| locative | 7.5 | 55.0 | 62.5 | 75.0 | 47.5 |
-| ablative | 3.7 | 44.4 | 66.7 | 59.3 | 55.6 |
-| instrumental | 12.5 | 70.0 | 87.5 | 75.0 | 85.0 |
-| possessive-3 | 2.6 | 52.6 | 78.9 | 57.9 | 81.6 |
-| **OVERALL** | **16.3** | **54.7** | **74.7** | **48.3** | **70.3** |
-
-A single example raises Kazakh-instructed accuracy from 16.3 to 54.7. Five
-examples raise it to 74.7, at which point it slightly exceeds the Russian
-condition: the 32.0-point instruction-language gap becomes -4.3. Kazakh gains
-58.3 points from examples while Russian gains 22.0.
-
-The gains are not uniform, and their distribution supports the account in
-Section 5.4. The categories that gain most from one example are exactly those
-where Kazakh instructions failed: dative +68.3, instrumental +57.5, possessive
-+50.0, locative +47.5, ablative +40.7. The two categories the model already
-handled under Kazakh instructions gain least: plural +6.1 and genitive +9.7.
-An example supplies what a grammatical term failed to convey -- which
-transformation is intended -- and it is redundant where the term was already
-understood.
-
-The Russian genitive provides an internal check. Under our first Russian gloss
-it scored 0.0 (Section 6.1); with five examples it reaches 75.6. The model's
-genitive knowledge was intact throughout; a mistranslated case label concealed
-it, and demonstrations bypass the label entirely.
-
-**Implication for evaluation practice.** Few-shot prompting substitutes for
-instruction comprehension and therefore masks instruction-language effects. A
-benchmark that reports few-shot numbers is measuring something closer to
-analogical pattern completion than to a model's ability to act on grammatical
-instructions in the target language. Both are worth measuring, but they are
-different capabilities, and reporting only the former will understate how
-poorly a model serves users who write in that language.
-
-Two caveats. With five same-category demonstrations the model observes most of
-the allomorph inventory for that category, so the 5-shot condition is closer to
-analogy than to rule application; the 1-shot figure is the more conservative
-one. And the Russian condition loses ground on locative (75.0 to 47.5) and
-ablative (59.3 to 55.6) under 5-shot prompting, which we do not currently
-explain.
 
 ## References
 
