@@ -1,5 +1,7 @@
 # kaz-eval
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21921339.svg)](https://doi.org/10.5281/zenodo.21921339)
+
 A generative benchmark for Kazakh nominal morphology, and the finding that
 small language models know more Kazakh morphology than they can be asked to
 demonstrate **in Kazakh**.
@@ -91,7 +93,17 @@ template. See `PAPER.md` Sections 6 and 8.
 
 ## Citation
 
-BibTeX will be added here once a DOI is minted.
+```bibtex
+@software{tuganbayev_kazeval_2026,
+  author    = {Tuganbayev, Alikhan},
+  title     = {kaz-eval: a generative benchmark for Kazakh nominal morphology},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1.1},
+  doi       = {10.5281/zenodo.21921339},
+  url       = {https://doi.org/10.5281/zenodo.21921339}
+}
+```
 
 ## Author
 

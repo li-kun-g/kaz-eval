@@ -6,3 +6,5 @@ authors:
     given-names: Alikhan
 license: MIT
 repository-code: "https://github.com/li-kun-g/kaz-eval"
+doi: "10.5281/zenodo.21921339"
+version: "v1.1"

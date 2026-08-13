@@ -414,7 +414,8 @@ instruction comprehension, and cannot separate them by design.
 
 ## Availability
 
-Code and item sets: [REPOSITORY URL]. All items are generated from a seed; the
+Code and item sets: https://github.com/li-kun-g/kaz-eval
+Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generated from a seed; the
 generator validates its rule tables against hand-verified forms before emitting
 anything.
 
