@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this benchmark, please cite it as below."
+title: "kaz-eval: a generative benchmark for Kazakh nominal morphology"
+authors:
+  - family-names: Tuganbayev
+    given-names: Alikhan
+license: MIT
+repository-code: "https://github.com/li-kun-g/kaz-eval"

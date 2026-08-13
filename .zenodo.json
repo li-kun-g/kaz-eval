@@ -1,0 +1,14 @@
+{
+  "upload_type": "software",
+  "title": "kaz-eval: a generative benchmark for Kazakh nominal morphology",
+  "creators": [
+    {"name": "Tuganbayev, Alikhan"}
+  ],
+  "description": "A generative benchmark for Kazakh nominal morphology in which gold answers are computed from vowel-harmony and consonant-assimilation rules rather than annotated by hand. Covers eight morphological categories over fifty regular noun stems, with instruction-language conditions in Kazakh, Russian and English holding items and gold answers byte-identical.",
+  "license": "MIT",
+  "keywords": [
+    "Kazakh", "morphology", "benchmark", "low-resource languages",
+    "LLM evaluation", "agglutinative languages", "instruction following"
+  ],
+  "access_right": "open"
+}
