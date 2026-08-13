@@ -77,56 +77,55 @@ appear, when addressed in Kazakh, not to have it.
 
 ## 2. Related work
 
-**Kazakh benchmarks.** KazMMLU (Togmanov et al., 2025) is the reference point:
-23,000 bilingual multiple-choice questions drawn from educational materials
-across STEM, humanities and social sciences. ISSAI's KAZ-LLM suite [CITE]
-provides evaluation scripts and datasets alongside a Kazakh-centric model.
-KazQAD [CITE] targets question answering and retrieval, KazSim [CITE] text
-simplification, and Qorgau [CITE] safety in the Kazakh-Russian bilingual
-setting. All are task-level evaluations; none targets morphological generation,
-and none reports results conditioned on phonological properties of the target
-form.
+**Kazakh benchmarks.** KazMMLU (Togmanov et al., 2025) is the largest Kazakh
+benchmark: 23,000 multiple-choice questions drawn from educational materials
+across STEM, humanities and social sciences, in both Kazakh and Russian.
+KazQAD (Yeshpanov et al., 2024) provides open-domain question answering with
+roughly 6,000 questions and passage-level relevance judgements. Qorgau
+(Goloburda et al., 2025) evaluates safety in the Kazakh-Russian bilingual
+setting. All are task-level evaluations in which the model selects or
+retrieves rather than produces inflected forms; none targets morphological
+generation, and none reports results conditioned on the phonological
+properties of the target.
 
-**Morphological evaluation.** The SIGMORPHON-UniMorph shared tasks have treated
-morphological inflection as a supervised problem for a decade, most recently
-covering 26 languages from 9 families with lemma-disjoint splits designed to
-test generalisation to unseen lemmas (SIGMORPHON-UniMorph 2023 Shared Task 0).
-Our item format -- lemma plus target features, inflected form as output --
-follows that tradition, but evaluates instruction-following models zero-shot
-rather than trained inflection systems.
+**Morphological inflection and its evaluation.** The SIGMORPHON-UniMorph
+shared tasks have treated inflection as a supervised problem for a decade; the
+2023 edition covered 26 languages from 9 families with lemma-disjoint splits
+designed to test generalisation to unseen lemmas (Goldman et al., 2023). Our
+item format -- lemma plus target features, inflected form as output -- follows
+that tradition, but evaluates instruction-following models zero-shot rather
+than trained inflection systems.
 
-Closest to the present work, "Evaluating Morphological Compositional
-Generalization in Large Language Models" (NAACL 2025; arXiv:2410.12656)
-evaluates instruction-tuned multilingual models on Turkish and Finnish, treating
-morphemes as compositional primitives and testing productivity and systematicity
-over novel roots. It reports sharp degradation as morphological complexity rises
-and a lack of systematicity relative to humans. We differ in three respects: the
-language is Kazakh; the instruction language is manipulated while the task and
-gold answers are held fixed, which that work does not do; and our focus is the
-small-model regime, where the effect we report is largest, rather than frontier
-models.
+Closest to the present work, Ismayilzada et al. (2025) evaluate
+instruction-tuned multilingual models on Turkish and Finnish, treating
+morphemes as compositional primitives and testing productivity and
+systematicity over nonce roots. They report sharp degradation as morphological
+complexity rises and a lack of systematicity relative to humans. Critically for
+our purposes, their Appendix A.1 reports an instruction-language experiment:
+prompting in Turkish or Finnish rather than English yields "a drop or no
+change" of roughly 1-5 points. We differ in three respects. The language is
+Kazakh. The instruction language is the manipulated variable rather than a
+robustness check, and we decompose its effect by morphological category. And we
+evaluate zero-shot, which Section 5.7 shows is why our effect is an order of
+magnitude larger than theirs.
 
-"Evaluating Metalinguistic Knowledge in Large Language Models across the World's
-Languages" (arXiv:2602.02182) converts WALS features into multiple-choice
-questions across 2,660 languages and finds metalinguistic knowledge to be
-fragmented and predicted mainly by digital resource availability rather than by
-genealogical or geographic factors. That is consistent with our interpretation
-in Section 5.3, though it measures knowledge *about* languages rather than the
-ability to act on grammatical instructions *in* a language, and is itself
-multiple-choice.
+**Prompt language and code-switching.** Wendler et al. (2024) show that
+multilingual transformers process non-English input partly through
+English-centric internal representations, motivating the common practice of
+prompting in English regardless of target language. Zhang et al. (2023) find
+that multilingual models handle code-switched input poorly, which is directly
+relevant here: instructing in Russian or English while requiring Kazakh output
+is itself a code-switched configuration. Our design isolates the
+instruction-language effect on a task whose output is fixed in the low-resource
+language, so differences cannot be attributed to output-language fluency.
 
-[TO VERIFY BEFORE SUBMISSION: arXiv:2411.14198 "Why do language models perform
-worse for morphologically complex languages?"; arXiv:2511.01380 "Confounding
-Factors in Relating Model Performance to Morphology"; MultiBLiMP 1.0
-(morphosyntactic minimal pairs, 101 languages). Titles located but contents not
-read. Also fill exact author lists and page numbers for all citations above.]
-
-**Prompt-language effects.** Cross-lingual prompting studies have reported that
-instructing a multilingual model in a high-resource language can outperform
-instructing it in the target language [CITE]. Our contribution is to isolate
-this effect on a task whose *output* is fixed in the low-resource language
-regardless of instruction language, so that any difference is attributable to
-instruction comprehension rather than to output-language fluency.
+Finally, Arcon et al. (2026) evaluate metalinguistic knowledge across the
+2,660 languages of the World Atlas of Language Structures, converting WALS
+features into multiple-choice questions, and find such knowledge to be fragmented and
+predicted mainly by digital resource availability rather than by genealogical
+or geographic factors. That converges with our Section 5.3 result at the level
+of a single language, though it measures knowledge *about* languages rather
+than the ability to act on grammatical instructions *in* one.
 
 ## 3. The benchmark
 
@@ -472,3 +471,46 @@ analogy than to rule application; the 1-shot figure is the more conservative
 one. And the Russian condition loses ground on locative (75.0 to 47.5) and
 ablative (59.3 to 55.6) under 5-shot prompting, which we do not currently
 explain.
+
+## References
+
+Omer Goldman, Khuyagbaatar Batsuren, Salam Khalifa, Aryaman Arora, Garrett
+Nicolai, Reut Tsarfaty, and Ekaterina Vylomova. 2023. SIGMORPHON-UniMorph 2023
+Shared Task 0: Typologically Diverse Morphological Inflection. In *Proceedings
+of the 20th SIGMORPHON Workshop on Computational Research in Phonetics,
+Phonology, and Morphology*, pages 117-125.
+
+Maiya Goloburda, Nurkhan Laiyk, Diana Turmakhan, Yuxia Wang, Mukhammed
+Togmanov, Jonibek Mansurov, Askhat Sametov, Nurdaulet Mukhituly, Minghan Wang,
+Daniil Orel, Zain Muhammad Mujahid, Fajri Koto, Timothy Baldwin, and Preslav
+Nakov. 2025. Qorgau: Evaluating Safety in Kazakh-Russian Bilingual Contexts. In
+*Findings of the Association for Computational Linguistics: ACL 2025*.
+arXiv:2502.13640.
+
+Mete Ismayilzada, Defne Circi, Jonne Saleva, Hale Sirin, Abdullatif Koksal,
+Bhuwan Dhingra, Antoine Bosselut, Duygu Ataman, and Lonneke van der Plas. 2025.
+Evaluating Morphological Compositional Generalization in Large Language Models.
+In *Proceedings of NAACL 2025*. arXiv:2410.12656.
+
+Mukhammed Togmanov, Nurdaulet Mukhituly, Diana Turmakhan, Jonibek Mansurov,
+Maiya Goloburda, Akhmed Sakip, Zhuohan Xie, Yuxia Wang, Bekassyl Syzdykov,
+Nurkhan Laiyk, Alham Fikri Aji, Ekaterina Kochmar, Preslav Nakov, and Fajri
+Koto. 2025. KazMMLU: Evaluating Language Models on Kazakh, Russian, and
+Regional Knowledge of Kazakhstan. In *Proceedings of ACL 2025*.
+arXiv:2502.12829.
+
+Chris Wendler, Veniamin Veselovsky, Giovanni Monea, and Robert West. 2024. Do
+Llamas Work in English? On the Latent Language of Multilingual Transformers. In
+*Proceedings of ACL 2024 (Volume 1: Long Papers)*.
+
+Rustem Yeshpanov, Pavel Efimov, Leonid Boytsov, Ardak Shalkarbayuli, and Pavel
+Braslavski. 2024. KazQAD: Kazakh Open-Domain Question Answering Dataset. In
+*Proceedings of LREC-COLING 2024*, pages 9645-9656.
+
+Ruochen Zhang, Samuel Cahyawijaya, Jan Christian Blaise Cruz, Genta Winata, and
+Alham Fikri Aji. 2023. Multilingual Large Language Models Are Not (Yet)
+Code-Switchers. In *Proceedings of EMNLP 2023*, pages 12567-12582.
+
+Tjasa Arcon, Matej Klemen, Marko Robnik-Sikonja, and Kaja Dobrovoljc. 2026.
+Evaluating Metalinguistic Knowledge in Large Language Models across the
+World's Languages. arXiv:2602.02182.
