@@ -1,5 +1,7 @@
 # What Small Models Know About Kazakh Morphology and Cannot Be Asked
 
+Alikhan Tuganbayev
+
 ## Abstract
 
 Multiple-choice benchmarks report that language models underperform in Kazakh
