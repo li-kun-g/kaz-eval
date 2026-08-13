@@ -1,0 +1,55 @@
+{
+  "model": "gemini-3.5-flash",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": 1.0,
+  "complete": true,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-plural-мектеп",
+      "question": "«мектеп» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектептер",
+      "accept": [
+        "мектептер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "мектеп",
+      "response": "мектептер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жұмыс",
+      "question": "«жұмыс» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жұмысты",
+      "accept": [
+        "жұмысты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жұмыс",
+      "response": "жұмысты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қасық",
+      "question": "«қасық» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықтар",
+      "accept": [
+        "қасықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қасық",
+      "response": "қасықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}

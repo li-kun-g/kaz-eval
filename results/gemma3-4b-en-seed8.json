@@ -1,0 +1,4592 @@
+{
+  "model": "gemma3:4b",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": 0.5033333333333333,
+  "complete": true,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-gen-балық",
+      "question": "Write the Kazakh word \"балық\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балықтың",
+      "accept": [
+        "балықтың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "балық",
+      "response": "Балығын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-жұмыс",
+      "question": "Write the Kazakh word \"жұмыс\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жұмысты",
+      "accept": [
+        "жұмысты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жұмыс",
+      "response": "Жұмыспен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-шаң",
+      "question": "Write the Kazakh word \"шаң\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңнан",
+      "accept": [
+        "шаңнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "шаң",
+      "response": "Шанынан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қасық",
+      "question": "Write the Kazakh word \"қасық\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қасықта",
+      "accept": [
+        "қасықта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қасық",
+      "response": "Қасықта",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қасықта\n"
+    },
+    {
+      "id": "kk-poss3-ел",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"ел\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "елі",
+      "accept": [
+        "елі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ел",
+      "response": "Елі",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Елі\n"
+    },
+    {
+      "id": "kk-loc-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағатта",
+      "accept": [
+        "сағатта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сағат",
+      "response": "Қатандақта",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қатандақта\n"
+    },
+    {
+      "id": "kk-dat-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағатқа",
+      "accept": [
+        "сағатқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "сағат",
+      "response": "Қабырғасына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-аспан",
+      "question": "Write the Kazakh word \"аспан\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "аспанда",
+      "accept": [
+        "аспанда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "аспан",
+      "response": "Аспанда",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Аспанда\n"
+    },
+    {
+      "id": "kk-gen-ұл",
+      "question": "Write the Kazakh word \"ұл\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ұлдың",
+      "accept": [
+        "ұлдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ұл",
+      "response": "Ұлдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-бала",
+      "question": "Write the Kazakh word \"бала\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "баладан",
+      "accept": [
+        "баладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бала",
+      "response": "Балынан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-көл",
+      "question": "Write the Kazakh word \"көл\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлде",
+      "accept": [
+        "көлде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "көл",
+      "response": "теңізде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "теңізде\n"
+    },
+    {
+      "id": "kk-ins-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағатпен",
+      "accept": [
+        "сағатпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "сағат",
+      "response": "Сағатпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ат",
+      "question": "Write the Kazakh word \"ат\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "атқа",
+      "accept": [
+        "атқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ат",
+      "response": "Атқа",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Атқа\n"
+    },
+    {
+      "id": "kk-gen-бас",
+      "question": "Write the Kazakh word \"бас\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "бастың",
+      "accept": [
+        "бастың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бас",
+      "response": "Басы",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Басы\n"
+    },
+    {
+      "id": "kk-dat-бет",
+      "question": "Write the Kazakh word \"бет\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "бетке",
+      "accept": [
+        "бетке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "бет",
+      "response": "Бетіне",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-күш",
+      "question": "Write the Kazakh word \"күш\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күшті",
+      "accept": [
+        "күшті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "күш",
+      "response": "Күшін",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-сабақ",
+      "question": "Write the Kazakh word \"сабақ\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сабақтан",
+      "accept": [
+        "сабақтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "сабақ",
+      "response": "Сабақтан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-жылқы",
+      "question": "Write the Kazakh word \"жылқы\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "жылқылар",
+      "accept": [
+        "жылқылар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жылқы",
+      "response": "Жылқылар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-бет",
+      "question": "Write the Kazakh word \"бет\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "бетпен",
+      "accept": [
+        "бетпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "бет",
+      "response": "Бетпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-тіс",
+      "question": "Write the Kazakh word \"тіс\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тісте",
+      "accept": [
+        "тісте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тіс",
+      "response": "Тісте",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Тісте\n"
+    },
+    {
+      "id": "kk-poss3-тас",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"тас\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "тасы",
+      "accept": [
+        "тасы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тас",
+      "response": "тáсқа",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-балық",
+      "question": "Write the Kazakh word \"балық\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балықпен",
+      "accept": [
+        "балықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "балық",
+      "response": "Балығым",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-жол",
+      "question": "Write the Kazakh word \"жол\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жолдың",
+      "accept": [
+        "жолдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жол",
+      "response": "Жолында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-гүл",
+      "question": "Write the Kazakh word \"гүл\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлде",
+      "accept": [
+        "гүлде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "гүл",
+      "response": "Гүлінде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-балық",
+      "question": "Write the Kazakh word \"балық\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балықтан",
+      "accept": [
+        "балықтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "балық",
+      "response": "Басынан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-бас",
+      "question": "Write the Kazakh word \"бас\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "бастан",
+      "accept": [
+        "бастан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бас",
+      "response": "बाट",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "बाट\n"
+    },
+    {
+      "id": "kk-poss3-орамал",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"орамал\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "орамалы",
+      "accept": [
+        "орамалы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "орамал",
+      "response": "Орамалын",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-күн",
+      "question": "Write the Kazakh word \"күн\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күннің",
+      "accept": [
+        "күннің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "күн",
+      "response": "Күнның",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-жер",
+      "question": "Write the Kazakh word \"жер\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жерден",
+      "accept": [
+        "жерден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жер",
+      "response": "Жерден",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Жерден\n"
+    },
+    {
+      "id": "kk-gen-іс",
+      "question": "Write the Kazakh word \"іс\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "істің",
+      "accept": [
+        "істің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "іс",
+      "response": "Істің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қыз",
+      "question": "Write the Kazakh word \"қыз\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қызды",
+      "accept": [
+        "қызды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қыз",
+      "response": "Қызын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-ел",
+      "question": "Write the Kazakh word \"ел\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елді",
+      "accept": [
+        "елді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ел",
+      "response": "Елді",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Елді\n"
+    },
+    {
+      "id": "kk-plural-күн",
+      "question": "Write the Kazakh word \"күн\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "күндер",
+      "accept": [
+        "күндер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "күн",
+      "response": "Күштері",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Күштері\n"
+    },
+    {
+      "id": "kk-plural-бет",
+      "question": "Write the Kazakh word \"бет\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "беттер",
+      "accept": [
+        "беттер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "бет",
+      "response": "Беттер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-адам",
+      "question": "Write the Kazakh word \"адам\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "адамдар",
+      "accept": [
+        "адамдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "адам",
+      "response": "Адамдар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламнан",
+      "accept": [
+        "қаламнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қалам",
+      "response": "Қаламнан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-дос",
+      "question": "Write the Kazakh word \"дос\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "доста",
+      "accept": [
+        "доста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дос",
+      "response": "Достақта",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Достақта\n"
+    },
+    {
+      "id": "kk-gen-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектептің",
+      "accept": [
+        "мектептің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "мектеп",
+      "response": "Мектепі",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-күш",
+      "question": "Write the Kazakh word \"күш\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күштен",
+      "accept": [
+        "күштен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "күш",
+      "response": "Күннен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Күннен\n"
+    },
+    {
+      "id": "kk-ins-орамал",
+      "question": "Write the Kazakh word \"орамал\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "орамалмен",
+      "accept": [
+        "орамалмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "орамал",
+      "response": "Орамалмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-іс",
+      "question": "Write the Kazakh word \"іс\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "істен",
+      "accept": [
+        "істен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "іс",
+      "response": "Істен",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Істен\n"
+    },
+    {
+      "id": "kk-gen-дос",
+      "question": "Write the Kazakh word \"дос\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "достың",
+      "accept": [
+        "достың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дос",
+      "response": "Досым",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-бала",
+      "question": "Write the Kazakh word \"бала\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "баламен",
+      "accept": [
+        "баламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "бала",
+      "response": "Баламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ел",
+      "question": "Write the Kazakh word \"ел\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елден",
+      "accept": [
+        "елден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ел",
+      "response": "Өздігінен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Өздігінен\n"
+    },
+    {
+      "id": "kk-acc-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағашты",
+      "accept": [
+        "ағашты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ағаш",
+      "response": "Ағашты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қыз",
+      "question": "Write the Kazakh word \"қыз\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қыздан",
+      "accept": [
+        "қыздан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қыз",
+      "response": "Қыздан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қыздан\n"
+    },
+    {
+      "id": "kk-gen-жаңбыр",
+      "question": "Write the Kazakh word \"жаңбыр\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жаңбырдың",
+      "accept": [
+        "жаңбырдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жаңбыр",
+      "response": "Жаңбырымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жазды",
+      "accept": [
+        "жазды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаз",
+      "response": "Жазды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сөз",
+      "question": "Write the Kazakh word \"сөз\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сөзде",
+      "accept": [
+        "сөзде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сөз",
+      "response": "Сөзде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ел",
+      "question": "Write the Kazakh word \"ел\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елге",
+      "accept": [
+        "елге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ел",
+      "response": "Елге",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Елге\n"
+    },
+    {
+      "id": "kk-acc-қар",
+      "question": "Write the Kazakh word \"қар\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қарды",
+      "accept": [
+        "қарды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қар",
+      "response": "Қарды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-жол",
+      "question": "Write the Kazakh word \"жол\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жолмен",
+      "accept": [
+        "жолмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жол",
+      "response": "Жолмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-әже",
+      "question": "Write the Kazakh word \"әже\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "әжеге",
+      "accept": [
+        "әжеге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "әже",
+      "response": "әзгеге",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "әзгеге\n"
+    },
+    {
+      "id": "kk-loc-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптерде",
+      "accept": [
+        "дәптерде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дәптер",
+      "response": "дәптерін",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "дәптерін\n"
+    },
+    {
+      "id": "kk-poss3-мектеп",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"мектеп\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектебі",
+      "accept": [
+        "мектебі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "мектеп",
+      "response": "Мектепі",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-тау",
+      "question": "Write the Kazakh word \"тау\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "таулар",
+      "accept": [
+        "таулар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "тау",
+      "response": "таулар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-алма",
+      "question": "Write the Kazakh word \"алма\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "алманы",
+      "accept": [
+        "алманы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "алма",
+      "response": "Алманы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ай",
+      "question": "Write the Kazakh word \"ай\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "айға",
+      "accept": [
+        "айға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ай",
+      "response": "Айға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қыз",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"қыз\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "қызы",
+      "accept": [
+        "қызы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қыз",
+      "response": "Қызы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ет",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"ет\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "еті",
+      "accept": [
+        "еті"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ет",
+      "response": "Етінде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламда",
+      "accept": [
+        "қаламда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қалам",
+      "response": "Қаламда",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қаламда\n"
+    },
+    {
+      "id": "kk-plural-алма",
+      "question": "Write the Kazakh word \"алма\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "алмалар",
+      "accept": [
+        "алмалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "алма",
+      "response": "Алмалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-көл",
+      "question": "Write the Kazakh word \"көл\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлмен",
+      "accept": [
+        "көлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "көл",
+      "response": "мендегі көл",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-ұл",
+      "question": "Write the Kazakh word \"ұл\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ұлдан",
+      "accept": [
+        "ұлдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ұл",
+      "response": "Ұлдан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Ұлдан\n"
+    },
+    {
+      "id": "kk-poss3-дәптер",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"дәптер\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптері",
+      "accept": [
+        "дәптері"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дәптер",
+      "response": "Дәптері",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-балық",
+      "question": "Write the Kazakh word \"балық\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балыққа",
+      "accept": [
+        "балыққа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "балық",
+      "response": "Балығына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "жаздар",
+      "accept": [
+        "жаздар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаз",
+      "response": "Жаздер",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Жаздер\n"
+    },
+    {
+      "id": "kk-dat-күн",
+      "question": "Write the Kazakh word \"күн\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күнге",
+      "accept": [
+        "күнге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "күн",
+      "response": "Қуаға көзіне",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-іс",
+      "question": "Write the Kazakh word \"іс\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "істе",
+      "accept": [
+        "істе"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "іс",
+      "response": "Істеде",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Істеде\n"
+    },
+    {
+      "id": "kk-dat-сөз",
+      "question": "Write the Kazakh word \"сөз\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сөзге",
+      "accept": [
+        "сөзге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "сөз",
+      "response": "Сөзбен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-ат",
+      "question": "Write the Kazakh word \"ат\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "аттар",
+      "accept": [
+        "аттар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ат",
+      "response": "Әттер",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Әттер\n"
+    },
+    {
+      "id": "kk-plural-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "мектептер",
+      "accept": [
+        "мектептер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "мектеп",
+      "response": "Мектептер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ет",
+      "question": "Write the Kazakh word \"ет\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "етте",
+      "accept": [
+        "етте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ет",
+      "response": "Еттіңде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Еттіңде\n"
+    },
+    {
+      "id": "kk-poss3-іс",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"іс\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "ісі",
+      "accept": [
+        "ісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "іс",
+      "response": "Ісін",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-жаңбыр",
+      "question": "Write the Kazakh word \"жаңбыр\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "жаңбырлар",
+      "accept": [
+        "жаңбырлар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаңбыр",
+      "response": "Жаңбырлар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тас",
+      "question": "Write the Kazakh word \"тас\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "таспен",
+      "accept": [
+        "таспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тас",
+      "response": "таста",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-тау",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"тау\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "тауы",
+      "accept": [
+        "тауы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тау",
+      "response": "тауы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағашпен",
+      "accept": [
+        "ағашпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ағаш",
+      "response": "әшіректегінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-қасық",
+      "question": "Write the Kazakh word \"қасық\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қасықты",
+      "accept": [
+        "қасықты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қасық",
+      "response": "Қасықпен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-күн",
+      "question": "Write the Kazakh word \"күн\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күннен",
+      "accept": [
+        "күннен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "күн",
+      "response": "Күннен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-көл",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"көл\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлі",
+      "accept": [
+        "көлі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "көл",
+      "response": "Келінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "сағаттар",
+      "accept": [
+        "сағаттар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "сағат",
+      "response": "Сағаттар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "кісілер",
+      "accept": [
+        "кісілер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "кісі",
+      "response": "Кişілер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-шаң",
+      "question": "Write the Kazakh word \"шаң\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңдар",
+      "accept": [
+        "шаңдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "шаң",
+      "response": "Шаштар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-ай",
+      "question": "Write the Kazakh word \"ай\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "айдан",
+      "accept": [
+        "айдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ай",
+      "response": "Айдан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Айдан\n"
+    },
+    {
+      "id": "kk-plural-қала",
+      "question": "Write the Kazakh word \"қала\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қалалар",
+      "accept": [
+        "қалалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қала",
+      "response": "Қалалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кітаппен",
+      "accept": [
+        "кітаппен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кітап",
+      "response": "Кітаппен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-күш",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"күш\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "күші",
+      "accept": [
+        "күші"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "күш",
+      "response": "Күші",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-түн",
+      "question": "Write the Kazakh word \"түн\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "түнді",
+      "accept": [
+        "түнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "түн",
+      "response": "Түнды",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-гүл",
+      "question": "Write the Kazakh word \"гүл\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлмен",
+      "accept": [
+        "гүлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "гүл",
+      "response": "Гүлінмен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-үй",
+      "question": "Write the Kazakh word \"үй\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "үйде",
+      "accept": [
+        "үйде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "үй",
+      "response": "Үйде",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Үйде\n"
+    },
+    {
+      "id": "kk-poss3-бала",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"бала\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "баласы",
+      "accept": [
+        "баласы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бала",
+      "response": "балын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-балық",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"балық\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "балығы",
+      "accept": [
+        "балығы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "балық",
+      "response": "Балығы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дала",
+      "question": "Write the Kazakh word \"дала\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "даламен",
+      "accept": [
+        "даламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дала",
+      "response": "Даламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-адам",
+      "question": "Write the Kazakh word \"адам\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "адаммен",
+      "accept": [
+        "адаммен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "адам",
+      "response": "әдімде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-бала",
+      "question": "Write the Kazakh word \"бала\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балада",
+      "accept": [
+        "балада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "бала",
+      "response": "Баламызда.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағаштың",
+      "accept": [
+        "ағаштың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ағаш",
+      "response": "Ағаштың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-кеш",
+      "question": "Write the Kazakh word \"кеш\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "кештер",
+      "accept": [
+        "кештер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "кеш",
+      "response": "Кешкелер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-аспан",
+      "question": "Write the Kazakh word \"аспан\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "аспандар",
+      "accept": [
+        "аспандар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "аспан",
+      "response": "Аспандар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-ай",
+      "question": "Write the Kazakh word \"ай\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "айдың",
+      "accept": [
+        "айдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ай",
+      "response": "Айын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-әже",
+      "question": "Write the Kazakh word \"әже\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "әжемен",
+      "accept": [
+        "әжемен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "әже",
+      "response": "әзермен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-жол",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жол\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жолы",
+      "accept": [
+        "жолы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жол",
+      "response": "жолын",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптерге",
+      "accept": [
+        "дәптерге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дәптер",
+      "response": "дәптерге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-дала",
+      "question": "Write the Kazakh word \"дала\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "даланы",
+      "accept": [
+        "даланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дала",
+      "response": "Даланы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-түн",
+      "question": "Write the Kazakh word \"түн\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "түннің",
+      "accept": [
+        "түннің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "түн",
+      "response": "Түнігі",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-адам",
+      "question": "Write the Kazakh word \"адам\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "адамда",
+      "accept": [
+        "адамда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "адам",
+      "response": "Адамда",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Адамда\n"
+    },
+    {
+      "id": "kk-dat-ет",
+      "question": "Write the Kazakh word \"ет\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "етке",
+      "accept": [
+        "етке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ет",
+      "response": "Етке",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Етке\n"
+    },
+    {
+      "id": "kk-dat-қол",
+      "question": "Write the Kazakh word \"қол\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қолға",
+      "accept": [
+        "қолға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қол",
+      "response": "Қолына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-тіс",
+      "question": "Write the Kazakh word \"тіс\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тісті",
+      "accept": [
+        "тісті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тіс",
+      "response": "Тісті",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Тісті\n"
+    },
+    {
+      "id": "kk-plural-гүл",
+      "question": "Write the Kazakh word \"гүл\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлдер",
+      "accept": [
+        "гүлдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "гүл",
+      "response": "Гүлдер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-жұмыс",
+      "question": "Write the Kazakh word \"жұмыс\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жұмыста",
+      "accept": [
+        "жұмыста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жұмыс",
+      "response": "Жұмыста",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Жұмыста\n"
+    },
+    {
+      "id": "kk-ins-тіс",
+      "question": "Write the Kazakh word \"тіс\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тіспен",
+      "accept": [
+        "тіспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тіс",
+      "response": "Тісте",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-үй",
+      "question": "Write the Kazakh word \"үй\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "үйдің",
+      "accept": [
+        "үйдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "үй",
+      "response": "Үйде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-жер",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жер\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жері",
+      "accept": [
+        "жері"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жер",
+      "response": "Жері",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-шаң",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"шаң\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңы",
+      "accept": [
+        "шаңы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "шаң",
+      "response": "шаны",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "шаны\n"
+    },
+    {
+      "id": "kk-plural-іс",
+      "question": "Write the Kazakh word \"іс\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "істер",
+      "accept": [
+        "істер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "іс",
+      "response": "Істер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-гүл",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"гүл\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлі",
+      "accept": [
+        "гүлі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "гүл",
+      "response": "гүлі",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "гүлі\n"
+    },
+    {
+      "id": "kk-dat-орамал",
+      "question": "Write the Kazakh word \"орамал\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "орамалға",
+      "accept": [
+        "орамалға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "орамал",
+      "response": "Орамалға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-қала",
+      "question": "Write the Kazakh word \"қала\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қалаға",
+      "accept": [
+        "қалаға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қала",
+      "response": "Қалага дейін",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-түн",
+      "question": "Write the Kazakh word \"түн\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "түнде",
+      "accept": [
+        "түнде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "түн",
+      "response": "Түнінен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Түнінен\n"
+    },
+    {
+      "id": "kk-plural-ел",
+      "question": "Write the Kazakh word \"ел\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "елдер",
+      "accept": [
+        "елдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ел",
+      "response": "Елдер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-аспан",
+      "question": "Write the Kazakh word \"аспан\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "аспаннан",
+      "accept": [
+        "аспаннан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "аспан",
+      "response": "Аспанан",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Аспанан\n"
+    },
+    {
+      "id": "kk-dat-қыз",
+      "question": "Write the Kazakh word \"қыз\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қызға",
+      "accept": [
+        "қызға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қыз",
+      "response": "Қызына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-күш",
+      "question": "Write the Kazakh word \"күш\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күшпен",
+      "accept": [
+        "күшпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "күш",
+      "response": "Күшпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-іс",
+      "question": "Write the Kazakh word \"іс\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "іспен",
+      "accept": [
+        "іспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "іс",
+      "response": "Істіңмен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-қасық",
+      "question": "Write the Kazakh word \"қасық\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қасықтар",
+      "accept": [
+        "қасықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қасық",
+      "response": "Қасықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектеппен",
+      "accept": [
+        "мектеппен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "мектеп",
+      "response": "Мектеппен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-терезе",
+      "question": "Write the Kazakh word \"терезе\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "терезеде",
+      "accept": [
+        "терезеде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "терезе",
+      "response": "Терезде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Терезде\n"
+    },
+    {
+      "id": "kk-ins-үй",
+      "question": "Write the Kazakh word \"үй\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "үймен",
+      "accept": [
+        "үймен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "үй",
+      "response": "Үзіліңде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-алма",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"алма\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "алмасы",
+      "accept": [
+        "алмасы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "алма",
+      "response": "алының",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-жылқы",
+      "question": "Write the Kazakh word \"жылқы\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жылқымен",
+      "accept": [
+        "жылқымен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жылқы",
+      "response": "Жылқымен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-ет",
+      "question": "Write the Kazakh word \"ет\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "етпен",
+      "accept": [
+        "етпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ет",
+      "response": "Етпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-алма",
+      "question": "Write the Kazakh word \"алма\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "алманың",
+      "accept": [
+        "алманың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "алма",
+      "response": "Алмын.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-аспан",
+      "question": "Write the Kazakh word \"аспан\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "аспанмен",
+      "accept": [
+        "аспанмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "аспан",
+      "response": "Аспанмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-тас",
+      "question": "Write the Kazakh word \"тас\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тасқа",
+      "accept": [
+        "тасқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "тас",
+      "response": "Тасқа",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Тасқа\n"
+    },
+    {
+      "id": "kk-loc-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектепте",
+      "accept": [
+        "мектепте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "мектеп",
+      "response": "Мектептақта",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-аспан",
+      "question": "Write the Kazakh word \"аспан\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "аспанға",
+      "accept": [
+        "аспанға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "аспан",
+      "response": "Аспанға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кітапты",
+      "accept": [
+        "кітапты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "кітап",
+      "response": "Кітабын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жазға",
+      "accept": [
+        "жазға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жаз",
+      "response": "Жазқа",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-ат",
+      "question": "Write the Kazakh word \"ат\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "атта",
+      "accept": [
+        "атта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ат",
+      "response": "Аттақта",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Аттақта\n"
+    },
+    {
+      "id": "kk-abl-қар",
+      "question": "Write the Kazakh word \"қар\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қардан",
+      "accept": [
+        "қардан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қар",
+      "response": "Қардан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісімен",
+      "accept": [
+        "кісімен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кісі",
+      "response": "Кісімен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дос",
+      "question": "Write the Kazakh word \"дос\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "доспен",
+      "accept": [
+        "доспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дос",
+      "response": "әкечтіңмен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-жұмыс",
+      "question": "Write the Kazakh word \"жұмыс\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жұмыспен",
+      "accept": [
+        "жұмыспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жұмыс",
+      "response": "Жұмыспен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-сабақ",
+      "question": "Write the Kazakh word \"сабақ\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сабақты",
+      "accept": [
+        "сабақты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сабақ",
+      "response": "Сабақ кетеді.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-қала",
+      "question": "Write the Kazakh word \"қала\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаланың",
+      "accept": [
+        "қаланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қала",
+      "response": "Қаланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-тас",
+      "question": "Write the Kazakh word \"тас\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тастың",
+      "accept": [
+        "тастың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "тас",
+      "response": "Таста.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-гүл",
+      "question": "Write the Kazakh word \"гүл\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлдің",
+      "accept": [
+        "гүлдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "гүл",
+      "response": "Гүлін",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-тау",
+      "question": "Write the Kazakh word \"тау\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тауды",
+      "accept": [
+        "тауды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тау",
+      "response": "Тауды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қол",
+      "question": "Write the Kazakh word \"қол\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қолмен",
+      "accept": [
+        "қолмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қол",
+      "response": "қолымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламды",
+      "accept": [
+        "қаламды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қалам",
+      "response": "Қаламды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-гүл",
+      "question": "Write the Kazakh word \"гүл\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "гүлді",
+      "accept": [
+        "гүлді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "гүл",
+      "response": "Гүлі",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Гүлі\n"
+    },
+    {
+      "id": "kk-acc-дос",
+      "question": "Write the Kazakh word \"дос\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "досты",
+      "accept": [
+        "досты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дос",
+      "response": "Досын",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Досын\n"
+    },
+    {
+      "id": "kk-gen-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптердің",
+      "accept": [
+        "дәптердің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дәптер",
+      "response": "Дәптердің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-дала",
+      "question": "Write the Kazakh word \"дала\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "даланың",
+      "accept": [
+        "даланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дала",
+      "response": "Далада",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-қасық",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"қасық\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "қасығы",
+      "accept": [
+        "қасығы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қасық",
+      "response": "Қасығы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-орамал",
+      "question": "Write the Kazakh word \"орамал\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "орамалды",
+      "accept": [
+        "орамалды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "орамал",
+      "response": "Орамалды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-терезе",
+      "question": "Write the Kazakh word \"терезе\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "терезенің",
+      "accept": [
+        "терезенің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "терезе",
+      "response": "Терезде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-күн",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"күн\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "күні",
+      "accept": [
+        "күні"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "күн",
+      "response": "Қуаны",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қуаны\n"
+    },
+    {
+      "id": "kk-dat-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектепке",
+      "accept": [
+        "мектепке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "мектеп",
+      "response": "Мектепке",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жаңбыр",
+      "question": "Write the Kazakh word \"жаңбыр\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жаңбырды",
+      "accept": [
+        "жаңбырды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаңбыр",
+      "response": "Жаңбырды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-күн",
+      "question": "Write the Kazakh word \"күн\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күнді",
+      "accept": [
+        "күнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "күн",
+      "response": "Күнды",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағатты",
+      "accept": [
+        "сағатты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сағат",
+      "response": "Сағатты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісіден",
+      "accept": [
+        "кісіден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "кісі",
+      "response": "Қисаннан",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қисаннан\n"
+    },
+    {
+      "id": "kk-abl-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптерден",
+      "accept": [
+        "дәптерден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дәптер",
+      "response": "дәптерінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жазбен",
+      "accept": [
+        "жазбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жаз",
+      "response": "Жазбен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-жұмыс",
+      "question": "Write the Kazakh word \"жұмыс\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "жұмыстар",
+      "accept": [
+        "жұмыстар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жұмыс",
+      "response": "Жұмыстар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-бас",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"бас\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "басы",
+      "accept": [
+        "басы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бас",
+      "response": "басын",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектепті",
+      "accept": [
+        "мектепті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "мектеп",
+      "response": "Мектепті",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Мектепті\n"
+    },
+    {
+      "id": "kk-gen-шаң",
+      "question": "Write the Kazakh word \"шаң\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңның",
+      "accept": [
+        "шаңның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "шаң",
+      "response": "Шаңның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жаз",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жаз\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жазы",
+      "accept": [
+        "жазы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жаз",
+      "response": "Жаздың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кітапта",
+      "accept": [
+        "кітапта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "кітап",
+      "response": "Кітаппен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Кітаппен\n"
+    },
+    {
+      "id": "kk-loc-бас",
+      "question": "Write the Kazakh word \"бас\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "баста",
+      "accept": [
+        "баста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "бас",
+      "response": "Басында",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Басында\n"
+    },
+    {
+      "id": "kk-dat-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісіге",
+      "accept": [
+        "кісіге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кісі",
+      "response": "Кісіге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қар",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"қар\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "қары",
+      "accept": [
+        "қары"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қар",
+      "response": "қары",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-іс",
+      "question": "Write the Kazakh word \"іс\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "іске",
+      "accept": [
+        "іске"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "іс",
+      "response": "Іске",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-мектеп",
+      "question": "Write the Kazakh word \"мектеп\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "мектептен",
+      "accept": [
+        "мектептен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "мектеп",
+      "response": "Мектестен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-жаңбыр",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жаңбыр\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жаңбыры",
+      "accept": [
+        "жаңбыры"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жаңбыр",
+      "response": "Жаңырау",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-терезе",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"терезе\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "терезесі",
+      "accept": [
+        "терезесі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "терезе",
+      "response": "Терезі",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-тас",
+      "question": "Write the Kazakh word \"тас\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "таста",
+      "accept": [
+        "таста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тас",
+      "response": "тастанда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-бас",
+      "question": "Write the Kazakh word \"бас\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "баспен",
+      "accept": [
+        "баспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "бас",
+      "response": "басымда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-үй",
+      "question": "Write the Kazakh word \"үй\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "үйді",
+      "accept": [
+        "үйді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "үй",
+      "response": "Үйді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-қар",
+      "question": "Write the Kazakh word \"қар\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қарға",
+      "accept": [
+        "қарға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қар",
+      "response": "Қарына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптерді",
+      "accept": [
+        "дәптерді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дәптер",
+      "response": "Дәптерді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-күн",
+      "question": "Write the Kazakh word \"күн\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күнде",
+      "accept": [
+        "күнде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "күн",
+      "response": "Күнінде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-көз",
+      "question": "Write the Kazakh word \"көз\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көзге",
+      "accept": [
+        "көзге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "көз",
+      "response": "Кезге",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Кезге\n"
+    },
+    {
+      "id": "kk-ins-ел",
+      "question": "Write the Kazakh word \"ел\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елмен",
+      "accept": [
+        "елмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ел",
+      "response": "Елмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қала",
+      "question": "Write the Kazakh word \"қала\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаладан",
+      "accept": [
+        "қаладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қала",
+      "response": "Қаладан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қаладан\n"
+    },
+    {
+      "id": "kk-acc-ай",
+      "question": "Write the Kazakh word \"ай\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "айды",
+      "accept": [
+        "айды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ай",
+      "response": "Айынды",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-қыз",
+      "question": "Write the Kazakh word \"қыз\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қыздар",
+      "accept": [
+        "қыздар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қыз",
+      "response": "Қыздар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жол",
+      "question": "Write the Kazakh word \"жол\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жолды",
+      "accept": [
+        "жолды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жол",
+      "response": "Жолды",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Жолды\n"
+    },
+    {
+      "id": "kk-abl-жол",
+      "question": "Write the Kazakh word \"жол\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жолдан",
+      "accept": [
+        "жолдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жол",
+      "response": "Жолдан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Жолдан\n"
+    },
+    {
+      "id": "kk-acc-көл",
+      "question": "Write the Kazakh word \"көл\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлді",
+      "accept": [
+        "көлді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "көл",
+      "response": "Көлді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-бала",
+      "question": "Write the Kazakh word \"бала\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "балалар",
+      "accept": [
+        "балалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "бала",
+      "response": "Балалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ұл",
+      "question": "Write the Kazakh word \"ұл\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ұлда",
+      "accept": [
+        "ұлда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ұл",
+      "response": "ұлдың ішінде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "ұлдың ішінде\n"
+    },
+    {
+      "id": "kk-ins-жаңбыр",
+      "question": "Write the Kazakh word \"жаңбыр\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жаңбырмен",
+      "accept": [
+        "жаңбырмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жаңбыр",
+      "response": "Жаңбырда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-сабақ",
+      "question": "Write the Kazakh word \"сабақ\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сабақта",
+      "accept": [
+        "сабақта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сабақ",
+      "response": "Сабақта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қар",
+      "question": "Write the Kazakh word \"қар\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қарлар",
+      "accept": [
+        "қарлар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қар",
+      "response": "Қастар",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қастар\n"
+    },
+    {
+      "id": "kk-dat-қасық",
+      "question": "Write the Kazakh word \"қасық\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қасыққа",
+      "accept": [
+        "қасыққа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қасық",
+      "response": "Қасығына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-дос",
+      "question": "Write the Kazakh word \"дос\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "достар",
+      "accept": [
+        "достар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "дос",
+      "response": "Достар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кітаптың",
+      "accept": [
+        "кітаптың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кітап",
+      "response": "Кітаптың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-бет",
+      "question": "Write the Kazakh word \"бет\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "беттен",
+      "accept": [
+        "беттен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бет",
+      "response": "Бетінен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Бетінен\n"
+    },
+    {
+      "id": "kk-ins-көз",
+      "question": "Write the Kazakh word \"көз\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көзбен",
+      "accept": [
+        "көзбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "көз",
+      "response": "Көзіммен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-әже",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"әже\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "әжесі",
+      "accept": [
+        "әжесі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "әже",
+      "response": "әжінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-бет",
+      "question": "Write the Kazakh word \"бет\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "беттің",
+      "accept": [
+        "беттің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бет",
+      "response": "Бетім",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кітапқа",
+      "accept": [
+        "кітапқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кітап",
+      "response": "Кітапқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-терезе",
+      "question": "Write the Kazakh word \"терезе\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "терезеге",
+      "accept": [
+        "терезеге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "терезе",
+      "response": "Терезде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Терезде\n"
+    },
+    {
+      "id": "kk-poss3-ат",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"ат\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "аты",
+      "accept": [
+        "аты"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ат",
+      "response": "атың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісіні",
+      "accept": [
+        "кісіні"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "кісі",
+      "response": "Кісіні",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-балық",
+      "question": "Write the Kazakh word \"балық\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "балықтар",
+      "accept": [
+        "балықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "балық",
+      "response": "Балықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-көз",
+      "question": "Write the Kazakh word \"көз\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көзді",
+      "accept": [
+        "көзді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "көз",
+      "response": "Көзі",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Көзі\n"
+    },
+    {
+      "id": "kk-dat-көл",
+      "question": "Write the Kazakh word \"көл\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлге",
+      "accept": [
+        "көлге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "көл",
+      "response": "Кешке",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Кешке\n"
+    },
+    {
+      "id": "kk-ins-ат",
+      "question": "Write the Kazakh word \"ат\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "атпен",
+      "accept": [
+        "атпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ат",
+      "response": "Атыңмен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-ай",
+      "question": "Write the Kazakh word \"ай\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "айда",
+      "accept": [
+        "айда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ай",
+      "response": "аудада",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "аудада\n"
+    },
+    {
+      "id": "kk-abl-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағаштан",
+      "accept": [
+        "ағаштан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ағаш",
+      "response": "Ағынан",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Ағынан\n"
+    },
+    {
+      "id": "kk-ins-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптермен",
+      "accept": [
+        "дәптермен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дәптер",
+      "response": "Дәптермен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-бас",
+      "question": "Write the Kazakh word \"бас\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "басқа",
+      "accept": [
+        "басқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "бас",
+      "response": "Басына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-алма",
+      "question": "Write the Kazakh word \"алма\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "алмадан",
+      "accept": [
+        "алмадан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "алма",
+      "response": "Алматыдан",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Алматыдан\n"
+    },
+    {
+      "id": "kk-loc-ел",
+      "question": "Write the Kazakh word \"ел\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елде",
+      "accept": [
+        "елде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ел",
+      "response": "Елде",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Елде\n"
+    },
+    {
+      "id": "kk-plural-дала",
+      "question": "Write the Kazakh word \"дала\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "далалар",
+      "accept": [
+        "далалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "дала",
+      "response": "Далалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-көл",
+      "question": "Write the Kazakh word \"көл\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "көлдер",
+      "accept": [
+        "көлдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "көл",
+      "response": "Көлекейлер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-дос",
+      "question": "Write the Kazakh word \"дос\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "достан",
+      "accept": [
+        "достан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дос",
+      "response": "Дəнен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Дəнен\n"
+    },
+    {
+      "id": "kk-plural-сөз",
+      "question": "Write the Kazakh word \"сөз\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "сөздер",
+      "accept": [
+        "сөздер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "сөз",
+      "response": "Сөздер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-түн",
+      "question": "Write the Kazakh word \"түн\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "түннен",
+      "accept": [
+        "түннен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "түн",
+      "response": "түнінен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "түнінен\n"
+    },
+    {
+      "id": "kk-dat-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламға",
+      "accept": [
+        "қаламға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қалам",
+      "response": "Қаламға",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қаламға\n"
+    },
+    {
+      "id": "kk-loc-тау",
+      "question": "Write the Kazakh word \"тау\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тауда",
+      "accept": [
+        "тауда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тау",
+      "response": "Таудағыда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-аспан",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"аспан\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "аспаны",
+      "accept": [
+        "аспаны"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "аспан",
+      "response": "Аспаны",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-тау",
+      "question": "Write the Kazakh word \"тау\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "таудың",
+      "accept": [
+        "таудың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "тау",
+      "response": "Таулары",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-ат",
+      "question": "Write the Kazakh word \"ат\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "атты",
+      "accept": [
+        "атты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ат",
+      "response": "Аттың",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Аттың\n"
+    },
+    {
+      "id": "kk-gen-бала",
+      "question": "Write the Kazakh word \"бала\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "баланың",
+      "accept": [
+        "баланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бала",
+      "response": "Баланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламдар",
+      "accept": [
+        "қаламдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қалам",
+      "response": "Қаламдар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-үй",
+      "question": "Write the Kazakh word \"үй\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "үйлер",
+      "accept": [
+        "үйлер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "үй",
+      "response": "Үйдер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағашқа",
+      "accept": [
+        "ағашқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ағаш",
+      "response": "Ағаштың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-ұл",
+      "question": "Write the Kazakh word \"ұл\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ұлға",
+      "accept": [
+        "ұлға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ұл",
+      "response": "ұлға",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "ұлға\n"
+    },
+    {
+      "id": "kk-gen-тіс",
+      "question": "Write the Kazakh word \"тіс\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тістің",
+      "accept": [
+        "тістің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "тіс",
+      "response": "Тізің.",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Тізің.\n"
+    },
+    {
+      "id": "kk-poss3-жылқы",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жылқы\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жылқысы",
+      "accept": [
+        "жылқысы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жылқы",
+      "response": "Жылқысы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қала",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"қала\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаласы",
+      "accept": [
+        "қаласы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қала",
+      "response": "Қалының",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-күш",
+      "question": "Write the Kazakh word \"күш\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "күшке",
+      "accept": [
+        "күшке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "күш",
+      "response": "Қуаға көтерді.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-үй",
+      "question": "Write the Kazakh word \"үй\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "үйден",
+      "accept": [
+        "үйден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "үй",
+      "response": "Үзінен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Үзінен\n"
+    },
+    {
+      "id": "kk-poss3-дала",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"дала\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "даласы",
+      "accept": [
+        "даласы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дала",
+      "response": "Далын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-тіс",
+      "question": "Write the Kazakh word \"тіс\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тістен",
+      "accept": [
+        "тістен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "тіс",
+      "response": "Тісінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-орамал",
+      "question": "Write the Kazakh word \"орамал\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "орамалда",
+      "accept": [
+        "орамалда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "орамал",
+      "response": "Орамалменде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-жылқы",
+      "question": "Write the Kazakh word \"жылқы\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жылқыда",
+      "accept": [
+        "жылқыда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жылқы",
+      "response": "Жылқыда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қасық",
+      "question": "Write the Kazakh word \"қасық\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қасықпен",
+      "accept": [
+        "қасықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қасық",
+      "response": "Қасықпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламмен",
+      "accept": [
+        "қаламмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қалам",
+      "response": "қаламыммен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-шаң",
+      "question": "Write the Kazakh word \"шаң\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңда",
+      "accept": [
+        "шаңда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "шаң",
+      "response": "шанда",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "шанда\n"
+    },
+    {
+      "id": "kk-poss3-көз",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"көз\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "көзі",
+      "accept": [
+        "көзі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "көз",
+      "response": "Кезінде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-адам",
+      "question": "Write the Kazakh word \"адам\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "адамның",
+      "accept": [
+        "адамның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "адам",
+      "response": "Адамның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-дала",
+      "question": "Write the Kazakh word \"дала\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "далаға",
+      "accept": [
+        "далаға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дала",
+      "response": "Далаға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-дала",
+      "question": "Write the Kazakh word \"дала\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "даладан",
+      "accept": [
+        "даладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дала",
+      "response": "Дасынан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-бас",
+      "question": "Write the Kazakh word \"бас\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "басты",
+      "accept": [
+        "басты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бас",
+      "response": "Басын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-кітап",
+      "question": "Write the Kazakh word \"кітап\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "кітаптар",
+      "accept": [
+        "кітаптар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "кітап",
+      "response": "кітаптар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-ет",
+      "question": "Write the Kazakh word \"ет\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "еттің",
+      "accept": [
+        "еттің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ет",
+      "response": "Етінде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-кеш",
+      "question": "Write the Kazakh word \"кеш\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кеште",
+      "accept": [
+        "кеште"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "кеш",
+      "response": "Кезде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Кезде\n"
+    },
+    {
+      "id": "kk-gen-кісі",
+      "question": "Write the Kazakh word \"кісі\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісінің",
+      "accept": [
+        "кісінің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кісі",
+      "response": "Кісінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-тас",
+      "question": "Write the Kazakh word \"тас\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тасты",
+      "accept": [
+        "тасты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тас",
+      "response": "Тастын",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-сөз",
+      "question": "Write the Kazakh word \"сөз\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сөзден",
+      "accept": [
+        "сөзден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "сөз",
+      "response": "Сөзінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-сағат",
+      "question": "Write the Kazakh word \"сағат\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағаттың",
+      "accept": [
+        "сағаттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сағат",
+      "response": "Сағатыңды",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-сағат",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"сағат\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "сағаты",
+      "accept": [
+        "сағаты"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сағат",
+      "response": "Сағыттың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-шаң",
+      "question": "Write the Kazakh word \"шаң\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "шаңды",
+      "accept": [
+        "шаңды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "шаң",
+      "response": "Шаңырауды",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-көл",
+      "question": "Write the Kazakh word \"көл\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көлден",
+      "accept": [
+        "көлден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "көл",
+      "response": "Көлінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-қол",
+      "question": "Write the Kazakh word \"қол\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "қолдар",
+      "accept": [
+        "қолдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қол",
+      "response": "Қуат",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қуат\n"
+    },
+    {
+      "id": "kk-gen-кеш",
+      "question": "Write the Kazakh word \"кеш\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кештің",
+      "accept": [
+        "кештің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кеш",
+      "response": "Кешіңде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-терезе",
+      "question": "Write the Kazakh word \"терезе\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "тереземен",
+      "accept": [
+        "тереземен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "терезе",
+      "response": "Терезде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-алма",
+      "question": "Write the Kazakh word \"алма\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "алмамен",
+      "accept": [
+        "алмамен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "алма",
+      "response": "алмамен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-кісі",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"кісі\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "кісісі",
+      "accept": [
+        "кісісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "кісі",
+      "response": "Кісінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-қол",
+      "question": "Write the Kazakh word \"қол\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қолдан",
+      "accept": [
+        "қолдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қол",
+      "response": "Қолдан",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қолдан\n"
+    },
+    {
+      "id": "kk-gen-қар",
+      "question": "Write the Kazakh word \"қар\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қардың",
+      "accept": [
+        "қардың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қар",
+      "response": "Қарыда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-іс",
+      "question": "Write the Kazakh word \"іс\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "істі",
+      "accept": [
+        "істі"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "іс",
+      "response": "Істі",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Істі\n"
+    },
+    {
+      "id": "kk-poss3-жұмыс",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"жұмыс\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "жұмысы",
+      "accept": [
+        "жұмысы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жұмыс",
+      "response": "Жұмысы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-ат",
+      "question": "Write the Kazakh word \"ат\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "аттың",
+      "accept": [
+        "аттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ат",
+      "response": "Атың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-бет",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"бет\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "беті",
+      "accept": [
+        "беті"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бет",
+      "response": "беті",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "беті\n"
+    },
+    {
+      "id": "kk-ins-қала",
+      "question": "Write the Kazakh word \"қала\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламен",
+      "accept": [
+        "қаламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қала",
+      "response": "қаламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-күш",
+      "question": "Write the Kazakh word \"күш\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "күштер",
+      "accept": [
+        "күштер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "күш",
+      "response": "Күштелер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-кеш",
+      "question": "Write the Kazakh word \"кеш\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кешке",
+      "accept": [
+        "кешке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кеш",
+      "response": "Қоғаға",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қоғаға\n"
+    },
+    {
+      "id": "kk-plural-көз",
+      "question": "Write the Kazakh word \"көз\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "көздер",
+      "accept": [
+        "көздер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "көз",
+      "response": "Кедергелер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-дәптер",
+      "question": "Write the Kazakh word \"дәптер\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "дәптерлер",
+      "accept": [
+        "дәптерлер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "дәптер",
+      "response": "Дәптерлер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-кеш",
+      "question": "Write the Kazakh word \"кеш\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "кешпен",
+      "accept": [
+        "кешпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кеш",
+      "response": "Кешке",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Кешке\n"
+    },
+    {
+      "id": "kk-poss3-сабақ",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"сабақ\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "сабағы",
+      "accept": [
+        "сабағы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сабақ",
+      "response": "Сабағы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-қар",
+      "question": "Write the Kazakh word \"қар\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қарда",
+      "accept": [
+        "қарда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қар",
+      "response": "Қарында",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Қарында\n"
+    },
+    {
+      "id": "kk-loc-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жазда",
+      "accept": [
+        "жазда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жаз",
+      "response": "Жазда",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Жазда\n"
+    },
+    {
+      "id": "kk-gen-қалам",
+      "question": "Write the Kazakh word \"қалам\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаламның",
+      "accept": [
+        "қаламның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қалам",
+      "response": "Қаламым",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-алма",
+      "question": "Write the Kazakh word \"алма\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "алмаға",
+      "accept": [
+        "алмаға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "алма",
+      "response": "Алға.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-балық",
+      "question": "Write the Kazakh word \"балық\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "балықта",
+      "accept": [
+        "балықта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "балық",
+      "response": "Балығында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-ел",
+      "question": "Write the Kazakh word \"ел\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "елдің",
+      "accept": [
+        "елдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ел",
+      "response": "Елдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қыз",
+      "question": "Write the Kazakh word \"қыз\" in the instrumental case (with whom? with what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қызбен",
+      "accept": [
+        "қызбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қыз",
+      "response": "әкечтің",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "әкечтің\n"
+    },
+    {
+      "id": "kk-poss3-ай",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"ай\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "айы",
+      "accept": [
+        "айы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ай",
+      "response": "айы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-тіс",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"тіс\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "тісі",
+      "accept": [
+        "тісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тіс",
+      "response": "Тісі",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Тісі\n"
+    },
+    {
+      "id": "kk-abl-терезе",
+      "question": "Write the Kazakh word \"терезе\" in the ablative case (from where? from what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "терезеден",
+      "accept": [
+        "терезеден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "терезе",
+      "response": "Терездеңнен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Терездеңнен\n"
+    },
+    {
+      "id": "kk-acc-адам",
+      "question": "Write the Kazakh word \"адам\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "адамды",
+      "accept": [
+        "адамды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "адам",
+      "response": "Адамды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-жер",
+      "question": "Write the Kazakh word \"жер\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жердің",
+      "accept": [
+        "жердің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жер",
+      "response": "Жердің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-адам",
+      "question": "Write the Kazakh word \"адам\" in the dative case (to whom? to where?). Answer with one Kazakh word only, no explanation.",
+      "answer": "адамға",
+      "accept": [
+        "адамға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "адам",
+      "response": "Адамға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the plural. Answer with one Kazakh word only, no explanation.",
+      "answer": "ағаштар",
+      "accept": [
+        "ағаштар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ағаш",
+      "response": "Ағаштар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-көз",
+      "question": "Write the Kazakh word \"көз\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "көздің",
+      "accept": [
+        "көздің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "көз",
+      "response": "Көзімнің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-жаз",
+      "question": "Write the Kazakh word \"жаз\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "жаздың",
+      "accept": [
+        "жаздың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жаз",
+      "response": "Жазтың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қала",
+      "question": "Write the Kazakh word \"қала\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қалада",
+      "accept": [
+        "қалада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қала",
+      "response": "Қалада",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Қалада\n"
+    },
+    {
+      "id": "kk-gen-сөз",
+      "question": "Write the Kazakh word \"сөз\" in the genitive case (whose?). Answer with one Kazakh word only, no explanation.",
+      "answer": "сөздің",
+      "accept": [
+        "сөздің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сөз",
+      "response": "Сөзі",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-ағаш",
+      "question": "Write the Kazakh word \"ағаш\" in the locative case (where? in what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "ағашта",
+      "accept": [
+        "ағашта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ағаш",
+      "response": "Ағашта",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Ағашта\n"
+    },
+    {
+      "id": "kk-acc-қала",
+      "question": "Write the Kazakh word \"қала\" in the accusative case (whom? what?). Answer with one Kazakh word only, no explanation.",
+      "answer": "қаланы",
+      "accept": [
+        "қаланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қала",
+      "response": "Қаланы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-кеш",
+      "question": "Add the 3rd-person possessive suffix to the Kazakh word \"кеш\" (his/her/its). Answer with one Kazakh word only, no explanation.",
+      "answer": "кеші",
+      "accept": [
+        "кеші"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "кеш",
+      "response": "Кешінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}

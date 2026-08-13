@@ -1,0 +1,115 @@
+{
+  "model": "gemini-3.6-flash",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": null,
+  "complete": false,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-plural-мектеп",
+      "question": "«мектеп» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектептер",
+      "accept": [
+        "мектептер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "мектеп",
+      "response": "Мектептер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жұмыс",
+      "question": "«жұмыс» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жұмысты",
+      "accept": [
+        "жұмысты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жұмыс",
+      "response": "жұмысты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қасық",
+      "question": "«қасық» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықтар",
+      "accept": [
+        "қасықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қасық",
+      "response": "Қасықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-шаң",
+      "question": "«шаң» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "шаңның",
+      "accept": [
+        "шаңның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "шаң",
+      "response": "шаңның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-көл",
+      "question": "«көл» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көлмен",
+      "accept": [
+        "көлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "көл",
+      "response": "Көлмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тау",
+      "question": "«тау» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таумен",
+      "accept": [
+        "таумен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тау",
+      "response": "таумен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қала",
+      "question": "«қала» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаланы",
+      "accept": [
+        "қаланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қала",
+      "response": "Қаланы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}
