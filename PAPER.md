@@ -2,33 +2,32 @@
 
 ## Abstract
 
-Multiple-choice benchmarks show that large language models underperform in
-Kazakh relative to Russian, but cannot explain why: a model can answer them
-without ever producing a Kazakh word form. We introduce a generative benchmark
-of rule-derived Kazakh nominal inflection covering eight morphological
-categories over fifty regular noun stems, in which gold answers are computed
-from vowel-harmony and consonant-assimilation rules rather than hand-annotated.
-Holding items and gold answers byte-identical while varying only the language
-of the instruction, we find that small models are bottlenecked by instruction
-comprehension rather than morphological knowledge. gemma3-4b scores 16.5% when
-instructed in Kazakh, 48.8% in Russian and 52.0% in English, against a noise
-floor of 2.7 points measured over independent item samples; qwen2.5-3b scores
-4.3% and 21.0% for Kazakh and Russian. Russian and English are close at the top
-line, ruling out an account grounded in Kazakhstan's specific bilingual
-situation, but they diverge sharply by category: Russian instructions are far
-better for oblique cases and English for core argument cases, with differences
-of 20-30 points in opposite directions. The Kazakh penalty is itself
-category-specific: plural and genitive show little or no penalty while
-accusative and dative collapse to near zero, indicating that the bottleneck
-is coverage of Kazakh grammatical terminology rather than instruction
-following in general. The overall effect disappears with
-scale: gemma-4-31b reaches 98.7% under Kazakh instructions and 100.0% under
-Russian, with a single genuine morphological error in 300 items. We additionally
-report five methodological findings for cross-lingual generative evaluation,
-including a case-label translation that moved one category by 41 points, a
-morpheme that resists isolated elicitation on principled grammatical grounds,
-and hidden reasoning tokens that silently consume the output budget and are
-scored as errors.
+Multiple-choice benchmarks report that language models underperform in Kazakh
+relative to Russian, but cannot say why: a model can answer them without ever
+producing a Kazakh word form. We introduce a generative benchmark of Kazakh
+nominal inflection covering eight morphological categories over fifty regular
+noun stems, with gold answers computed from vowel-harmony and
+consonant-assimilation rules rather than annotated by hand. Holding items and
+gold answers byte-identical while varying only the language of the instruction,
+we find that small models are limited by instruction comprehension rather than
+by morphological knowledge. gemma3-4b scores 16.3% under Kazakh instructions
+against 48.8% in Russian and 52.0% in English, with a noise floor of 2.7
+points; qwen2.5-3b scores 4.3% and 21.0%. The deficit is not uniform:
+categories whose Kazakh grammatical terminology is common show little or no
+penalty, while those with more specialised terminology fall to zero. A single
+in-context example raises Kazakh-instructed accuracy to 54.7% and five raise it
+to 74.7%, eliminating the gap, with gains concentrated precisely in the
+categories that had failed -- the knowledge was present throughout and the
+instruction could not reach it. This reconciles our findings with prior work
+reporting a 1-5 point instruction-language penalty for Turkish and Finnish
+under few-shot prompting: demonstrations substitute for instruction
+comprehension and therefore mask the effect. The gap also vanishes with scale,
+gemma-4-31b reaching 98.7% and 100.0% with one genuine morphological error in
+300 items. We further report five methodological findings for cross-lingual
+generative evaluation, including a translated case label that moved one
+category by 41 points and was fully rescued by examples, a morpheme that
+resists isolated elicitation on grammatical grounds, and hidden reasoning
+tokens that silently consume the output budget and are scored as errors.
 
 ## 1. Introduction
 
