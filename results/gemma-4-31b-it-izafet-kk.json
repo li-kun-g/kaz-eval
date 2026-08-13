@@ -1,0 +1,760 @@
+{
+  "model": "gemma-4-31b-it",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": 0.9387755102040817,
+  "complete": true,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-gen_izafet-шаң",
+      "question": "«шаң» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "шаңның",
+      "accept": [
+        "шаңның"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "шаң",
+      "response": "Шаңның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-көз",
+      "question": "«көз» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көздің",
+      "accept": [
+        "көздің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "көз",
+      "response": "көздің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қасық",
+      "question": "«қасық» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықтың",
+      "accept": [
+        "қасықтың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қасық",
+      "response": "Қасықтың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-көл",
+      "question": "«көл» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көлдің",
+      "accept": [
+        "көлдің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "көл",
+      "response": "көлдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-ұл",
+      "question": "«ұл» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ұлдың",
+      "accept": [
+        "ұлдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ұл",
+      "response": "ұлдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-күш",
+      "question": "«күш» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күштің",
+      "accept": [
+        "күштің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "күш",
+      "response": "күштің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-сағат",
+      "question": "«сағат» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сағаттың",
+      "accept": [
+        "сағаттың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "сағат",
+      "response": "Сағаттың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-жаңбыр",
+      "question": "«жаңбыр» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаңбырдың",
+      "accept": [
+        "жаңбырдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жаңбыр",
+      "response": "жаңбырдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қар",
+      "question": "«қар» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қардың",
+      "accept": [
+        "қардың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қар",
+      "response": "Қардың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-тас",
+      "question": "«тас» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тастың",
+      "accept": [
+        "тастың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "тас",
+      "response": "Тастың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-бет",
+      "question": "«бет» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "беттің",
+      "accept": [
+        "беттің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "бет",
+      "response": "Бет",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen_izafet-күн",
+      "question": "«күн» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күннің",
+      "accept": [
+        "күннің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "күн",
+      "response": "күннің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-үй",
+      "question": "«үй» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "үйдің",
+      "accept": [
+        "үйдің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "үй",
+      "response": "Үйдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қол",
+      "question": "«қол» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолдың",
+      "accept": [
+        "қолдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қол",
+      "response": "Қолдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-кітап",
+      "question": "«кітап» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кітаптың",
+      "accept": [
+        "кітаптың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "кітап",
+      "response": "Кітаптың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-гүл",
+      "question": "«гүл» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлдің",
+      "accept": [
+        "гүлдің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "гүл",
+      "response": "Гүлдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-сабақ",
+      "question": "«сабақ» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сабақтың",
+      "accept": [
+        "сабақтың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "сабақ",
+      "response": "Сабақтың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-дос",
+      "question": "«дос» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "достың",
+      "accept": [
+        "достың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "дос",
+      "response": "Достың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қалам",
+      "question": "«қалам» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаламның",
+      "accept": [
+        "қаламның"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қалам",
+      "response": "Қаламның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-ет",
+      "question": "«ет» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "еттің",
+      "accept": [
+        "еттің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ет",
+      "response": "Еттің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-кеш",
+      "question": "«кеш» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кештің",
+      "accept": [
+        "кештің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "кеш",
+      "response": "Кештің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-орамал",
+      "question": "«орамал» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "орамалдың",
+      "accept": [
+        "орамалдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "орамал",
+      "response": "Орамалдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-әже",
+      "question": "«әже» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "әженің",
+      "accept": [
+        "әженің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "әже",
+      "response": "Әженің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-тау",
+      "question": "«тау» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таудың",
+      "accept": [
+        "таудың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "тау",
+      "response": "Таудың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-сөз",
+      "question": "«сөз» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сөздің",
+      "accept": [
+        "сөздің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "сөз",
+      "response": "Сөздің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-алма",
+      "question": "«алма» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "алманың",
+      "accept": [
+        "алманың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "алма",
+      "response": "Алманың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-кісі",
+      "question": "«кісі» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кісінің",
+      "accept": [
+        "кісінің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "кісі",
+      "response": "кісінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-бала",
+      "question": "«бала» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "баланың",
+      "accept": [
+        "баланың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "бала",
+      "response": "Баланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-мектеп",
+      "question": "«мектеп» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектептің",
+      "accept": [
+        "мектептің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "мектеп",
+      "response": "Мектептің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-ай",
+      "question": "«ай» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "айдың",
+      "accept": [
+        "айдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ай",
+      "response": "Айдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-тіс",
+      "question": "«тіс» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тістің",
+      "accept": [
+        "тістің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "тіс",
+      "response": "Тістің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-бас",
+      "question": "«бас» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "бастың",
+      "accept": [
+        "бастың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "бас",
+      "response": "Бас",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen_izafet-терезе",
+      "question": "«терезе» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "терезенің",
+      "accept": [
+        "терезенің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "терезе",
+      "response": "",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen_izafet-жылқы",
+      "question": "«жылқы» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жылқының",
+      "accept": [
+        "жылқының"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жылқы",
+      "response": "жылқының",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-дала",
+      "question": "«дала» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "даланың",
+      "accept": [
+        "даланың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "дала",
+      "response": "Даланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қыз",
+      "question": "«қыз» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қыздың",
+      "accept": [
+        "қыздың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қыз",
+      "response": "Қыздың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-қала",
+      "question": "«қала» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаланың",
+      "accept": [
+        "қаланың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "қала",
+      "response": "Қаланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-ағаш",
+      "question": "«ағаш» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ағаштың",
+      "accept": [
+        "ағаштың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ағаш",
+      "response": "Ағаштың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-жер",
+      "question": "«жер» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жердің",
+      "accept": [
+        "жердің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жер",
+      "response": "Жердің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-түн",
+      "question": "«түн» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түннің",
+      "accept": [
+        "түннің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "түн",
+      "response": "түннің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-ел",
+      "question": "«ел» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "елдің",
+      "accept": [
+        "елдің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ел",
+      "response": "Елдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-балық",
+      "question": "«балық» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "балықтың",
+      "accept": [
+        "балықтың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "балық",
+      "response": "Балықтың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-жол",
+      "question": "«жол» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жолдың",
+      "accept": [
+        "жолдың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жол",
+      "response": "Жолдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-іс",
+      "question": "«іс» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "істің",
+      "accept": [
+        "істің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "іс",
+      "response": "Іс",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen_izafet-ат",
+      "question": "«ат» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аттың",
+      "accept": [
+        "аттың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "ат",
+      "response": "Аттың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-адам",
+      "question": "«адам» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "адамның",
+      "accept": [
+        "адамның"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "адам",
+      "response": "Адамның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-дәптер",
+      "question": "«дәптер» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "дәптердің",
+      "accept": [
+        "дәптердің"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "дәптер",
+      "response": "Дәптердің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-аспан",
+      "question": "«аспан» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспанның",
+      "accept": [
+        "аспанның"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "аспан",
+      "response": "Аспанның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-жаз",
+      "question": "«жаз» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаздың",
+      "accept": [
+        "жаздың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жаз",
+      "response": "Жаздың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen_izafet-жұмыс",
+      "question": "«жұмыс» сөзін дұрыс формаға қойып, тіркесті толықтырыңыз: ___ суреті. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жұмыстың",
+      "accept": [
+        "жұмыстың"
+      ],
+      "type": "gen_izafet",
+      "category": "gen_izafet",
+      "stem": "жұмыс",
+      "response": "Жұмыстың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}

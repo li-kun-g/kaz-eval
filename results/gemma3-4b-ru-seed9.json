@@ -1,0 +1,4518 @@
+{
+  "model": "gemma3:4b",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": 0.5,
+  "complete": true,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-poss3-дәптер",
+      "question": "Добавьте к казахскому слову «дәптер» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптері",
+      "accept": [
+        "дәптері"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дәптер",
+      "response": "Дәптері",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-бас",
+      "question": "Напишите казахское слово «бас» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бастың",
+      "accept": [
+        "бастың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бас",
+      "response": "Жасыл.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-кеш",
+      "question": "Напишите казахское слово «кеш» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кештің",
+      "accept": [
+        "кештің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кеш",
+      "response": "Кешінен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-кеш",
+      "question": "Напишите казахское слово «кеш» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кеште",
+      "accept": [
+        "кеште"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "кеш",
+      "response": "Кешке.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-жер",
+      "question": "Напишите казахское слово «жер» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жермен",
+      "accept": [
+        "жермен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жер",
+      "response": "Жермен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жаз",
+      "question": "Напишите казахское слово «жаз» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жазды",
+      "accept": [
+        "жазды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаз",
+      "response": "Жаз",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Жаз\n"
+    },
+    {
+      "id": "kk-gen-қасық",
+      "question": "Напишите казахское слово «қасық» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықтың",
+      "accept": [
+        "қасықтың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қасық",
+      "response": "Қасығымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-іс",
+      "question": "Напишите казахское слово «іс» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "істер",
+      "accept": [
+        "істер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "іс",
+      "response": "Істер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-гүл",
+      "question": "Напишите казахское слово «гүл» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "гүлдің",
+      "accept": [
+        "гүлдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "гүл",
+      "response": "Гүlleзде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-балық",
+      "question": "Напишите казахское слово «балық» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балықтар",
+      "accept": [
+        "балықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "балық",
+      "response": "Балықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-кітап",
+      "question": "Напишите казахское слово «кітап» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітаптың",
+      "accept": [
+        "кітаптың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кітап",
+      "response": "Кітаппен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-балық",
+      "question": "Напишите казахское слово «балық» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балықта",
+      "accept": [
+        "балықта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "балық",
+      "response": "Балықта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-орамал",
+      "question": "Напишите казахское слово «орамал» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалға",
+      "accept": [
+        "орамалға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "орамал",
+      "response": "Екеуге.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-дала",
+      "question": "Напишите казахское слово «дала» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "даланың",
+      "accept": [
+        "даланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дала",
+      "response": "Далада.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-ұл",
+      "question": "Напишите казахское слово «ұл» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлға",
+      "accept": [
+        "ұлға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ұл",
+      "response": "Ұлға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-бет",
+      "question": "Напишите казахское слово «бет» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бетті",
+      "accept": [
+        "бетті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бет",
+      "response": "Жоғарыда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-іс",
+      "question": "Напишите казахское слово «іс» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "істі",
+      "accept": [
+        "істі"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "іс",
+      "response": "Істі.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-сөз",
+      "question": "Напишите казахское слово «сөз» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөздер",
+      "accept": [
+        "сөздер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "сөз",
+      "response": "Сөздер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қасық",
+      "question": "Напишите казахское слово «қасық» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықты",
+      "accept": [
+        "қасықты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қасық",
+      "response": "Қасықпен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-әже",
+      "question": "Напишите казахское слово «әже» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әжені",
+      "accept": [
+        "әжені"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "әже",
+      "response": "Әжеге.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-қар",
+      "question": "Напишите казахское слово «қар» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қардың",
+      "accept": [
+        "қардың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қар",
+      "response": "Қарыдағыда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-күш",
+      "question": "Напишите казахское слово «күш» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күште",
+      "accept": [
+        "күште"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "күш",
+      "response": "Күштеде.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-ұл",
+      "question": "Напишите казахское слово «ұл» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлды",
+      "accept": [
+        "ұлды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ұл",
+      "response": "Улым.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-ағаш",
+      "question": "Напишите казахское слово «ағаш» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағашты",
+      "accept": [
+        "ағашты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ағаш",
+      "response": "Ағашты.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-орамал",
+      "question": "Напишите казахское слово «орамал» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалдан",
+      "accept": [
+        "орамалдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "орамал",
+      "response": "Орамалдан.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-алма",
+      "question": "Напишите казахское слово «алма» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмалар",
+      "accept": [
+        "алмалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "алма",
+      "response": "Алматылар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-бас",
+      "question": "Напишите казахское слово «бас» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бастан",
+      "accept": [
+        "бастан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бас",
+      "response": "Бастанда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-үй",
+      "question": "Напишите казахское слово «үй» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйден",
+      "accept": [
+        "үйден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "үй",
+      "response": "Үйде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-қол",
+      "question": "Напишите казахское слово «қол» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қолдың",
+      "accept": [
+        "қолдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қол",
+      "response": "Қолында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-қасық",
+      "question": "Добавьте к казахскому слову «қасық» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасығы",
+      "accept": [
+        "қасығы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қасық",
+      "response": "Қасиының",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-тіс",
+      "question": "Добавьте к казахскому слову «тіс» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тісі",
+      "accept": [
+        "тісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тіс",
+      "response": "Тісінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қыз",
+      "question": "Напишите казахское слово «қыз» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қыздар",
+      "accept": [
+        "қыздар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қыз",
+      "response": "Қыздар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-сабақ",
+      "question": "Напишите казахское слово «сабақ» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабаққа",
+      "accept": [
+        "сабаққа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "сабақ",
+      "response": "Оқуға",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-күш",
+      "question": "Добавьте к казахскому слову «күш» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күші",
+      "accept": [
+        "күші"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "күш",
+      "response": "Күшіне",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-тас",
+      "question": "Напишите казахское слово «тас» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тасқа",
+      "accept": [
+        "тасқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "тас",
+      "response": "Тасқа.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-жер",
+      "question": "Напишите казахское слово «жер» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жерге",
+      "accept": [
+        "жерге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жер",
+      "response": "Жерге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-дос",
+      "question": "Напишите казахское слово «дос» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "доста",
+      "accept": [
+        "доста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дос",
+      "response": "Достада.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-көл",
+      "question": "Напишите казахское слово «көл» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлдер",
+      "accept": [
+        "көлдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "көл",
+      "response": "Көлелер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-кісі",
+      "question": "Напишите казахское слово «кісі» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісінің",
+      "accept": [
+        "кісінің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кісі",
+      "response": "Кісімен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-ағаш",
+      "question": "Напишите казахское слово «ағаш» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағаштың",
+      "accept": [
+        "ағаштың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ағаш",
+      "response": "Ағаштардан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-орамал",
+      "question": "Напишите казахское слово «орамал» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалды",
+      "accept": [
+        "орамалды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "орамал",
+      "response": "Орамалмен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-көз",
+      "question": "Напишите казахское слово «көз» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көзден",
+      "accept": [
+        "көзден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "көз",
+      "response": "Кезде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-терезе",
+      "question": "Напишите казахское слово «терезе» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "терезенің",
+      "accept": [
+        "терезенің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "терезе",
+      "response": "Тереземен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-іс",
+      "question": "Напишите казахское слово «іс» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "іспен",
+      "accept": [
+        "іспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "іс",
+      "response": "Істің көзімен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-тас",
+      "question": "Напишите казахское слово «тас» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тастан",
+      "accept": [
+        "тастан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "тас",
+      "response": "Таста.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-дәптер",
+      "question": "Напишите казахское слово «дәптер» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптердің",
+      "accept": [
+        "дәптердің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дәптер",
+      "response": "Дәптермен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-балық",
+      "question": "Напишите казахское слово «балық» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балықтан",
+      "accept": [
+        "балықтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "балық",
+      "response": "Балықтан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-күш",
+      "question": "Напишите казахское слово «күш» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күшті",
+      "accept": [
+        "күшті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "күш",
+      "response": "Күшті.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-балық",
+      "question": "Напишите казахское слово «балық» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балықтың",
+      "accept": [
+        "балықтың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "балық",
+      "response": "Суретінде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-көз",
+      "question": "Добавьте к казахскому слову «көз» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көзі",
+      "accept": [
+        "көзі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "көз",
+      "response": "Көзі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-сағат",
+      "question": "Напишите казахское слово «сағат» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағаттар",
+      "accept": [
+        "сағаттар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "сағат",
+      "response": "Сақилар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-сабақ",
+      "question": "Напишите казахское слово «сабақ» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабақтың",
+      "accept": [
+        "сабақтың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сабақ",
+      "response": "Сабағымда.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-қыз",
+      "question": "Напишите казахское слово «қыз» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қызға",
+      "accept": [
+        "қызға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қыз",
+      "response": "Қизына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-балық",
+      "question": "Напишите казахское слово «балық» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балықпен",
+      "accept": [
+        "балықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "балық",
+      "response": "Балығым",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-кітап",
+      "question": "Добавьте к казахскому слову «кітап» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітабы",
+      "accept": [
+        "кітабы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "кітап",
+      "response": "Китабы",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-тас",
+      "question": "Напишите казахское слово «тас» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "таста",
+      "accept": [
+        "таста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тас",
+      "response": "Тастақта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-іс",
+      "question": "Напишите казахское слово «іс» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "істің",
+      "accept": [
+        "істің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "іс",
+      "response": "Істің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-мектеп",
+      "question": "Напишите казахское слово «мектеп» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектептер",
+      "accept": [
+        "мектептер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "мектеп",
+      "response": "Мектептер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-бет",
+      "question": "Напишите казахское слово «бет» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "беттің",
+      "accept": [
+        "беттің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бет",
+      "response": "Жарынында.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-қыз",
+      "question": "Напишите казахское слово «қыз» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қыздың",
+      "accept": [
+        "қыздың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қыз",
+      "response": "Қызымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-күн",
+      "question": "Напишите казахское слово «күн» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күндер",
+      "accept": [
+        "күндер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "күн",
+      "response": "Күштері",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-үй",
+      "question": "Напишите казахское слово «үй» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйге",
+      "accept": [
+        "үйге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "үй",
+      "response": "Үйде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-ат",
+      "question": "Напишите казахское слово «ат» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аттың",
+      "accept": [
+        "аттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ат",
+      "response": "Атыңнан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-дос",
+      "question": "Напишите казахское слово «дос» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "достан",
+      "accept": [
+        "достан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дос",
+      "response": "Досым",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-жұмыс",
+      "question": "Напишите казахское слово «жұмыс» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмысқа",
+      "accept": [
+        "жұмысқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жұмыс",
+      "response": "Жұмысқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-терезе",
+      "question": "Напишите казахское слово «терезе» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "терезеге",
+      "accept": [
+        "терезеге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "терезе",
+      "response": "Терезеге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-көз",
+      "question": "Напишите казахское слово «көз» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көзде",
+      "accept": [
+        "көзде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "көз",
+      "response": "Кезде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-іс",
+      "question": "Добавьте к казахскому слову «іс» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ісі",
+      "accept": [
+        "ісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "іс",
+      "response": "Оның",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-ағаш",
+      "question": "Напишите казахское слово «ағаш» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағашта",
+      "accept": [
+        "ағашта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ағаш",
+      "response": "Ағашта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-әже",
+      "question": "Напишите казахское слово «әже» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әжемен",
+      "accept": [
+        "әжемен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "әже",
+      "response": "Әзével",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-жол",
+      "question": "Напишите казахское слово «жол» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жолға",
+      "accept": [
+        "жолға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жол",
+      "response": "Жолға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-тіс",
+      "question": "Напишите казахское слово «тіс» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тісті",
+      "accept": [
+        "тісті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тіс",
+      "response": "Жазу.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-көл",
+      "question": "Напишите казахское слово «көл» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлден",
+      "accept": [
+        "көлден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "көл",
+      "response": "Көзілдік",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-қасық",
+      "question": "Напишите казахское слово «қасық» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықпен",
+      "accept": [
+        "қасықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қасық",
+      "response": "Қасықпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-көл",
+      "question": "Напишите казахское слово «көл» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлдің",
+      "accept": [
+        "көлдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "көл",
+      "response": "Көлінен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-жұмыс",
+      "question": "Напишите казахское слово «жұмыс» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмыста",
+      "accept": [
+        "жұмыста"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жұмыс",
+      "response": "Жұмыста.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-күн",
+      "question": "Добавьте к казахскому слову «күн» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күні",
+      "accept": [
+        "күні"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "күн",
+      "response": "Күніне",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-аспан",
+      "question": "Добавьте к казахскому слову «аспан» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспаны",
+      "accept": [
+        "аспаны"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "аспан",
+      "response": "Аспанының",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қыз",
+      "question": "Напишите казахское слово «қыз» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қыздан",
+      "accept": [
+        "қыздан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қыз",
+      "response": "Қызда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-балық",
+      "question": "Добавьте к казахскому слову «балық» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балығы",
+      "accept": [
+        "балығы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "балық",
+      "response": "Балығының",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-адам",
+      "question": "Напишите казахское слово «адам» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "адаммен",
+      "accept": [
+        "адаммен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "адам",
+      "response": "Адаммен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қар",
+      "question": "Добавьте к казахскому слову «қар» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қары",
+      "accept": [
+        "қары"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қар",
+      "response": "Қарысы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-шаң",
+      "question": "Добавьте к казахскому слову «шаң» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңы",
+      "accept": [
+        "шаңы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "шаң",
+      "response": "Шанықтық",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-қол",
+      "question": "Напишите казахское слово «қол» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қолға",
+      "accept": [
+        "қолға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қол",
+      "response": "Жаңаға",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-дәптер",
+      "question": "Напишите казахское слово «дәптер» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптерге",
+      "accept": [
+        "дәптерге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дәптер",
+      "response": "Екеуге.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-ет",
+      "question": "Напишите казахское слово «ет» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "еттің",
+      "accept": [
+        "еттің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ет",
+      "response": "Етінде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-ай",
+      "question": "Напишите казахское слово «ай» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аймен",
+      "accept": [
+        "аймен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ай",
+      "response": "Аймен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-дос",
+      "question": "Напишите казахское слово «дос» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "досқа",
+      "accept": [
+        "досқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дос",
+      "response": "Досына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-бала",
+      "question": "Напишите казахское слово «бала» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "баламен",
+      "accept": [
+        "баламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "бала",
+      "response": "Баламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жаз",
+      "question": "Добавьте к казахскому слову «жаз» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жазы",
+      "accept": [
+        "жазы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жаз",
+      "response": "Жаздың",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-кеш",
+      "question": "Напишите казахское слово «кеш» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кешке",
+      "accept": [
+        "кешке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кеш",
+      "response": "Эспедиске.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-жол",
+      "question": "Напишите казахское слово «жол» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жолдар",
+      "accept": [
+        "жолдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жол",
+      "response": "Жолымдар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-қасық",
+      "question": "Напишите казахское слово «қасық» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықтар",
+      "accept": [
+        "қасықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қасық",
+      "response": "Қасықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-күн",
+      "question": "Напишите казахское слово «күн» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күннен",
+      "accept": [
+        "күннен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "күн",
+      "response": "Күннен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қалам",
+      "question": "Напишите казахское слово «қалам» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қаламнан",
+      "accept": [
+        "қаламнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қалам",
+      "response": "Қаламнан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-шаң",
+      "question": "Напишите казахское слово «шаң» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңдар",
+      "accept": [
+        "шаңдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "шаң",
+      "response": "Шаштар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-ат",
+      "question": "Напишите казахское слово «ат» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "атты",
+      "accept": [
+        "атты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ат",
+      "response": "Атыңды.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қасық",
+      "question": "Напишите казахское слово «қасық» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықта",
+      "accept": [
+        "қасықта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қасық",
+      "response": "Қасықта.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-тас",
+      "question": "Напишите казахское слово «тас» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тастар",
+      "accept": [
+        "тастар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "тас",
+      "response": "Тастар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-көз",
+      "question": "Напишите казахское слово «көз» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көздің",
+      "accept": [
+        "көздің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "көз",
+      "response": "Көзімде",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Көзімде\n"
+    },
+    {
+      "id": "kk-acc-аспан",
+      "question": "Напишите казахское слово «аспан» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспанды",
+      "accept": [
+        "аспанды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "аспан",
+      "response": "Аспанды.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-шаң",
+      "question": "Напишите казахское слово «шаң» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңнан",
+      "accept": [
+        "шаңнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "шаң",
+      "response": "Шанында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-көл",
+      "question": "Напишите казахское слово «көл» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлге",
+      "accept": [
+        "көлге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "көл",
+      "response": "Жағасында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-сағат",
+      "question": "Напишите казахское слово «сағат» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағаттың",
+      "accept": [
+        "сағаттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сағат",
+      "response": "Сағатымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-сағат",
+      "question": "Напишите казахское слово «сағат» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағаттан",
+      "accept": [
+        "сағаттан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "сағат",
+      "response": "Сағаттан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-сабақ",
+      "question": "Напишите казахское слово «сабақ» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабақтар",
+      "accept": [
+        "сабақтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "сабақ",
+      "response": "Сабақтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-алма",
+      "question": "Напишите казахское слово «алма» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмада",
+      "accept": [
+        "алмада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "алма",
+      "response": "Алмада",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-адам",
+      "question": "Напишите казахское слово «адам» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "адамды",
+      "accept": [
+        "адамды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "адам",
+      "response": "Адамды.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-бас",
+      "question": "Добавьте к казахскому слову «бас» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "басы",
+      "accept": [
+        "басы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бас",
+      "response": "Басы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-күн",
+      "question": "Напишите казахское слово «күн» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күнмен",
+      "accept": [
+        "күнмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "күн",
+      "response": "Қунтарамен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-бет",
+      "question": "Напишите казахское слово «бет» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "беттен",
+      "accept": [
+        "беттен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бет",
+      "response": "Бетін",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Бетін\n"
+    },
+    {
+      "id": "kk-dat-кітап",
+      "question": "Напишите казахское слово «кітап» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітапқа",
+      "accept": [
+        "кітапқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кітап",
+      "response": "Китапқа",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-дәптер",
+      "question": "Напишите казахское слово «дәптер» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптерден",
+      "accept": [
+        "дәптерден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дәптер",
+      "response": "Дәптерден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ет",
+      "question": "Напишите казахское слово «ет» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "етте",
+      "accept": [
+        "етте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ет",
+      "response": "Етте.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жол",
+      "question": "Добавьте к казахскому слову «жол» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жолы",
+      "accept": [
+        "жолы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жол",
+      "response": "Оның жолы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-кеш",
+      "question": "Напишите казахское слово «кеш» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кештен",
+      "accept": [
+        "кештен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "кеш",
+      "response": "Кеше.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қар",
+      "question": "Напишите казахское слово «қар» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қарда",
+      "accept": [
+        "қарда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қар",
+      "response": "Қарында.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-шаң",
+      "question": "Напишите казахское слово «шаң» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңға",
+      "accept": [
+        "шаңға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "шаң",
+      "response": "Шанарада",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-жер",
+      "question": "Напишите казахское слово «жер» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жерді",
+      "accept": [
+        "жерді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жер",
+      "response": "Жерді.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-үй",
+      "question": "Напишите казахское слово «үй» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үймен",
+      "accept": [
+        "үймен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "үй",
+      "response": "Үймен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ет",
+      "question": "Добавьте к казахскому слову «ет» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "еті",
+      "accept": [
+        "еті"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ет",
+      "response": "Еті",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Еті\n"
+    },
+    {
+      "id": "kk-gen-ұл",
+      "question": "Напишите казахское слово «ұл» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлдың",
+      "accept": [
+        "ұлдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ұл",
+      "response": "Улыда.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-дос",
+      "question": "Напишите казахское слово «дос» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "досты",
+      "accept": [
+        "досты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дос",
+      "response": "Досым.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қала",
+      "question": "Напишите казахское слово «қала» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қалада",
+      "accept": [
+        "қалада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қала",
+      "response": "Қалада",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-көз",
+      "question": "Напишите казахское слово «көз» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көзді",
+      "accept": [
+        "көзді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "көз",
+      "response": "Көзім.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-қар",
+      "question": "Напишите казахское слово «қар» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қарға",
+      "accept": [
+        "қарға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қар",
+      "response": "Қарына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-ұл",
+      "question": "Напишите казахское слово «ұл» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлдар",
+      "accept": [
+        "ұлдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ұл",
+      "response": "Улдар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-гүл",
+      "question": "Напишите казахское слово «гүл» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "гүлдер",
+      "accept": [
+        "гүлдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "гүл",
+      "response": "Гүліктер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-қар",
+      "question": "Напишите казахское слово «қар» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қармен",
+      "accept": [
+        "қармен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қар",
+      "response": "Қармен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-күш",
+      "question": "Напишите казахское слово «күш» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күштер",
+      "accept": [
+        "күштер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "күш",
+      "response": "Күштері",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Күштері\n"
+    },
+    {
+      "id": "kk-poss3-жер",
+      "question": "Добавьте к казахскому слову «жер» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жері",
+      "accept": [
+        "жері"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жер",
+      "response": "Жерек",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қол",
+      "question": "Напишите казахское слово «қол» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қолда",
+      "accept": [
+        "қолда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қол",
+      "response": "Қолда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-кісі",
+      "question": "Напишите казахское слово «кісі» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісіге",
+      "accept": [
+        "кісіге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кісі",
+      "response": "Қисыға",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-сағат",
+      "question": "Добавьте к казахскому слову «сағат» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағаты",
+      "accept": [
+        "сағаты"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сағат",
+      "response": "Осынатының",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-тіс",
+      "question": "Напишите казахское слово «тіс» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тістен",
+      "accept": [
+        "тістен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "тіс",
+      "response": "Тістен.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жылқы",
+      "question": "Напишите казахское слово «жылқы» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жылқыны",
+      "accept": [
+        "жылқыны"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жылқы",
+      "response": "Жылқы.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-ел",
+      "question": "Напишите казахское слово «ел» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "елден",
+      "accept": [
+        "елден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ел",
+      "response": "Елден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-алма",
+      "question": "Напишите казахское слово «алма» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмадан",
+      "accept": [
+        "алмадан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "алма",
+      "response": "Алмас.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-кітап",
+      "question": "Напишите казахское слово «кітап» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітапта",
+      "accept": [
+        "кітапта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "кітап",
+      "response": "Кітапта.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-тас",
+      "question": "Напишите казахское слово «тас» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тасты",
+      "accept": [
+        "тасты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тас",
+      "response": "Тасты.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-жаз",
+      "question": "Напишите казахское слово «жаз» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаздың",
+      "accept": [
+        "жаздың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жаз",
+      "response": "Жазбен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-ай",
+      "question": "Напишите казахское слово «ай» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "айға",
+      "accept": [
+        "айға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ай",
+      "response": "Екеуге",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-ат",
+      "question": "Напишите казахское слово «ат» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "атпен",
+      "accept": [
+        "атпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ат",
+      "response": "Атпен",
+      "substring": true,
+      "judge": null,
+      "correct": true,
+      "raw_response": "Атпен\n"
+    },
+    {
+      "id": "kk-poss3-терезе",
+      "question": "Добавьте к казахскому слову «терезе» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "терезесі",
+      "accept": [
+        "терезесі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "терезе",
+      "response": "Терезінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-ай",
+      "question": "Напишите казахское слово «ай» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "айды",
+      "accept": [
+        "айды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ай",
+      "response": "Айды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-жұмыс",
+      "question": "Напишите казахское слово «жұмыс» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмыстан",
+      "accept": [
+        "жұмыстан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жұмыс",
+      "response": "Жұмыста.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-бас",
+      "question": "Напишите казахское слово «бас» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "басты",
+      "accept": [
+        "басты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бас",
+      "response": "Жумыс",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-сөз",
+      "question": "Добавьте к казахскому слову «сөз» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзі",
+      "accept": [
+        "сөзі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сөз",
+      "response": "Сөзіне",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-көл",
+      "question": "Напишите казахское слово «көл» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлді",
+      "accept": [
+        "көлді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "көл",
+      "response": "Жазу.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-аспан",
+      "question": "Напишите казахское слово «аспан» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспанға",
+      "accept": [
+        "аспанға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "аспан",
+      "response": "Әлемге",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-жаз",
+      "question": "Напишите казахское слово «жаз» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жазда",
+      "accept": [
+        "жазда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жаз",
+      "response": "Жазда.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жылқы",
+      "question": "Добавьте к казахскому слову «жылқы» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жылқысы",
+      "accept": [
+        "жылқысы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жылқы",
+      "response": "Жылқысы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-орамал",
+      "question": "Напишите казахское слово «орамал» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалда",
+      "accept": [
+        "орамалда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "орамал",
+      "response": "Орамалда.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-жер",
+      "question": "Напишите казахское слово «жер» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жерден",
+      "accept": [
+        "жерден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жер",
+      "response": "Жерден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қол",
+      "question": "Напишите казахское слово «қол» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қолды",
+      "accept": [
+        "қолды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қол",
+      "response": "Қолмен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-қол",
+      "question": "Напишите казахское слово «қол» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қолмен",
+      "accept": [
+        "қолмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қол",
+      "response": "Қолмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қар",
+      "question": "Напишите казахское слово «қар» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қардан",
+      "accept": [
+        "қардан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қар",
+      "response": "Қарындағы",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-гүл",
+      "question": "Напишите казахское слово «гүл» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "гүлге",
+      "accept": [
+        "гүлге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "гүл",
+      "response": "Гүлінə.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-адам",
+      "question": "Напишите казахское слово «адам» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "адамнан",
+      "accept": [
+        "адамнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "адам",
+      "response": "Адамнан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жұмыс",
+      "question": "Напишите казахское слово «жұмыс» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмысты",
+      "accept": [
+        "жұмысты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жұмыс",
+      "response": "Жұмыс.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-кітап",
+      "question": "Напишите казахское слово «кітап» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітаппен",
+      "accept": [
+        "кітаппен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кітап",
+      "response": "Кітаппен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-іс",
+      "question": "Напишите казахское слово «іс» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "іске",
+      "accept": [
+        "іске"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "іс",
+      "response": "Істің көзіне.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-тас",
+      "question": "Напишите казахское слово «тас» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тастың",
+      "accept": [
+        "тастың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "тас",
+      "response": "Тастарында.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-ағаш",
+      "question": "Напишите казахское слово «ағаш» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағаштан",
+      "accept": [
+        "ағаштан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ағаш",
+      "response": "Ағаштан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-сағат",
+      "question": "Напишите казахское слово «сағат» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағатқа",
+      "accept": [
+        "сағатқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "сағат",
+      "response": "Уақытына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-дос",
+      "question": "Добавьте к казахскому слову «дос» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "досы",
+      "accept": [
+        "досы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дос",
+      "response": "Досы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дала",
+      "question": "Напишите казахское слово «дала» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "даламен",
+      "accept": [
+        "даламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дала",
+      "response": "Даламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-кітап",
+      "question": "Напишите казахское слово «кітап» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітаптан",
+      "accept": [
+        "кітаптан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "кітап",
+      "response": "Кітаптан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-дала",
+      "question": "Напишите казахское слово «дала» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "даладан",
+      "accept": [
+        "даладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дала",
+      "response": "Далада",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-сөз",
+      "question": "Напишите казахское слово «сөз» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзбен",
+      "accept": [
+        "сөзбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "сөз",
+      "response": "Сөзбен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тау",
+      "question": "Напишите казахское слово «тау» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "таумен",
+      "accept": [
+        "таумен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тау",
+      "response": "Таумен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-түн",
+      "question": "Напишите казахское слово «түн» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түнде",
+      "accept": [
+        "түнде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "түн",
+      "response": "Түнде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сағат",
+      "question": "Напишите казахское слово «сағат» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағатта",
+      "accept": [
+        "сағатта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сағат",
+      "response": "Сағатта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-аспан",
+      "question": "Напишите казахское слово «аспан» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспанда",
+      "accept": [
+        "аспанда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "аспан",
+      "response": "Аспанда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-мектеп",
+      "question": "Напишите казахское слово «мектеп» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектепке",
+      "accept": [
+        "мектепке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "мектеп",
+      "response": "Мектепке",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-алма",
+      "question": "Добавьте к казахскому слову «алма» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмасы",
+      "accept": [
+        "алмасы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "алма",
+      "response": "Алматысы",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-күн",
+      "question": "Напишите казахское слово «күн» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күнді",
+      "accept": [
+        "күнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "күн",
+      "response": "Күннен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-кісі",
+      "question": "Напишите казахское слово «кісі» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісіде",
+      "accept": [
+        "кісіде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "кісі",
+      "response": "Кісіде.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-сөз",
+      "question": "Напишите казахское слово «сөз» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзге",
+      "accept": [
+        "сөзге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "сөз",
+      "response": "Сөзбен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-күш",
+      "question": "Напишите казахское слово «күш» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күшпен",
+      "accept": [
+        "күшпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "күш",
+      "response": "Күшпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-бала",
+      "question": "Напишите казахское слово «бала» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "баланы",
+      "accept": [
+        "баланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бала",
+      "response": "Баланы.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырға",
+      "accept": [
+        "жаңбырға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жаңбыр",
+      "response": "Жаңбырға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ай",
+      "question": "Добавьте к казахскому слову «ай» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "айы",
+      "accept": [
+        "айы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ай",
+      "response": "Айын",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тас",
+      "question": "Напишите казахское слово «тас» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "таспен",
+      "accept": [
+        "таспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тас",
+      "response": "Таспенің түрі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-бала",
+      "question": "Напишите казахское слово «бала» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "баланың",
+      "accept": [
+        "баланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бала",
+      "response": "Баласымен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-үй",
+      "question": "Напишите казахское слово «үй» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйде",
+      "accept": [
+        "үйде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "үй",
+      "response": "Үйде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-аспан",
+      "question": "Напишите казахское слово «аспан» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспанмен",
+      "accept": [
+        "аспанмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "аспан",
+      "response": "Аспанмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ел",
+      "question": "Добавьте к казахскому слову «ел» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "елі",
+      "accept": [
+        "елі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ел",
+      "response": "Елінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дос",
+      "question": "Напишите казахское слово «дос» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "доспен",
+      "accept": [
+        "доспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дос",
+      "response": "Досыммен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-сағат",
+      "question": "Напишите казахское слово «сағат» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сағатты",
+      "accept": [
+        "сағатты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сағат",
+      "response": "Сағат.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-гүл",
+      "question": "Напишите казахское слово «гүл» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "гүлде",
+      "accept": [
+        "гүлде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "гүл",
+      "response": "Гүлінөңде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-жаңбыр",
+      "question": "Добавьте к казахскому слову «жаңбыр» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбыры",
+      "accept": [
+        "жаңбыры"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жаңбыр",
+      "response": "Жаңыратын",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-көз",
+      "question": "Напишите казахское слово «көз» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көзге",
+      "accept": [
+        "көзге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "көз",
+      "response": "Кезге",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-іс",
+      "question": "Напишите казахское слово «іс» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "істе",
+      "accept": [
+        "істе"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "іс",
+      "response": "Істе.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-күн",
+      "question": "Напишите казахское слово «күн» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күнде",
+      "accept": [
+        "күнде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "күн",
+      "response": "Күнде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-аспан",
+      "question": "Напишите казахское слово «аспан» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспандар",
+      "accept": [
+        "аспандар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "аспан",
+      "response": "Аспандар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-сөз",
+      "question": "Напишите казахское слово «сөз» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөздің",
+      "accept": [
+        "сөздің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сөз",
+      "response": "Сөзде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-жылқы",
+      "question": "Напишите казахское слово «жылқы» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жылқыға",
+      "accept": [
+        "жылқыға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жылқы",
+      "response": "Жылқыға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-дәптер",
+      "question": "Напишите казахское слово «дәптер» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптерде",
+      "accept": [
+        "дәптерде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дәптер",
+      "response": "Дәптерде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қала",
+      "question": "Напишите казахское слово «қала» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қаланы",
+      "accept": [
+        "қаланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қала",
+      "response": "Қаламен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-кеш",
+      "question": "Напишите казахское слово «кеш» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кешті",
+      "accept": [
+        "кешті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "кеш",
+      "response": "Кеші.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-түн",
+      "question": "Добавьте к казахскому слову «түн» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түні",
+      "accept": [
+        "түні"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "түн",
+      "response": "Түніне",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-кісі",
+      "question": "Напишите казахское слово «кісі» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісіні",
+      "accept": [
+        "кісіні"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "кісі",
+      "response": "Кісіні.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-кісі",
+      "question": "Напишите казахское слово «кісі» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісімен",
+      "accept": [
+        "кісімен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кісі",
+      "response": "Кісімен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-жылқы",
+      "question": "Напишите казахское слово «жылқы» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жылқымен",
+      "accept": [
+        "жылқымен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жылқы",
+      "response": "Жылқымен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ұл",
+      "question": "Напишите казахское слово «ұл» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлдан",
+      "accept": [
+        "ұлдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ұл",
+      "response": "Ұлдан.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-кітап",
+      "question": "Напишите казахское слово «кітап» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітапты",
+      "accept": [
+        "кітапты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "кітап",
+      "response": "Кітап.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-алма",
+      "question": "Напишите казахское слово «алма» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмамен",
+      "accept": [
+        "алмамен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "алма",
+      "response": "Алмамен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-сабақ",
+      "question": "Напишите казахское слово «сабақ» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабақпен",
+      "accept": [
+        "сабақпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "сабақ",
+      "response": "Сабақпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-сабақ",
+      "question": "Напишите казахское слово «сабақ» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабақтан",
+      "accept": [
+        "сабақтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "сабақ",
+      "response": "Сабақтан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қала",
+      "question": "Напишите казахское слово «қала» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қаладан",
+      "accept": [
+        "қаладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қала",
+      "response": "Қалада.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-үй",
+      "question": "Напишите казахское слово «үй» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйді",
+      "accept": [
+        "үйді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "үй",
+      "response": "Үйім.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-жылқы",
+      "question": "Напишите казахское слово «жылқы» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жылқыда",
+      "accept": [
+        "жылқыда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жылқы",
+      "response": "Жылқыда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-тіс",
+      "question": "Напишите казахское слово «тіс» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тісте",
+      "accept": [
+        "тісте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тіс",
+      "response": "Тісте.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-мектеп",
+      "question": "Напишите казахское слово «мектеп» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектептен",
+      "accept": [
+        "мектептен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "мектеп",
+      "response": "Мектеп",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырлар",
+      "accept": [
+        "жаңбырлар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаңбыр",
+      "response": "Жаңырлар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-терезе",
+      "question": "Напишите казахское слово «терезе» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "терезеде",
+      "accept": [
+        "терезеде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "терезе",
+      "response": "Терезде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-қар",
+      "question": "Напишите казахское слово «қар» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қарды",
+      "accept": [
+        "қарды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қар",
+      "response": "Қар.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-жер",
+      "question": "Напишите казахское слово «жер» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жерде",
+      "accept": [
+        "жерде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жер",
+      "response": "Жерде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-бет",
+      "question": "Напишите казахское слово «бет» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бетке",
+      "accept": [
+        "бетке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "бет",
+      "response": "Жанымға.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-кеш",
+      "question": "Добавьте к казахскому слову «кеш» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кеші",
+      "accept": [
+        "кеші"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "кеш",
+      "response": "Кешінде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-әже",
+      "question": "Напишите казахское слово «әже» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әжеден",
+      "accept": [
+        "әжеден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "әже",
+      "response": "Әзەден",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-жұмыс",
+      "question": "Напишите казахское слово «жұмыс» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмыспен",
+      "accept": [
+        "жұмыспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жұмыс",
+      "response": "Жұмыспен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-мектеп",
+      "question": "Добавьте к казахскому слову «мектеп» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектебі",
+      "accept": [
+        "мектебі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "мектеп",
+      "response": "Мектепке",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-адам",
+      "question": "Добавьте к казахскому слову «адам» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "адамы",
+      "accept": [
+        "адамы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "адам",
+      "response": "Адамның",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-балық",
+      "question": "Напишите казахское слово «балық» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балыққа",
+      "accept": [
+        "балыққа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "балық",
+      "response": "Суырынына",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-тіс",
+      "question": "Напишите казахское слово «тіс» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тістер",
+      "accept": [
+        "тістер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "тіс",
+      "response": "Тістер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-орамал",
+      "question": "Напишите казахское слово «орамал» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалдың",
+      "accept": [
+        "орамалдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "орамал",
+      "response": "Орамалымен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-мектеп",
+      "question": "Напишите казахское слово «мектеп» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектептің",
+      "accept": [
+        "мектептің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "мектеп",
+      "response": "Мектептерде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-ат",
+      "question": "Напишите казахское слово «ат» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "атта",
+      "accept": [
+        "атта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ат",
+      "response": "Атта.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сөз",
+      "question": "Напишите казахское слово «сөз» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзде",
+      "accept": [
+        "сөзде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сөз",
+      "response": "Сөзбен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-acc-жол",
+      "question": "Напишите казахское слово «жол» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жолды",
+      "accept": [
+        "жолды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жол",
+      "response": "Жолмен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-аспан",
+      "question": "Напишите казахское слово «аспан» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "аспанның",
+      "accept": [
+        "аспанның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "аспан",
+      "response": "Жарайды.\n\nЖыргын.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-әже",
+      "question": "Напишите казахское слово «әже» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әженің",
+      "accept": [
+        "әженің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "әже",
+      "response": "Әкемізде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-бала",
+      "question": "Напишите казахское слово «бала» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "балада",
+      "accept": [
+        "балада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "бала",
+      "response": "Балада.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-адам",
+      "question": "Напишите казахское слово «адам» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "адамның",
+      "accept": [
+        "адамның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "адам",
+      "response": "Адаммен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-бас",
+      "question": "Напишите казахское слово «бас» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "басқа",
+      "accept": [
+        "басқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "бас",
+      "response": "Жұмысқа",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-бас",
+      "question": "Напишите казахское слово «бас» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бастар",
+      "accept": [
+        "бастар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "бас",
+      "response": "Бұлақтар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-әже",
+      "question": "Напишите казахское слово «әже» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әжеде",
+      "accept": [
+        "әжеде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "әже",
+      "response": "Әдәмде",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-бет",
+      "question": "Добавьте к казахскому слову «бет» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "беті",
+      "accept": [
+        "беті"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бет",
+      "response": "Бәтінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-ел",
+      "question": "Напишите казахское слово «ел» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "елдер",
+      "accept": [
+        "елдер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ел",
+      "response": "Елдер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қыз",
+      "question": "Напишите казахское слово «қыз» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қызды",
+      "accept": [
+        "қызды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қыз",
+      "response": "Қызды.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-үй",
+      "question": "Напишите казахское слово «үй» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйлер",
+      "accept": [
+        "үйлер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "үй",
+      "response": "Үйдер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-көл",
+      "question": "Напишите казахское слово «көл» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "көлмен",
+      "accept": [
+        "көлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "көл",
+      "response": "Көлмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-бет",
+      "question": "Напишите казахское слово «бет» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "бетте",
+      "accept": [
+        "бетте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "бет",
+      "response": "Жөнде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-сабақ",
+      "question": "Добавьте к казахскому слову «сабақ» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабағы",
+      "accept": [
+        "сабағы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сабақ",
+      "response": "Сабағы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-түн",
+      "question": "Напишите казахское слово «түн» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түннен",
+      "accept": [
+        "түннен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "түн",
+      "response": "Түннен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-тау",
+      "question": "Напишите казахское слово «тау» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тауда",
+      "accept": [
+        "тауда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тау",
+      "response": "Тауда.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-мектеп",
+      "question": "Напишите казахское слово «мектеп» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектепте",
+      "accept": [
+        "мектепте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "мектеп",
+      "response": "Мектеп.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-ет",
+      "question": "Напишите казахское слово «ет» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "етпен",
+      "accept": [
+        "етпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ет",
+      "response": "Етпеніңдә.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-тау",
+      "question": "Напишите казахское слово «тау» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "таулар",
+      "accept": [
+        "таулар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "тау",
+      "response": "Таулар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырдың",
+      "accept": [
+        "жаңбырдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жаңбыр",
+      "response": "Жаңбырда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-шаң",
+      "question": "Напишите казахское слово «шаң» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңда",
+      "accept": [
+        "шаңда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "шаң",
+      "response": "Шанында",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-қалам",
+      "question": "Напишите казахское слово «қалам» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қаламмен",
+      "accept": [
+        "қаламмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қалам",
+      "response": "Қаламмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырдан",
+      "accept": [
+        "жаңбырдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жаңбыр",
+      "response": "Жаңбырдан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-ел",
+      "question": "Напишите казахское слово «ел» в родительном падеже (кого? чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "елдің",
+      "accept": [
+        "елдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ел",
+      "response": "Елінде.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-күш",
+      "question": "Напишите казахское слово «күш» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күшке",
+      "accept": [
+        "күшке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "күш",
+      "response": "Қуайда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-терезе",
+      "question": "Напишите казахское слово «терезе» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тереземен",
+      "accept": [
+        "тереземен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "терезе",
+      "response": "Тереземен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-сөз",
+      "question": "Напишите казахское слово «сөз» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзді",
+      "accept": [
+        "сөзді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сөз",
+      "response": "Сөз",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Сөз\n"
+    },
+    {
+      "id": "kk-acc-мектеп",
+      "question": "Напишите казахское слово «мектеп» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектепті",
+      "accept": [
+        "мектепті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "мектеп",
+      "response": "Мектепті.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырмен",
+      "accept": [
+        "жаңбырмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жаңбыр",
+      "response": "Жаңбырмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-әже",
+      "question": "Напишите казахское слово «әже» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "әжелер",
+      "accept": [
+        "әжелер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "әже",
+      "response": "Әжелер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-алма",
+      "question": "Напишите казахское слово «алма» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алмаға",
+      "accept": [
+        "алмаға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "алма",
+      "response": "Алмаға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дәптер",
+      "question": "Напишите казахское слово «дәптер» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "дәптермен",
+      "accept": [
+        "дәптермен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дәптер",
+      "response": "Дәптермен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-кісі",
+      "question": "Напишите казахское слово «кісі» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кісілер",
+      "accept": [
+        "кісілер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "кісі",
+      "response": "Кişілер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-дала",
+      "question": "Напишите казахское слово «дала» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "далаға",
+      "accept": [
+        "далаға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дала",
+      "response": "Далаға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-жол",
+      "question": "Напишите казахское слово «жол» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жолмен",
+      "accept": [
+        "жолмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жол",
+      "response": "Жолмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-шаң",
+      "question": "Напишите казахское слово «шаң» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "шаңмен",
+      "accept": [
+        "шаңмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "шаң",
+      "response": "Шаңмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сабақ",
+      "question": "Напишите казахское слово «сабақ» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сабақта",
+      "accept": [
+        "сабақта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сабақ",
+      "response": "Сабақта.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-түн",
+      "question": "Напишите казахское слово «түн» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түнді",
+      "accept": [
+        "түнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "түн",
+      "response": "Түннен.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-ағаш",
+      "question": "Напишите казахское слово «ағаш» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағаштар",
+      "accept": [
+        "ағаштар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ағаш",
+      "response": "Ағаштар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-кеш",
+      "question": "Напишите казахское слово «кеш» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кешпен",
+      "accept": [
+        "кешпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "кеш",
+      "response": "Кешенімен",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-қасық",
+      "question": "Напишите казахское слово «қасық» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қасықтан",
+      "accept": [
+        "қасықтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қасық",
+      "response": "Қасықтан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ағаш",
+      "question": "Добавьте к казахскому слову «ағаш» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағашы",
+      "accept": [
+        "ағашы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ағаш",
+      "response": "Ағашы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-түн",
+      "question": "Напишите казахское слово «түн» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түнге",
+      "accept": [
+        "түнге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "түн",
+      "response": "Түнге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-тау",
+      "question": "Напишите казахское слово «тау» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тауды",
+      "accept": [
+        "тауды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тау",
+      "response": "Тауды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-түн",
+      "question": "Напишите казахское слово «түн» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "түндер",
+      "accept": [
+        "түндер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "түн",
+      "response": "Түндер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жаңбыр",
+      "question": "Напишите казахское слово «жаңбыр» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаңбырды",
+      "accept": [
+        "жаңбырды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаңбыр",
+      "response": "Жаңбырда.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-ұл",
+      "question": "Напишите казахское слово «ұл» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ұлмен",
+      "accept": [
+        "ұлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ұл",
+      "response": "Улмен",
+      "substring": false,
+      "judge": null,
+      "correct": false,
+      "raw_response": "Улмен\n"
+    },
+    {
+      "id": "kk-loc-дала",
+      "question": "Напишите казахское слово «дала» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "далада",
+      "accept": [
+        "далада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дала",
+      "response": "Далада",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ағаш",
+      "question": "Напишите казахское слово «ағаш» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "ағашқа",
+      "accept": [
+        "ағашқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ағаш",
+      "response": "Эшкадамда.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-dat-жаз",
+      "question": "Напишите казахское слово «жаз» в дательном падеже (кому? куда?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жазға",
+      "accept": [
+        "жазға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жаз",
+      "response": "Жазқа",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-мектеп",
+      "question": "Напишите казахское слово «мектеп» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "мектеппен",
+      "accept": [
+        "мектеппен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "мектеп",
+      "response": "Мектеппен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-қалам",
+      "question": "Напишите казахское слово «қалам» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қаламда",
+      "accept": [
+        "қаламда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қалам",
+      "response": "Қаламда.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-кітап",
+      "question": "Напишите казахское слово «кітап» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "кітаптар",
+      "accept": [
+        "кітаптар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "кітап",
+      "response": "Кітаптар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-алма",
+      "question": "Напишите казахское слово «алма» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "алманы",
+      "accept": [
+        "алманы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "алма",
+      "response": "Алтын.",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-үй",
+      "question": "Добавьте к казахскому слову «үй» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "үйі",
+      "accept": [
+        "үйі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "үй",
+      "response": "Екінің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-plural-жаз",
+      "question": "Напишите казахское слово «жаз» во множественном числе. Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жаздар",
+      "accept": [
+        "жаздар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаз",
+      "response": "Жаздер",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-ins-орамал",
+      "question": "Напишите казахское слово «орамал» в творительном падеже (с кем? с чем?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "орамалмен",
+      "accept": [
+        "орамалмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "орамал",
+      "response": "Орамалымда",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-loc-қыз",
+      "question": "Напишите казахское слово «қыз» в местном падеже (где? в чём?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қызда",
+      "accept": [
+        "қызда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "қыз",
+      "response": "Қыздақта.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қыз",
+      "question": "Добавьте к казахскому слову «қыз» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "қызы",
+      "accept": [
+        "қызы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қыз",
+      "response": "Қизының",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-дала",
+      "question": "Добавьте к казахскому слову «дала» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "даласы",
+      "accept": [
+        "даласы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дала",
+      "response": "Далыннан",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-күш",
+      "question": "Напишите казахское слово «күш» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "күштен",
+      "accept": [
+        "күштен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "күш",
+      "response": "Күштен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жұмыс",
+      "question": "Добавьте к казахскому слову «жұмыс» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "жұмысы",
+      "accept": [
+        "жұмысы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жұмыс",
+      "response": "Жұмысының",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-дала",
+      "question": "Напишите казахское слово «дала» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "даланы",
+      "accept": [
+        "даланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дала",
+      "response": "Даланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-тау",
+      "question": "Добавьте к казахскому слову «тау» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "тауы",
+      "accept": [
+        "тауы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тау",
+      "response": "Тайыны",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-abl-сөз",
+      "question": "Напишите казахское слово «сөз» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "сөзден",
+      "accept": [
+        "сөзден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "сөз",
+      "response": "Сөзден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ай",
+      "question": "Напишите казахское слово «ай» в исходном падеже (откуда? от чего?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "айдан",
+      "accept": [
+        "айдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ай",
+      "response": "Айдан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-ел",
+      "question": "Напишите казахское слово «ел» в винительном падеже (кого? что?). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "елді",
+      "accept": [
+        "елді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ел",
+      "response": "Елді.",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-бала",
+      "question": "Добавьте к казахскому слову «бала» притяжательный аффикс 3-го лица (его/её). Ответьте одним словом на казахском языке, без пояснений.",
+      "answer": "баласы",
+      "accept": [
+        "баласы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бала",
+      "response": "Баласы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}

@@ -66,7 +66,9 @@ only the language of the instruction. Small models prove limited by instruction
 comprehension rather than morphological knowledge. That English performs on par
 with Russian rules out an explanation grounded in Kazakhstan's bilingual
 situation: the effect is instruction comprehension in general, not transfer from
-a contact language. Underneath that parity, however, the choice of instruction
+a contact language. A single in-context example recovers most of the deficit and five
+eliminate it, showing that the knowledge was present and the instruction
+could not reach it (Section 5.7). Underneath that parity, however, the choice of instruction
 language shifts individual categories by 20-30 points in opposite directions,
 which we discuss in Section 6. The morphology is largely present in models that
 appear, when addressed in Kazakh, not to have it.

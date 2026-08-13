@@ -1,0 +1,9 @@
+{
+  "model": "gemini-2.5-flash",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": null,
+  "complete": false,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": []
+}

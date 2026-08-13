@@ -1,0 +1,2260 @@
+{
+  "model": "gemma-4-31b-it",
+  "grader": "substring",
+  "grader_key": "correct",
+  "score": 0.9866666666666667,
+  "complete": true,
+  "system_prompt": "Сен қазақ тілінде жауап беретін көмекшісің. Сұраққа қысқа әрі нақты жауап бер. Артық түсіндірме жазба.",
+  "records": [
+    {
+      "id": "kk-plural-мектеп",
+      "question": "«мектеп» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектептер",
+      "accept": [
+        "мектептер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "мектеп",
+      "response": "Мектептер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жұмыс",
+      "question": "«жұмыс» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жұмысты",
+      "accept": [
+        "жұмысты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жұмыс",
+      "response": "жұмысты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қасық",
+      "question": "«қасық» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықтар",
+      "accept": [
+        "қасықтар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қасық",
+      "response": "қасықтар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-шаң",
+      "question": "«шаң» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "шаңның",
+      "accept": [
+        "шаңның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "шаң",
+      "response": "Шаңның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-көл",
+      "question": "«көл» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көлмен",
+      "accept": [
+        "көлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "көл",
+      "response": "көлмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тау",
+      "question": "«тау» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таумен",
+      "accept": [
+        "таумен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тау",
+      "response": "Таумен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қала",
+      "question": "«қала» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаланы",
+      "accept": [
+        "қаланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қала",
+      "response": "қаланы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-әже",
+      "question": "«әже» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "әжеде",
+      "accept": [
+        "әжеде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "әже",
+      "response": "Әжеде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-адам",
+      "question": "«адам» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "адамға",
+      "accept": [
+        "адамға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "адам",
+      "response": "адамға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-түн",
+      "question": "«түн» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түннің",
+      "accept": [
+        "түннің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "түн",
+      "response": "түннің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-аспан",
+      "question": "«аспан» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспанға",
+      "accept": [
+        "аспанға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "аспан",
+      "response": "аспанға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ел",
+      "question": "«ел» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "елі",
+      "accept": [
+        "елі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ел",
+      "response": "елі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-дос",
+      "question": "«дос» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "достар",
+      "accept": [
+        "достар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "дос",
+      "response": "Достар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қалам",
+      "question": "«қалам» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаламы",
+      "accept": [
+        "қаламы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қалам",
+      "response": "қаламы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-ат",
+      "question": "«ат» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аттар",
+      "accept": [
+        "аттар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ат",
+      "response": "Аттар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қасық",
+      "question": "«қасық» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықты",
+      "accept": [
+        "қасықты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қасық",
+      "response": "қасықты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-мектеп",
+      "question": "«мектеп» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектепке",
+      "accept": [
+        "мектепке"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "мектеп",
+      "response": "мектепке",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-түн",
+      "question": "«түн» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түндер",
+      "accept": [
+        "түндер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "түн",
+      "response": "түндер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-дос",
+      "question": "«дос» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "досы",
+      "accept": [
+        "досы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "дос",
+      "response": "досы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-сабақ",
+      "question": "«сабақ» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сабағы",
+      "accept": [
+        "сабағы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сабақ",
+      "response": "сабағы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-бас",
+      "question": "«бас» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "басы",
+      "accept": [
+        "басы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "бас",
+      "response": "басы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-гүл",
+      "question": "«гүл» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлмен",
+      "accept": [
+        "гүлмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "гүл",
+      "response": "гүлмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жер",
+      "question": "«жер» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жерді",
+      "accept": [
+        "жерді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жер",
+      "response": "Жерді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-тас",
+      "question": "«тас» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тасы",
+      "accept": [
+        "тасы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тас",
+      "response": "тасы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-күн",
+      "question": "«күн» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күні",
+      "accept": [
+        "күні"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "күн",
+      "response": "күні",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ат",
+      "question": "«ат» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "атқа",
+      "accept": [
+        "атқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ат",
+      "response": "атқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-бет",
+      "question": "«бет» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "бетті",
+      "accept": [
+        "бетті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бет",
+      "response": "Бетті",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-әже",
+      "question": "«әже» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "әженің",
+      "accept": [
+        "әженің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "әже",
+      "response": "әженің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-сабақ",
+      "question": "«сабақ» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сабақты",
+      "accept": [
+        "сабақты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сабақ",
+      "response": "сабақты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-сағат",
+      "question": "«сағат» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сағатты",
+      "accept": [
+        "сағатты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "сағат",
+      "response": "Сағатты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сағат",
+      "question": "«сағат» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сағатта",
+      "accept": [
+        "сағатта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сағат",
+      "response": "сағатта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-көл",
+      "question": "«көл» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көлден",
+      "accept": [
+        "көлден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "көл",
+      "response": "көлден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-үй",
+      "question": "«үй» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "үйдің",
+      "accept": [
+        "үйдің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "үй",
+      "response": "үйдің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-бет",
+      "question": "«бет» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "бетпен",
+      "accept": [
+        "бетпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "бет",
+      "response": "бетпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-орамал",
+      "question": "«орамал» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "орамалды",
+      "accept": [
+        "орамалды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "орамал",
+      "response": "Орамалды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-тау",
+      "question": "«тау» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таудан",
+      "accept": [
+        "таудан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "тау",
+      "response": "Таудан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-кеш",
+      "question": "«кеш» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кештің",
+      "accept": [
+        "кештің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кеш",
+      "response": "Кештің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-жаз",
+      "question": "«жаз» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жазда",
+      "accept": [
+        "жазда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жаз",
+      "response": "Жазда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-жаз",
+      "question": "«жаз» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жазы",
+      "accept": [
+        "жазы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "жаз",
+      "response": "жазы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-іс",
+      "question": "«іс» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "істе",
+      "accept": [
+        "істе"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "іс",
+      "response": "істе",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-бала",
+      "question": "«бала» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "баладан",
+      "accept": [
+        "баладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "бала",
+      "response": "Баладан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-жаз",
+      "question": "«жаз» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаздар",
+      "accept": [
+        "жаздар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаз",
+      "response": "Жаздар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-үй",
+      "question": "«үй» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "үйге",
+      "accept": [
+        "үйге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "үй",
+      "response": "үйге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-ат",
+      "question": "«ат» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аттың",
+      "accept": [
+        "аттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "ат",
+      "response": "аттың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-дос",
+      "question": "«дос» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "достың",
+      "accept": [
+        "достың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "дос",
+      "response": "Достың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-сабақ",
+      "question": "«сабақ» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сабақтың",
+      "accept": [
+        "сабақтың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сабақ",
+      "response": "сабақтың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-аспан",
+      "question": "«аспан» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспанмен",
+      "accept": [
+        "аспанмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "аспан",
+      "response": "аспанмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-ел",
+      "question": "«ел» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "елмен",
+      "accept": [
+        "елмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ел",
+      "response": "елмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-күш",
+      "question": "«күш» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күштің",
+      "accept": [
+        "күштің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "күш",
+      "response": "күштің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-іс",
+      "question": "«іс» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "істі",
+      "accept": [
+        "істі"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "іс",
+      "response": "істі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қалам",
+      "question": "«қалам» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаламнан",
+      "accept": [
+        "қаламнан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қалам",
+      "response": "қаламнан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-кітап",
+      "question": "«кітап» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кітабы",
+      "accept": [
+        "кітабы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "кітап",
+      "response": "кітабы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-бала",
+      "question": "«бала» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "балада",
+      "accept": [
+        "балада"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "бала",
+      "response": "балада",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қол",
+      "question": "«қол» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолдар",
+      "accept": [
+        "қолдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қол",
+      "response": "Қолдар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-түн",
+      "question": "«түн» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түнді",
+      "accept": [
+        "түнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "түн",
+      "response": "түнді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қасық",
+      "question": "«қасық» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықтан",
+      "accept": [
+        "қасықтан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қасық",
+      "response": "қасықтан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-іс",
+      "question": "«іс» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "істер",
+      "accept": [
+        "істер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "іс",
+      "response": "істер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-іс",
+      "question": "«іс» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "істен",
+      "accept": [
+        "істен"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "іс",
+      "response": "істен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-сөз",
+      "question": "«сөз» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сөзбен",
+      "accept": [
+        "сөзбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "сөз",
+      "response": "сөзбен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-аспан",
+      "question": "«аспан» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспаны",
+      "accept": [
+        "аспаны"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "аспан",
+      "response": "аспаны",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қасық",
+      "question": "«қасық» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қасықпен",
+      "accept": [
+        "қасықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қасық",
+      "response": "қасықпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-қол",
+      "question": "«қол» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолға",
+      "accept": [
+        "қолға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "қол",
+      "response": "қолға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-бас",
+      "question": "«бас» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "бастың",
+      "accept": [
+        "бастың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бас",
+      "response": "Бастың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жаңбыр",
+      "question": "«жаңбыр» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаңбырды",
+      "accept": [
+        "жаңбырды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаңбыр",
+      "response": "Жаңбырды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-әже",
+      "question": "«әже» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "әжесі",
+      "accept": [
+        "әжесі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "әже",
+      "response": "әжесі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-мектеп",
+      "question": "«мектеп» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектепте",
+      "accept": [
+        "мектепте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "мектеп",
+      "response": "Мектепте",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-ағаш",
+      "question": "«ағаш» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ағашты",
+      "accept": [
+        "ағашты"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ағаш",
+      "response": "Ағашты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-дала",
+      "question": "«дала» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "далалар",
+      "accept": [
+        "далалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "дала",
+      "response": "Далалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-түн",
+      "question": "«түн» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түні",
+      "accept": [
+        "түні"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "түн",
+      "response": "түні",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ұл",
+      "question": "«ұл» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ұлға",
+      "accept": [
+        "ұлға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ұл",
+      "response": "Ұлға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ағаш",
+      "question": "«ағаш» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ағашта",
+      "accept": [
+        "ағашта"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ағаш",
+      "response": "ағашта",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-жылқы",
+      "question": "«жылқы» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жылқыда",
+      "accept": [
+        "жылқыда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жылқы",
+      "response": "жылқыда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-жол",
+      "question": "«жол» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жолда",
+      "accept": [
+        "жолда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жол",
+      "response": "жолда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-күш",
+      "question": "«күш» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күште",
+      "accept": [
+        "күште"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "күш",
+      "response": "күште",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-қала",
+      "question": "«қала» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қалалар",
+      "accept": [
+        "қалалар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "қала",
+      "response": "қалалар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-кісі",
+      "question": "«кісі» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кісіге",
+      "accept": [
+        "кісіге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "кісі",
+      "response": "кісіге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-қол",
+      "question": "«қол» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолдан",
+      "accept": [
+        "қолдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "қол",
+      "response": "қолдан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-балық",
+      "question": "«балық» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "балықпен",
+      "accept": [
+        "балықпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "балық",
+      "response": "балықпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-дос",
+      "question": "«дос» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "доспен",
+      "accept": [
+        "доспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "дос",
+      "response": "Доспен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-іс",
+      "question": "«іс» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "іске",
+      "accept": [
+        "іске"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "іс",
+      "response": "іске",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-мектеп",
+      "question": "«мектеп» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "мектеппен",
+      "accept": [
+        "мектеппен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "мектеп",
+      "response": "мектеппен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-дәптер",
+      "question": "«дәптер» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "дәптерді",
+      "accept": [
+        "дәптерді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "дәптер",
+      "response": "дәптерді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-тас",
+      "question": "«тас» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таспен",
+      "accept": [
+        "таспен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "тас",
+      "response": "Таспен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-гүл",
+      "question": "«гүл» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлді",
+      "accept": [
+        "гүлді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "гүл",
+      "response": "гүлді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-тіс",
+      "question": "«тіс» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тісті",
+      "accept": [
+        "тісті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "тіс",
+      "response": "тісті",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-терезе",
+      "question": "«терезе» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "терезеде",
+      "accept": [
+        "терезеде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "терезе",
+      "response": "терезеде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-аспан",
+      "question": "«аспан» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспанның",
+      "accept": [
+        "аспанның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "аспан",
+      "response": "Аспанның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-тіс",
+      "question": "«тіс» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тісі",
+      "accept": [
+        "тісі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "тіс",
+      "response": "тісі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-адам",
+      "question": "«адам» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "адамдар",
+      "accept": [
+        "адамдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "адам",
+      "response": "Адамдар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-жаңбыр",
+      "question": "«жаңбыр» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаңбырлар",
+      "accept": [
+        "жаңбырлар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "жаңбыр",
+      "response": "Жаңбырлар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-қар",
+      "question": "«қар» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қарды",
+      "accept": [
+        "қарды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "қар",
+      "response": "қарды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ел",
+      "question": "«ел» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "елде",
+      "accept": [
+        "елде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ел",
+      "response": "Елде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-терезе",
+      "question": "«терезе» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тереземен",
+      "accept": [
+        "тереземен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "терезе",
+      "response": "тереземен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-қол",
+      "question": "«қол» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолы",
+      "accept": [
+        "қолы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "қол",
+      "response": "қолы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-кісі",
+      "question": "«кісі» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кісіден",
+      "accept": [
+        "кісіден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "кісі",
+      "response": "кісіден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-кітап",
+      "question": "«кітап» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кітаптың",
+      "accept": [
+        "кітаптың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кітап",
+      "response": "кітаптың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-көз",
+      "question": "«көз» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көзде",
+      "accept": [
+        "көзде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "көз",
+      "response": "Көзде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ел",
+      "question": "«ел» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "елден",
+      "accept": [
+        "елден"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ел",
+      "response": "Елден",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ағаш",
+      "question": "«ағаш» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ағаштан",
+      "accept": [
+        "ағаштан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ағаш",
+      "response": "Ағаштан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-дәптер",
+      "question": "«дәптер» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "дәптерде",
+      "accept": [
+        "дәптерде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "дәптер",
+      "response": "дәптерде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-қыз",
+      "question": "«қыз» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қыздың",
+      "accept": [
+        "қыздың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қыз",
+      "response": "қыздың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-орамал",
+      "question": "«орамал» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "орамалдар",
+      "accept": [
+        "орамалдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "орамал",
+      "response": "Орамалдар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-ай",
+      "question": "«ай» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "айға",
+      "accept": [
+        "айға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "ай",
+      "response": "Айға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-шаң",
+      "question": "«шаң» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "шаңда",
+      "accept": [
+        "шаңда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "шаң",
+      "response": "шаңда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-ет",
+      "question": "«ет» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "етті",
+      "accept": [
+        "етті"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "ет",
+      "response": "Етті",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-жаңбыр",
+      "question": "«жаңбыр» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаңбырдан",
+      "accept": [
+        "жаңбырдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "жаңбыр",
+      "response": "жаңбырдан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-ай",
+      "question": "«ай» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "айдан",
+      "accept": [
+        "айдан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "ай",
+      "response": "айдан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-күн",
+      "question": "«күн» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "күнді",
+      "accept": [
+        "күнді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "күн",
+      "response": "күнді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-жаз",
+      "question": "«жаз» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жазбен",
+      "accept": [
+        "жазбен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "жаз",
+      "response": "Жазбен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-бала",
+      "question": "«бала» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "баланы",
+      "accept": [
+        "баланы"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "бала",
+      "response": "баланы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-жол",
+      "question": "«жол» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жолға",
+      "accept": [
+        "жолға"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жол",
+      "response": "жолға",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-ұл",
+      "question": "«ұл» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "ұлдар",
+      "accept": [
+        "ұлдар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ұл",
+      "response": "Олар",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-gen-жер",
+      "question": "«жер» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жердің",
+      "accept": [
+        "жердің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жер",
+      "response": "жердің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-тас",
+      "question": "«тас» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тастан",
+      "accept": [
+        "тастан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "тас",
+      "response": "Тастан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-көз",
+      "question": "«көз» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көзі",
+      "accept": [
+        "көзі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "көз",
+      "response": "көзі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-кісі",
+      "question": "«кісі» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "кісінің",
+      "accept": [
+        "кісінің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "кісі",
+      "response": "кісінің",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-көл",
+      "question": "«көл» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "көлде",
+      "accept": [
+        "көлде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "көл",
+      "response": "Көлде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-үй",
+      "question": "«үй» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "үйді",
+      "accept": [
+        "үйді"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "үй",
+      "response": "үйді",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-аспан",
+      "question": "«аспан» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспанда",
+      "accept": [
+        "аспанда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "аспан",
+      "response": "Аспанда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-гүл",
+      "question": "«гүл» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлде",
+      "accept": [
+        "гүлде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "гүл",
+      "response": "гүлде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-қар",
+      "question": "«қар» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қардың",
+      "accept": [
+        "қардың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қар",
+      "response": "қардың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-бас",
+      "question": "«бас» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "басқа",
+      "accept": [
+        "басқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "бас",
+      "response": "басқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қала",
+      "question": "«қала» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаламен",
+      "accept": [
+        "қаламен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қала",
+      "response": "қаламен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-сағат",
+      "question": "«сағат» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сағаты",
+      "accept": [
+        "сағаты"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "сағат",
+      "response": "сағаты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-тас",
+      "question": "«тас» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тасқа",
+      "accept": [
+        "тасқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "тас",
+      "response": "Тасқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-ет",
+      "question": "«ет» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "еттер",
+      "accept": [
+        "еттер"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "ет",
+      "response": "Еттер",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-аспан",
+      "question": "«аспан» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аспаннан",
+      "accept": [
+        "аспаннан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "аспан",
+      "response": "Аспаннан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-тау",
+      "question": "«тау» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "тауда",
+      "accept": [
+        "тауда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "тау",
+      "response": "Тауда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-гүл",
+      "question": "«гүл» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлге",
+      "accept": [
+        "гүлге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "гүл",
+      "response": "гүлге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-сөз",
+      "question": "«сөз» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сөзде",
+      "accept": [
+        "сөзде"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "сөз",
+      "response": "Сөзде",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-жол",
+      "question": "«жол» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жолдың",
+      "accept": [
+        "жолдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "жол",
+      "response": "жолдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-қол",
+      "question": "«қол» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолмен",
+      "accept": [
+        "қолмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "қол",
+      "response": "қолмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-ат",
+      "question": "«ат» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "аты",
+      "accept": [
+        "аты"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "ат",
+      "response": "аты",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-сөз",
+      "question": "«сөз» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сөздің",
+      "accept": [
+        "сөздің"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сөз",
+      "response": "сөзнің",
+      "substring": false,
+      "judge": null,
+      "correct": false
+    },
+    {
+      "id": "kk-poss3-шаң",
+      "question": "«шаң» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "шаңы",
+      "accept": [
+        "шаңы"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "шаң",
+      "response": "шаңы",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-poss3-гүл",
+      "question": "«гүл» сөзіне ІІІ жақтағы тәуелдік жалғауын жалғаңыз (оның ...). Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "гүлі",
+      "accept": [
+        "гүлі"
+      ],
+      "type": "poss3",
+      "category": "poss3",
+      "stem": "гүл",
+      "response": "гүлі",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-әже",
+      "question": "«әже» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "әжеге",
+      "accept": [
+        "әжеге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "әже",
+      "response": "әжеге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-ат",
+      "question": "«ат» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "атпен",
+      "accept": [
+        "атпен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "ат",
+      "response": "атпен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-жұмыс",
+      "question": "«жұмыс» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жұмысқа",
+      "accept": [
+        "жұмысқа"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "жұмыс",
+      "response": "жұмысқа",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-қалам",
+      "question": "«қалам» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қаламның",
+      "accept": [
+        "қаламның"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қалам",
+      "response": "қаламның",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-dat-дәптер",
+      "question": "«дәптер» сөзін барыс септігінде (кімге? неге?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "дәптерге",
+      "accept": [
+        "дәптерге"
+      ],
+      "type": "dat",
+      "category": "dat",
+      "stem": "дәптер",
+      "response": "дәптерге",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-plural-тау",
+      "question": "«тау» сөзінің көпше түрін жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "таулар",
+      "accept": [
+        "таулар"
+      ],
+      "type": "plural",
+      "category": "plural",
+      "stem": "тау",
+      "response": "Таулар",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-ет",
+      "question": "«ет» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "етте",
+      "accept": [
+        "етте"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "ет",
+      "response": "етте",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-abl-дала",
+      "question": "«дала» сөзін шығыс септігінде (кімнен? неден?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "даладан",
+      "accept": [
+        "даладан"
+      ],
+      "type": "abl",
+      "category": "abl",
+      "stem": "дала",
+      "response": "даладан",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-acc-жаз",
+      "question": "«жаз» сөзін табыс септігінде (кімді? нені?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жазды",
+      "accept": [
+        "жазды"
+      ],
+      "type": "acc",
+      "category": "acc",
+      "stem": "жаз",
+      "response": "Жазды",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-бала",
+      "question": "«бала» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "баланың",
+      "accept": [
+        "баланың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "бала",
+      "response": "баланың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-қол",
+      "question": "«қол» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "қолдың",
+      "accept": [
+        "қолдың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "қол",
+      "response": "қолдың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-loc-жаңбыр",
+      "question": "«жаңбыр» сөзін жатыс септігінде (кімде? неде?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "жаңбырда",
+      "accept": [
+        "жаңбырда"
+      ],
+      "type": "loc",
+      "category": "loc",
+      "stem": "жаңбыр",
+      "response": "жаңбырда",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-gen-сағат",
+      "question": "«сағат» сөзін ілік септігінде (кімнің? ненің?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "сағаттың",
+      "accept": [
+        "сағаттың"
+      ],
+      "type": "gen",
+      "category": "gen",
+      "stem": "сағат",
+      "response": "сағаттың",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    },
+    {
+      "id": "kk-ins-түн",
+      "question": "«түн» сөзін көмектес септігінде (кіммен? немен?) жазыңыз. Тек бір сөзбен жауап беріңіз, басқа ештеңе жазбаңыз.",
+      "answer": "түнмен",
+      "accept": [
+        "түнмен"
+      ],
+      "type": "ins",
+      "category": "ins",
+      "stem": "түн",
+      "response": "Түнмен",
+      "substring": true,
+      "judge": null,
+      "correct": true
+    }
+  ]
+}
