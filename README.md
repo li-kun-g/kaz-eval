@@ -26,6 +26,9 @@ there all along. The instruction could not reach it.
 The effect also vanishes with scale: `gemma-4-31b-it` scores 98.7% under Kazakh
 instructions, with one genuine morphological error in 300 items.
 
+The full write-up is in [`PAPER.md`](PAPER.md), typeset as
+[`kaz-eval-paper.pdf`](kaz-eval-paper.pdf).
+
 ## Why this benchmark exists
 
 Existing Kazakh benchmarks are multiple-choice. A model can score well on them

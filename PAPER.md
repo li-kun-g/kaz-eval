@@ -12,14 +12,14 @@ noun stems, with gold answers computed from vowel-harmony and
 consonant-assimilation rules rather than annotated by hand. Holding items and
 gold answers byte-identical while varying only the language of the instruction,
 we find that small models are limited by instruction comprehension rather than
-by morphological knowledge. gemma3-4b scores 16.3% under Kazakh instructions
+by morphological knowledge. gemma3-4b scores 16.6% under Kazakh instructions
 against 48.8% in Russian and 52.0% in English, with a noise floor of 2.7
 points; qwen2.5-3b scores 4.3% and 21.0%. The deficit is not uniform:
 categories whose Kazakh grammatical terminology is common show little or no
 penalty, while those with more specialised terminology fall to zero. A single
 in-context example raises Kazakh-instructed accuracy to 54.7% and five raise it
 to 74.7%, eliminating the gap, with gains concentrated precisely in the
-categories that had failed -- the knowledge was present throughout and the
+categories that had failed — the knowledge was present throughout and the
 instruction could not reach it. This reconciles our findings with prior work
 reporting a 1-5 point instruction-language penalty for Turkish and Finnish
 under few-shot prompting: demonstrations substitute for instruction
@@ -59,20 +59,20 @@ making the item set reproducible from a seed, cheap to extend, and free of
 annotator disagreement. Each item presents a citation-form noun and a target
 morphological category and requires the model to produce the inflected form.
 Because the gold answer is computed, the analysis can be conditioned on the
-linguistic properties that determine it -- harmony class, stem-final sound, and
-the specific allomorph -- so that we report where a model fails rather than only
+linguistic properties that determine it — harmony class, stem-final sound, and
+the specific allomorph — so that we report where a model fails rather than only
 how often.
 
 Our central experiment holds items and gold answers byte-identical while varying
 only the language of the instruction. Small models prove limited by instruction
-comprehension rather than morphological knowledge. That English performs on par
-with Russian rules out an explanation grounded in Kazakhstan's bilingual
+comprehension rather than morphological knowledge. That English performs at least as well
+as Russian rules out an explanation grounded in Kazakhstan's bilingual
 situation: the effect is instruction comprehension in general, not transfer from
-a contact language. A single in-context example recovers most of the deficit and five
-eliminate it, showing that the knowledge was present and the instruction
-could not reach it (Section 5.3). Underneath that parity, however, the choice of instruction
-language shifts individual categories by 20-30 points in opposite directions,
-which we discuss in Section 6. The morphology is largely present in models that
+a contact language. Underneath that parity, however, the choice of instruction
+language shifts individual categories by 20–30 points in opposite directions
+(Section 5.2). A single in-context example then recovers most of the deficit and
+five eliminate it, showing that the knowledge was present and the instruction
+could not reach it (Section 5.3). The morphology is largely present in models that
 appear, when addressed in Kazakh, not to have it.
 
 ## 2. Related work
@@ -92,7 +92,7 @@ properties of the target.
 shared tasks have treated inflection as a supervised problem for a decade; the
 2023 edition covered 26 languages from 9 families with lemma-disjoint splits
 designed to test generalisation to unseen lemmas (Goldman et al., 2023). Our
-item format -- lemma plus target features, inflected form as output -- follows
+item format — lemma plus target features, inflected form as output — follows
 that tradition, but evaluates instruction-following models zero-shot rather
 than trained inflection systems.
 
@@ -157,8 +157,8 @@ and by individual allomorph rather than only by category.
 
 Fifty regular noun stems are used, thirty back-harmonic and twenty
 front-harmonic, spanning all six stem-final sound classes. Stems that undergo
-syncope under suffixation -- `халық` to `халқы`, `орын` to `орны`, `ауыз` to
-`аузы` -- are deliberately excluded, since their surface forms are not derivable
+syncope under suffixation — `халық` to `халқы`, `орын` to `орны`, `ауыз` to
+`аузы` — are deliberately excluded, since their surface forms are not derivable
 from the rules above. The benchmark therefore slightly understates the
 difficulty of real Kazakh.
 
@@ -179,7 +179,7 @@ words echoed from the question. Echo removal is necessary because a model that
 merely repeats the prompt would otherwise score correct whenever the prompt
 contains a substring of the answer. Blank completions are treated as
 non-answers and excluded from the denominator rather than scored as errors
-(Section 7).
+(Section 6.4).
 
 ## 4. Experimental setup
 
@@ -204,7 +204,7 @@ additionally used as a ceiling check on a subset. Decoding is greedy; repeated
 runs on identical items reproduce identical outputs.
 
 Local models were given a 64-token budget, sufficient for single-word answers;
-API models required 1500 tokens for reasons discussed in Section 7.
+API models required 1500 tokens for reasons discussed in Section 6.3.
 
 ### 4.3 Noise floor
 
@@ -222,12 +222,11 @@ gemma3-4b figures are means over three independent item samples.
 
 | Model | Params | Kazakh | Russian | English |
 |---|---:|---:|---:|---:|
-| qwen2.5-3b | 3B | 4.3 | 21.0 | -- |
-| gemma3-4b | 4B | 16.6 +-1.3 | 48.8 +-1.0 | 52.0 +-1.3 |
-| gemma-4-31b-it | 31B | 98.7 | 100.0 | -- |
+| qwen2.5-3b | 3B | 4.3 | 21.0 | — |
+| gemma3-4b | 4B | 16.6 ±1.3 | 48.8 ±1.0 | 52.0 ±1.3 |
+| gemma-4-31b-it | 31B | 98.7 | 100.0 | — |
 
-gemma3-4b figures are means over three independent item samples, with half the
-observed range. Others are single runs of 300 items (3B) and 150 items (31B).
+Others are single runs of 300 items (3B) and 150 items (31B).
 
 Table 1 shows the same pattern in two small models: a large deficit under Kazakh
 instructions that a high-resource instruction language largely removes. At 31B
@@ -248,17 +247,17 @@ language. Mean over three item samples, plus or minus half the observed range.
 
 | Category | Kazakh | Russian | English | difference |
 |---|---:|---:|---:|---:|
-| plural | 68.7 +-6.0 | 58.9 +-2.0 | 68.0 +-1.5 | EN +9.1 |
-| genitive | 42.2 +-1.5 | 1.8 +-1.5 | 28.2 +-3.2 | EN +26.4 |
-| dative | 1.7 +-1.3 | 33.6 +-6.8 | 48.4 +-5.8 | EN +14.8 |
-| accusative | 0.0 +-0.0 | 31.0 +-5.4 | 62.9 +-3.3 | EN +31.9 |
-| locative | 9.2 +-1.5 | 76.7 +-2.0 | 51.6 +-2.4 | RU +25.1 |
-| ablative | 3.1 +-0.5 | 57.9 +-1.3 | 40.8 +-5.9 | RU +17.1 |
-| instrumental | 11.0 +-1.2 | 74.6 +-4.5 | 53.4 +-2.6 | RU +21.2 |
-| possessive-3 | 2.6 +-0.1 | 56.4 +-1.4 | 62.4 +-2.1 | EN +6.0 |
+| plural | 68.7 ±6.0 | 58.9 ±2.0 | 68.0 ±1.5 | EN +9.1 |
+| genitive | 42.2 ±1.5 | 1.8 ±1.5 | 28.2 ±3.2 | EN +26.4 |
+| dative | 1.7 ±1.3 | 33.6 ±6.8 | 48.4 ±5.8 | EN +14.8 |
+| accusative | 0.0 ±0.0 | 31.0 ±5.4 | 62.9 ±3.3 | EN +31.9 |
+| locative | 9.2 ±1.5 | 76.7 ±2.0 | 51.6 ±2.4 | RU +25.1 |
+| ablative | 3.1 ±0.5 | 57.9 ±1.3 | 40.8 ±5.9 | RU +17.1 |
+| instrumental | 11.0 ±1.2 | 74.6 ±4.5 | 53.4 ±2.6 | RU +21.2 |
+| possessive-3 | 2.6 ±0.1 | 56.4 ±1.4 | 62.4 ±2.1 | EN +6.0 |
 
-Russian instructions are substantially better for the oblique cases -- locative,
-instrumental, ablative -- while English instructions are substantially better for
+Russian instructions are substantially better for the oblique cases — locative,
+instrumental, ablative — while English instructions are substantially better for
 accusative and genitive. Russian lexicalises an instrumental and a
 locative/prepositional case; English has no case morphology and its case terms
 are purely metalinguistic. Whether the interaction reflects that difference in
@@ -273,7 +272,9 @@ The results above are zero-shot. Prior work on morphological evaluation in
 agglutinative languages prompts with in-context examples, and reports only a
 1-5 point penalty for instructing in the target language rather than English
 (arXiv:2410.12656, Appendix A.1). We reconcile the two by varying the number of
-examples on our own items (Table 3).
+examples on our own items (Table 3). This experiment uses a single item
+sample (seed 7), whose zero-shot Kazakh baseline is 16.3 rather than the 16.6
+mean of Table 1.
 
 **Table 3.** Effect of in-context examples on gemma3-4b, by instruction
 language and number of demonstrations.
@@ -300,8 +301,8 @@ Section 5.4. The categories that gain most from one example are exactly those
 where Kazakh instructions failed: dative +68.3, instrumental +57.5, possessive
 +50.0, locative +47.5, ablative +40.7. The two categories the model already
 handled under Kazakh instructions gain least: plural +6.1 and genitive +9.7.
-An example supplies what a grammatical term failed to convey -- which
-transformation is intended -- and it is redundant where the term was already
+An example supplies what a grammatical term failed to convey — which
+transformation is intended — and it is redundant where the term was already
 understood.
 
 The Russian genitive provides an internal check. Under our first Russian gloss
@@ -332,7 +333,7 @@ outperform both alternatives (42.2 against 28.2 and 1.8). For accusative and
 dative they collapse to near zero.
 
 The categories that survive Kazakh prompting are those whose Kazakh
-grammatical terms -- `көпше түрі`, `ілік септік` -- are basic school vocabulary;
+grammatical terms — `көпше түрі`, `ілік септік` — are basic school vocabulary;
 those that fail use more specialised terminology. This suggests that the
 bottleneck is coverage of Kazakh metalinguistic vocabulary rather than an
 inability to process Kazakh instructions in general, and predicts that term
@@ -359,7 +360,7 @@ ones: 52.2 against 42.2 for gemma3-4b under Russian instructions, 25.5 against
 13.8 for qwen2.5-3b. At 31B both classes reach 100%.
 
 qwen2.5-3b scores 0/40 on instrumental under both Kazakh and Russian
-instructions -- the `-мен/-бен/-пен` paradigm appears to be absent from the model
+instructions — the `-мен/-бен/-пен` paradigm appears to be absent from the model
 rather than merely unreachable. gemma3-4b handles instrumental at 74.6 under
 Russian. Two models of comparable size therefore fail on different categories,
 and an intervention targeting either would need to be built against measured
@@ -371,8 +372,8 @@ gemma-4-31b-it makes two errors in 300 items. One is lexical: `ұл` returns
 `Олар` ("they"). The other is the single genuine morphological error observed
 at this scale: `сөз` returns `сөзнің` where Kazakh requires `сөздің`, applying
 the post-nasal allomorph after a fricative. Vowel harmony is correct;
-assimilation is not. All other cuts of the data -- both harmony classes, all six
-stem-final sound classes, every allomorph -- are at 100%.
+assimilation is not. All other cuts of the data — both harmony classes, all six
+stem-final sound classes, every allomorph — are at 100%.
 
 ## 6. Methodological findings
 
@@ -385,7 +386,7 @@ Russian's `кого?/чего?` overlaps with the accusative and with negation
 constructions and does not signal possession; the model was pulled toward
 ablative and instrumental forms (`шаң` returning `Шаңмен`, `түн` returning
 `Түннен`). Genitive fell from 42.2 under Kazakh instructions to 1.8 under
-Russian. All six allomorphs scored near zero uniformly -- the signature of a
+Russian. All six allomorphs scored near zero uniformly — the signature of a
 category never identified, as opposed to a phonological error, which would
 fail some allomorphs and spare others. A cross-lingual evaluation measures its
 own translations as much as it measures the model.
@@ -395,7 +396,7 @@ in three distinct ways. The `кого? чего?` gloss pulled toward oblique ca
 A revised `родительный падеж принадлежности (чей? чьё?)` pulled toward the
 possessed form (`шаң` returning `Оның шаңы`, `дос` returning `Досының`). An
 izafet frame (`___ суреті`) scored zero at 4B but 93.9 at 31B, and its residual
-errors at 31B were confined to `бет`, `бас` and `іс` -- exactly the nouns that
+errors at 31B were confined to `бет`, `бас` and `іс` — exactly the nouns that
 form natural compounds.
 
 The explanation is grammatical. Kazakh izafet Type II (`бала кітабы`) takes a
@@ -480,7 +481,9 @@ instruction comprehension, and cannot separate them by design.
 ## Availability
 
 Code and item sets: https://github.com/li-kun-g/kaz-eval
-Archived release: https://doi.org/10.5281/zenodo.21921339 All items are generated from a seed; the
+Archived release: https://doi.org/10.5281/zenodo.21921339
+
+All items are generated from a seed; the
 generator validates its rule tables against hand-verified forms before emitting
 anything.
 
